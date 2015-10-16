@@ -1,7 +1,86 @@
 @import "compass/css3";
 @import "normalize";
+@import "bits";
 
+html{
+	font-family: "SortsMillGoudy", serif;
+  font-size: 16px;
+  line-height: 1;
+ }
 
-.mediadei {
+ .mediadei {
 	font-size: .2em;
+}
+
+
+//----------------------------------------------- RESOURCES
+body.page-id-4{
+	section{
+		padding-top: 50px;
+		article{
+			display: table;
+			margin: 0 auto;
+			max-width: 633px;
+			min-width: 633px;
+			padding-bottom: 55px;
+
+			h1{
+				//margin should be changed for all h tags in normalize. Using h1 tag for semantic purposes.
+				margin: 0px;
+				color: #585858;
+				font-style: italic;
+				font-size: 23px;
+				font-weight: normal;
+				padding-bottom: 3px;		
+			}
+
+			p{
+				color: #6E6E6E;
+				line-height: 1.5;
+				margin: 0px;
+			}
+		}
+	}
+}
+//----------------------------------------------- PROJECTS
+body.page-id-6{
+	section{
+		article{
+
+		}
+		h1{
+
+		}
+		div.project{
+			figure{
+				&.img1{
+
+				}
+				&.img2{
+
+				}
+				&.img3{
+
+				}
+				&.img4{
+
+				}
+				&.img5{
+
+				}
+
+				label{
+
+				}
+				figcaption{
+					h2{
+
+					}
+					p{
+
+					}
+				}
+			}
+		}
+	}
 }
