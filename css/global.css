@@ -427,8 +427,6 @@ body.page-id-4 section {
       line-height: 1.5;
       margin: 0px; }
 
-body.page-id-6 section input {
-  display: none; }
 body.page-id-6 section article {
   max-width: 461px;
   margin: 0 auto;
@@ -440,11 +438,20 @@ body.page-id-6 section article {
     text-transform: uppercase;
     font-size: .8em; }
 body.page-id-6 section h1 {
-  text-align: center;
   font-style: italic;
   color: #585858;
   padding-bottom: 40px;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  display: table;
+  margin: 0 auto;
+  position: relative; }
+  body.page-id-6 section h1:before {
+    content: "";
+    background: url("../images/pmark.png") no-repeat scroll;
+    width: 25px;
+    height: 45px;
+    left: -30px;
+    position: absolute; }
 body.page-id-6 section div.project {
   display: table;
   margin: 0 auto; }
@@ -453,7 +460,8 @@ body.page-id-6 section div.project {
     height: 442px;
     border-radius: 12px;
     border: 1px solid #B4A177;
-    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.5);
+    position: relative; }
     body.page-id-6 section div.project figure.img1 {
       background: transparent url("../images/project1.jpg") no-repeat scroll 0px 0px/815px auto; }
     body.page-id-6 section div.project figure.img2 {
@@ -464,6 +472,14 @@ body.page-id-6 section div.project {
       background: transparent url("../images/project4.jpg") no-repeat scroll 0px 0px/815px auto; }
     body.page-id-6 section div.project figure.img5 {
       background: transparent url("../images/project5.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); }
+    body.page-id-6 section div.project figure label {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: absolute;
+      z-index: 3; }
     body.page-id-6 section div.project figure figcaption {
       width: 511px;
       height: 217px;
@@ -497,3 +513,24 @@ body.page-id-6 section div.project {
         width: 380px;
         margin: 0 auto;
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
+body.page-id-6 section div.modal-info {
+  background-color: #626262;
+  box-shadow: 0 12px 8px -5px #000 inset, 0 -80px 60px -60px rgba(255, 255, 255, 0.2) inset;
+  height: 346px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.3s ease 0s;
+  width: 100%;
+  z-index: 2; }
+  body.page-id-6 section div.modal-info div.bio h1 {
+    color: #FFFFFF;
+    font-style: italic;
+    padding-top: 40px; }
+  body.page-id-6 section div.modal-info div.bio p {
+    color: #F0F0F0;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5); }
+    body.page-id-6 section div.modal-info div.bio p span {
+      color: #D1D1D1;
+      text-transform: uppercase; }

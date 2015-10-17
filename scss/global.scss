@@ -43,7 +43,7 @@ body.page-id-4{
 body.page-id-6{
 	section{
 		input{
-			display: none;
+			//display: none;
 		}
 		article{
 			max-width: 461px;
@@ -60,11 +60,24 @@ body.page-id-6{
 
 		}
 		h1{
-			text-align: center;
+			
 			font-style: italic;
 			color: #585858;
 			padding-bottom: 40px;
 			font-size: 2.5em;
+			display: table;
+			margin: 0 auto;
+			position: relative;
+
+			&:before{
+				content: "";
+				background: url("../images/pmark.png") no-repeat scroll;
+				width: 25px;
+				height: 45px;
+				left: -30px;
+				position: absolute;
+
+			}
 		}
 		div.project{
 			display: table;
@@ -75,6 +88,7 @@ body.page-id-6{
 				border-radius: 12px;
 				border: 1px solid #B4A177;
 				box-shadow: 0px 4px 12px 1px rgba(black, 0.5);
+				position: relative;
 				&.img1{
 					background: rgba(0,0,0,0) url("../images/project1.jpg") no-repeat scroll 0px 0px / 815px auto; 
 				}
@@ -90,11 +104,29 @@ body.page-id-6{
 				&.img5{
 					background: rgba(0,0,0,0) url("../images/project5.jpg") no-repeat scroll 0px 0px / 815px auto; 
 				}
+				&:active{
+					box-shadow: 0px 0px 0px rgba(black, 0.5);
+				}
 
 				label{
+					width: 100%;
+					height: 100%;
+			    cursor: pointer;
+			    position: absolute;
+			    z-index: 3;
 
 				}
 				figcaption{
+
+					width: 511px;
+					height: 217px;
+					margin: 0 auto;
+					border-radius: 14px;
+					box-shadow: 0px 2px 4px rgba(black,0.5);
+					text-align: center;
+					background: rgba(black, 0.12);
+					position: relative;
+					margin-top: 110px;
 
 					&:before{
 						background: transparent linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.3)) repeat scroll 0 0;
@@ -109,15 +141,7 @@ body.page-id-6{
 				    width: 100%;
 					}
 
-					width: 511px;
-					height: 217px;
-					margin: 0 auto;
-					border-radius: 14px;
-					box-shadow: 0px 2px 4px rgba(black,0.5);
-					text-align: center;
-					background: rgba(black, 0.12);
-					position: relative;
-					margin-top: 110px;
+					
 
 					h2{
 						color: #FFFFFF;
@@ -137,6 +161,36 @@ body.page-id-6{
 						text-shadow: 0px 2px 4px rgba(black,0.5);
 
 					}
+				}
+			}
+		}
+		div.modal-info{
+			background-color: #626262;
+	    box-shadow: 0 12px 8px -5px #000 inset, 0 -80px 60px -60px rgba(255, 255, 255, 0.2) inset;
+	    height: 346px;
+	    margin-bottom: 40px;
+	    margin-top: 20px;
+	    overflow: hidden;
+	    position: relative;
+	    transition: height 0.3s ease 0s;
+	    width: 100%;
+	    z-index: 2;
+			div.bio{
+				h1{
+					color: #FFFFFF;
+					font-style: italic;
+					padding-top: 40px;
+
+				}
+				p{
+					color: #F0F0F0;
+					text-shadow: 0px -1px 0px rgba(black, 0.5);
+
+					span{
+						color: #D1D1D1;
+						text-transform: uppercase;
+					}
+
 				}
 			}
 		}

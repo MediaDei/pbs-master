@@ -11,30 +11,11 @@
 </section>
 <section>
 
-	<script>
-		$(document).ready(function() {
-			var radioButtons = [false, false, false, false, false];
-
-			$("input[type='radio'].radioButton-projects").click(function() {
-				if( radioButtons[$(this).index("input[type='radio']")] == true ) { // if clicking on self
-					$(this).prop('checked', false);								   // unselect self
-					radioButtons[$(this).index("input[type='radio']")] = false;
-				}
-				else {															// if clicking another
-					radioButtons = [false, false, false, false, false];
-					$("input[type='radio'].radioButton-projects").prop('checked', false);	// unselect all
-					radioButtons[$(this).index("input[type='radio']")] = true;	// select self
-					$(this).prop('checked', true);
-				}
-			});
-		});
-	</script>
-
-	<input class="radioButton-project" id="project-1st" type="radio" name="project1">
-	<input class="radioButton-project" id="project-2nd" type="radio" name="project2">
-	<input class="radioButton-project" id="project-3rd" type="radio" name="project3">
-	<input class="radioButton-project" id="project-4th" type="radio" name="project4">
-	<input class="radioButton-project" id="project-5th" type="radio" name="project5">
+	<input id="project-1st" class="radioButton-project" type="radio" name="project1">
+	<input id="project-2nd" class="radioButton-project" type="radio" name="project2">
+	<input id="project-3rd" class="radioButton-project" type="radio" name="project3">
+	<input id="project-4th" class="radioButton-project" type="radio" name="project4">
+	<input id="project-5th" class="radioButton-project" type="radio" name="project5">
 
 	<h1>
 		Projects
@@ -53,6 +34,17 @@
 			</figcaption>
 		</figure>
 	</div>
+	<div class="modal-info">
+		<div class="bio">
+			<h1>
+				Anglican Way
+			</h1>
+			<p>
+				This new online library of Anglican classics offers central texts to the new gen-
+	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
+			</p>
+		</div>
+	</div>
 
 	<div class="project">
 		<figure class="img2">
@@ -67,6 +59,17 @@
 				</p>
 			</figcaption>
 		</figure>
+	</div>
+	<div class="modal-info">
+		<div class="bio">
+			<h1>
+				Anglican Way Print
+			</h1>
+			<p>
+				This new online library of Anglican classics offers central texts to the new gen-
+	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
+			</p>
+		</div>
 	</div>
 
 	<div class="project">
@@ -83,6 +86,17 @@
 			</figcaption>
 		</figure>
 	</div>
+	<div class="modal-info">
+		<div class="bio">
+			<h1>
+				I-Pray BCP App
+			</h1>
+			<p>
+				This new online library of Anglican classics offers central texts to the new gen-
+	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
+			</p>
+		</div>
+	</div>
 
 	<div class="project">
 		<figure class="img4">
@@ -97,6 +111,17 @@
 				</p>
 			</figcaption>
 		</figure>
+	</div>
+	<div class="modal-info">
+		<div class="bio">
+			<h1>
+				Catechesis Project
+			</h1>
+			<p>
+				<span>This new</span> online library of Anglican classics offers central texts to the new gen-
+	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
+			</p>
+		</div>
 	</div>
 
 	<div class="project">
@@ -113,6 +138,36 @@
 			</figcaption>
 		</figure>
 	</div>
+	<div class="modal-info">
+		<div class="bio">
+			<h1>
+				New Scriptorium
+			</h1>
+			<p>
+				This new online library of Anglican classics offers central texts to the new gen-
+	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
+			</p>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			var radioButtons = [false, false, false, false, false];
+
+			$("input[type='radio'].radioButton-project").click(function() {
+				if( radioButtons[$(this).index("input[type='radio']")] == true ) { // if clicking on self
+					$(this).prop('checked', false);								   // unselect self
+					radioButtons[$(this).index("input[type='radio']")] = false;
+				}
+				else {															// if clicking another
+					radioButtons = [false, false, false, false, false];
+					$("input[type='radio'].radioButton-project").prop('checked', false);	// unselect all
+					radioButtons[$(this).index("input[type='radio']")] = true;	// select self
+					$(this).prop('checked', true);
+				}
+			});
+		});
+	</script>
 </section>
 
 <?php get_footer(); ?>
