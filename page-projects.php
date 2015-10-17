@@ -3,7 +3,7 @@
 </header>
 <section>
 	<article>
-		New society projects ipse lorem ipsum dolor abesset velum 
+		<span>New society projects</span> ipse lorem ipsum dolor abesset velum 
 	  amet, consectetur adipiscing elit. Ut pretium non datur.
 	  rest pretium tempor. Ut eget imperdiet neque. In verita-
 	  atem volutpat ante semper diam et aliquam erat.

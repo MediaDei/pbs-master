@@ -15,20 +15,3 @@
 	min-width: 960px;
 	margin: 0 auto;
 }
-
-
-//Font-Stacks
-@font-face {
-  font-family: 'SortsMillGoudy';
-  src: url('../assets/GoudyStM-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/GoudyStM-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/GoudyStM-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SortsMillGoudy';
-  src: url('../assets/GoudyStM-Italic-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/GoudyStM-Italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/GoudyStM-Italic-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-  font-style: italic;
-}
