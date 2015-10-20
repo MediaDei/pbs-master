@@ -23,7 +23,7 @@
 
 //Styling
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html {
@@ -37,7 +37,11 @@ a {
   }
 }
 
-
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-weight: normal;
+  // Normalize.css defaults commented out below
+}
 
 
 
@@ -178,27 +182,10 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-
-
-
-
-
-///////////////////////////////////////////////////////////
-//Remove Header Margin and Bold Defaults -- Added by Tyler. Is not a default of normalize.
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-  font-weight: normal;
-}
-
-///////////////////////////////////////////////////////////
-
-
-
+//h1 {
+//  font-size: 2em;
+//  margin: 0.67em 0;
+//}
 
 
 
