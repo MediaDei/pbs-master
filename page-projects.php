@@ -32,6 +32,7 @@
 					Premier online magazine of Anglican faith and tradition.
 				</p>
 			</figcaption>
+			<div class="arrow"></div>
 		</figure>
 	</div>
 	<div class="modal-info">
@@ -40,7 +41,7 @@
 				Anglican Way
 			</h2>
 			<p>
-				<span>This new</span> online library of Anglican classics offers central texts to the new gen-
+				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>
@@ -58,6 +59,7 @@
 					Print edition on the vital topics in the Church.
 				</p>
 			</figcaption>
+			<div class="arrow"></div>
 		</figure>
 	</div>
 	<div class="modal-info">
@@ -66,7 +68,7 @@
 				Anglican Way Print
 			</h2>
 			<p>
-				This new online library of Anglican classics offers central texts to the new gen-
+				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>
@@ -84,6 +86,7 @@
 					Your portable Daily office, going everywhere you go.
 				</p>
 			</figcaption>
+			<div class="arrow"></div>
 		</figure>
 	</div>
 	<div class="modal-info">
@@ -92,7 +95,7 @@
 				I-Pray BCP App
 			</h2>
 			<p>
-				This new online library of Anglican classics offers central texts to the new gen-
+				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>
@@ -110,6 +113,7 @@
 					What is whispered in the classroom, will be uttered on the street.
 				</p>
 			</figcaption>
+			<div class="arrow"></div>
 		</figure>
 	</div>
 	<div class="modal-info">
@@ -118,7 +122,7 @@
 				Catechesis Project
 			</h2>
 			<p>
-				<span>This new</span> online library of Anglican classics offers central texts to the new gen-
+				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>
@@ -136,6 +140,7 @@
 					Anglican classics online, for today's generation.
 				</p>
 			</figcaption>
+			<div class="arrow"></div>
 		</figure>
 	</div>
 	<div class="modal-info">
@@ -144,7 +149,7 @@
 				New Scriptorium
 			</h2>
 			<p>
-				This new online library of Anglican classics offers central texts to the new gen-
+				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>

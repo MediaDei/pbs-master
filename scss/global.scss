@@ -97,6 +97,7 @@ body.page-id-6{
 			figure{
 				width: 816px;
 				height: 442px;
+				margin: 0 auto 40px;
 				border-radius: 12px;
 				border: 1px solid #B4A177;
 				box-shadow: 0px 4px 12px 1px rgba(black, 0.5);
@@ -177,6 +178,18 @@ body.page-id-6{
 
 					}
 				}
+				div.arrow{
+					//display: none;
+					background-color: #616161;
+					bottom: -90px;
+					box-shadow: 11px 11px 7px -5px rgba(black,1) inset;
+					width: 50px;
+					height: 50px;
+					right: 48%;
+					transform: rotate(45deg);
+					z-index: 3;
+					position: absolute;
+				}
 			}
 		}
 		div.modal-info{
@@ -195,27 +208,37 @@ body.page-id-6{
 					color: #FFFFFF;
 					font-style: italic;
 					padding: 50px 0 20px;
-					font-size: 1.6em;
+					font-size: 2em;
 					text-align: center;
+					display: table;
+					margin: 0 auto;
 
 				}
 				p{
 					color: #F0F0F0;
-					text-shadow: 0px -1px 0px rgba(black, 0.5);
+					text-shadow: 0px -1px 0px rgba(black, 1);
 					font-size: 1.1em;
 					width: 705px;
 					margin: 0 auto;
 					line-height: 1.3;
 					letter-spacing: 1px;
 
+
+					&:first-letter{
+							font-size: 2.5em;
+							display: inline-block;
+							margin: 8px 10px 0px 0px;
+							float: left;
+						}
+
 					span{
 						color: #D1D1D1;
 						text-transform: uppercase;
 						font-size: .7em;
+						margin: 0px 8px 0px -10px;
+						letter-spacing: 2px;
 
-						&:first-letter{
-							font-size: 1.2em;
-						}
+						
 					}
 				}
 			}

@@ -452,6 +452,7 @@ body.page-id-6 section div.project {
   body.page-id-6 section div.project figure {
     width: 816px;
     height: 442px;
+    margin: 0 auto 40px;
     border-radius: 12px;
     border: 1px solid #B4A177;
     box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.5);
@@ -509,6 +510,16 @@ body.page-id-6 section div.project {
         text-shadow: 0px 2px 2px black;
         letter-spacing: 1.2px;
         line-height: 1.3; }
+    body.page-id-6 section div.project figure div.arrow {
+      background-color: #616161;
+      bottom: -90px;
+      box-shadow: 11px 11px 7px -5px black inset;
+      width: 50px;
+      height: 50px;
+      right: 48%;
+      transform: rotate(45deg);
+      z-index: 3;
+      position: absolute; }
 body.page-id-6 section div.modal-info {
   background-color: #626262;
   box-shadow: 0 12px 8px -5px #000 inset, 0 -80px 60px -60px rgba(255, 255, 255, 0.2) inset;
@@ -524,19 +535,26 @@ body.page-id-6 section div.modal-info {
     color: #FFFFFF;
     font-style: italic;
     padding: 50px 0 20px;
-    font-size: 1.6em;
-    text-align: center; }
+    font-size: 2em;
+    text-align: center;
+    display: table;
+    margin: 0 auto; }
   body.page-id-6 section div.modal-info div.bio p {
     color: #F0F0F0;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px -1px 0px black;
     font-size: 1.1em;
     width: 705px;
     margin: 0 auto;
     line-height: 1.3;
     letter-spacing: 1px; }
+    body.page-id-6 section div.modal-info div.bio p:first-letter {
+      font-size: 2.5em;
+      display: inline-block;
+      margin: 8px 10px 0px 0px;
+      float: left; }
     body.page-id-6 section div.modal-info div.bio p span {
       color: #D1D1D1;
       text-transform: uppercase;
-      font-size: .7em; }
-      body.page-id-6 section div.modal-info div.bio p span:first-letter {
-        font-size: 1.2em; }
+      font-size: .7em;
+      margin: 0px 8px 0px -10px;
+      letter-spacing: 2px; }
