@@ -36,11 +36,11 @@
 	</div>
 	<div class="modal-info">
 		<div class="bio">
-			<h1>
+			<h2>
 				Anglican Way
-			</h1>
+			</h2>
 			<p>
-				This new online library of Anglican classics offers central texts to the new gen-
+				<span>This new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
 			</p>
 		</div>
@@ -62,9 +62,9 @@
 	</div>
 	<div class="modal-info">
 		<div class="bio">
-			<h1>
+			<h2>
 				Anglican Way Print
-			</h1>
+			</h2>
 			<p>
 				This new online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
@@ -88,9 +88,9 @@
 	</div>
 	<div class="modal-info">
 		<div class="bio">
-			<h1>
+			<h2>
 				I-Pray BCP App
-			</h1>
+			</h2>
 			<p>
 				This new online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
@@ -114,9 +114,9 @@
 	</div>
 	<div class="modal-info">
 		<div class="bio">
-			<h1>
+			<h2>
 				Catechesis Project
-			</h1>
+			</h2>
 			<p>
 				<span>This new</span> online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
@@ -140,9 +140,9 @@
 	</div>
 	<div class="modal-info">
 		<div class="bio">
-			<h1>
+			<h2>
 				New Scriptorium
-			</h1>
+			</h2>
 			<p>
 				This new online library of Anglican classics offers central texts to the new gen-
 	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
