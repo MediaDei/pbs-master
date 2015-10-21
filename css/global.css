@@ -15,7 +15,7 @@
   /* Safari, Android, iOS */
   font-style: italic; }
 * {
-  box-sizing: border-box; }
+  box-sizing: content-box; }
 
 html {
   font-family: "SortsMillGoudy", serif; }
@@ -24,6 +24,10 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
 
 /* ====================================================== */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -138,14 +142,6 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: normal; }
-
 /**
  * Address styling not present in IE 8/9.
  */
@@ -388,18 +384,10 @@ td,
 th {
   padding: 0; }
 
-* {
-  box-sizing: border-box; }
-
 .clear:after {
   content: "";
   display: table;
   clear: both; }
-
-.page-wrap {
-  max-width: 1060px;
-  min-width: 960px;
-  margin: 0 auto; }
 
 html {
   font-family: "SortsMillGoudy", serif;
