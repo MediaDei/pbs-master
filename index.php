@@ -3,7 +3,7 @@
 </header>
 
 
-<section>
+<section class="placeholder">
 </section>
 
 <?php get_footer(); ?>

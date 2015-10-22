@@ -2,8 +2,6 @@
 /* MediaDei defaults */
 /* ================= */
 
-//See h1,h2,h3,h4,h5,h6 below for added change to remove default margin and bold style on all h tags. Added below by Tyler, since change was being overridden by more specific "normalize" tag below.
-
 //Font-Stacks
 @font-face {
   font-family: 'SortsMillGoudy';
@@ -20,14 +18,9 @@
   font-style: italic;
 }
 
-
 //Styling
 * {
-  box-sizing: content-box;
-}
-
-html {
-  font-family: "SortsMillGoudy", serif;
+  box-sizing: border-box;
 }
 
 a {

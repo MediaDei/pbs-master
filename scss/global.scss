@@ -2,15 +2,587 @@
 @import "normalize";
 @import "bits";
 
-html{
+html {
 	font-family: "SortsMillGoudy", serif;
   font-size: 16px;
   line-height: 1;
  }
 
- .mediadei {
-	font-size: .2em;
+section.placeholder {
+  height: 300px;
 }
+
+.page-wrap{
+	max-width: 1060px;
+	min-width: 960px;
+	margin: 0 auto;
+}
+
+
+
+
+
+//------------------------------------------------- Header
+header {
+
+  .title-wrap {
+    position: relative;
+    margin: 20px 0 10px;
+
+
+    // ----- Title
+    h1.main-title {
+      display: table;
+      margin: 0 auto;
+      font-size: 2em;
+      letter-spacing: 5px;
+      line-height: 1;
+      white-space: pre-line;
+    }
+
+    // ------ Social
+    div.main-social {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      font-size: 1.1em;
+
+      a {
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+        border: 1px solid $social-border;
+        background-color: $social-bg;
+        color: $social-text;
+        text-shadow: 0 1px 2px rgba(black, 0.5);
+        box-shadow: inset 0 1px 1px rgba(black, 0.2);
+        margin: 0 1px;
+        outline: 0;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+
+        &.fa-facebook {
+          padding-top: 7px;
+          padding-left: 1px;
+        }
+        &.fa-twitter {
+          font-size: 1.16em;
+          padding-top: 6px;
+          padding-left: 2px;
+        }
+        &.fa-rss {
+          padding-top: 6px;
+          padding-left: 4px;
+        }
+        &.fa-envelope {
+          font-size: 0.96em;
+          padding-top: 6px;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          background-image: radial-gradient(ellipse closest-side, #555555, #888888, rgba(255, 255, 255, 0));
+          height: 5px;
+          width: 30px;
+          position: absolute;
+          bottom: -3px;
+          left: 0px;
+          z-index: -1;
+        }
+
+        &:hover {
+          background-color: $social-bg * 0.95;
+        }
+        &:active {
+          background-color: $social-bg * 0.9;
+          text-shadow: 0 1px 2px rgba(black, 0.8);
+          box-shadow: inset 0 1px 2px rgba(black, 0.5);
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    position: relative;
+    margin-bottom: 6px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top:6px; left:0;
+      height:46px; width:46px;
+      background: url('../images/header_menu-ornament.png') top left no-repeat;
+      background-size: 100% auto;
+    } &:after {
+      content: "";
+      position: absolute;		
+      top:6px; right:0;
+      height:46px; width:46px;
+      background: url('../images/header_menu-ornament.png') top left no-repeat;
+      background-size: 100% auto;
+      @include transform (scaleX(-1));
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+
+    @include background(
+      linear-gradient(to top, rgba(white, 0.12), rgba(black, 0)), 
+      $nav-bg);
+    box-shadow: 0 2px 3px rgba(black, 0.5), inset 0 2px 3px black;
+    border-radius: 4px;
+
+    .container {
+      display: table;
+      margin: 0 auto;
+    }
+
+    a {
+      color: $nav-button-text;
+      text-decoration: none;
+      @include background(
+        linear-gradient(to bottom, rgba(white, 0.06), rgba(68,68,68, 0.11), rgba(black, 0.25)),
+        $nav-button-bg);
+      box-shadow: 1px 1px 1px rgba(black, 0.5),
+                  -1px -1px 0 rgba(white, 0.31),
+                  inset 0 0 8px 1px rgba(white, 0.22);
+      text-shadow: 0 2px 2px black;
+      padding: 8px 26px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 3px 2px 3px;
+      float: left;  // to avoid white-space between menus
+
+      &:hover {
+        @include background(
+          linear-gradient(to bottom, rgba(white, 0.06), rgba(68,68,68, 0.11), rgba(black, 0.25)),
+          $nav-button-bg * 1.15);
+      }
+      &:active {
+        @include background(
+          linear-gradient(to top, rgba(#555, 0.1), rgba(68,68,68, 0.21), rgba(black, 0.3)),
+          $nav-button-bg * 1.3);			
+        box-shadow: inset 0 0 1px rgba(black, 0.4),
+                    inset 0 0 1px black,
+                    inset 0 0 8px 0px rgba(black, 0.22);
+        margin: 4px 2px 2px;
+        text-shadow: 0 1px 1px black;
+      }
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border: 1px solid #979797;
+    box-shadow: inset 0 0 3px rgba(black, 0.5);
+
+    &.home {
+      background: url("../images/home--header.jpg") no-repeat scroll 0 -98px / 100% auto;
+      background-size: 100% auto;
+    }
+    
+    &.about {
+      background: url("../images/about--header.jpg") center left no-repeat;
+      background-size: 100% auto;
+    }
+    
+    &.whatson{
+      background: url("../images/whatson--header.jpg") center left no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .page-title {
+    display: table;
+    margin: -24px auto 0;
+    position: relative;
+    z-index: 2;
+
+    &:before {
+      content: "";
+      box-shadow: -1px -5px 8px 1px black;
+      height: 43px;
+      left: 3px;
+      position: absolute;
+      top: 5px;
+      @include transform(rotate(-5deg));
+      width: 6px;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      box-shadow: 1px -5px 8px 1px black;
+      height: 43px;
+      right: 3px;
+      position: absolute;
+      top: 5px;
+      @include transform(rotate(5deg));
+      width: 6px;
+      z-index: -1;
+    }
+
+    h1 {
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 -5px 6px -4px rgba(black, 1);
+      font-size: 3.2em;
+      padding: 14px 40px 0;
+      color: #876B58;
+    }
+  }
+} //----------END Header
+
+
+
+
+
+
+
+//----------------------------------------------------- Footer
+footer {
+
+  @include background(
+    linear-gradient(to bottom, #AAAAAA, rgba(white, 0) 60%),
+    url("../images/footer_bg.png") top left / 15% auto);
+  background-blend-mode: multiply;
+  box-shadow: inset 0 7px 4px -4px black;
+  position: relative;
+  padding: 40px 40px 0;
+  margin-top: 10px;
+  font-size: 0.9em;
+  letter-spacing: 0.2px;
+
+  &:before {  // line
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #C06A0C;
+    box-shadow: 0 1px 1px black;
+  }
+
+  h3 {        // all headers
+    color: #E5DFDB;
+    text-shadow: 0 1px 0 rgba(black, 0.5);
+    font-style: italic;
+    font-size: 1.7em;
+    border-bottom: 1px solid #979797;
+    width: 100%;
+    padding-left: 5px;
+    margin: 0;
+  }
+
+  .contact p, .social p, .branding p {          // body text
+    color: $footer-text;
+    text-shadow: 0 1px 0 black;
+    line-height: 1;
+  }
+
+  .contact {
+    float: left;
+
+    figure.svg-container {
+      display: inline-block;
+      position: relative;
+      height: 78px;
+      width: 92px;
+      margin: 0;
+      cursor: pointer;
+      
+      svg {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;   // to allow clicking through, jquery click(), etc
+      }
+
+      figcaption {
+        font-size: 1.26em;
+        position: absolute;
+        left: 12px;
+        bottom: -2px;
+        color: #43362F;
+        text-shadow: 0 1px 0 rgba(white, 0.65);
+        text-decoration: none;
+        @include user-select(none);
+        pointer-events: none;   // shouldn't be clickable
+      }
+      // hover/active effects for button and label are inline
+    }
+
+    p.details {
+      display: inline-block;
+      padding-right: 10px;
+      span {
+        font-style: italic;
+        display: block;
+      }
+    }
+
+    h3.address {
+      font-size: 1.4em;
+      margin: 20px 0 12px;
+      color: $footer-text;
+    }
+    p.address {
+      margin: 0 5px 0;
+      line-height: 1.4;
+    }
+  }
+
+
+  .branding {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    min-width: 200px;
+
+    .title {
+      font-style: italic;
+      font-size: 1.7em;
+      color: #362D29 * 1.1;
+      text-shadow: 0 1px 0 rgba(white, 0.1), 0 -1px 0 rgba(black, 0.25);
+      margin: 0 0 6px;
+      line-height: 0.95;
+      @include user-select(none);
+      cursor: default;
+
+      span {
+        font-style: normal;
+        font-size: 1.3em;
+        letter-spacing: 3px;
+      }
+    }
+
+    .cross {
+      background: url("../images/footer_cross.png") center center no-repeat;
+      background-size: 100% auto;
+      margin: 0 auto 30px;
+      width: 50px;
+      height: 80px;
+    }
+
+    .benediction {
+      font-size: 0.96em;
+      line-height: 1.3;
+
+      span {
+        font-style: italic;       
+      }
+    }
+  }
+
+  .social {
+    float: right;
+    width: 230px;
+    display: table;
+    margin-right: 40px;
+    
+    h3 {
+      margin-bottom: 24px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $footer-text;
+      text-shadow: 0 1px 0 black;
+      margin: 0 0 20px 20px;
+      font-size: 1.2em;
+      letter-spacing: 0.2px;
+
+      figure {
+        border: 1px solid #3D3428;
+        background-color: #C4B3AA;
+        color: #4E4540;
+        text-shadow: 0 1px 0 white, 0 -1px 0 black;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        box-shadow: 0 1px 1px rgba(black, 0.15), inset 0 0 1px 1px white;
+        margin: -5px 10px 0 0;
+        vertical-align: middle;
+        text-align: center;
+
+        &.fa-facebook {
+          font-size: 1.36em;
+          padding-top: 9px;
+          padding-left: 2px;
+        }
+        &.fa-twitter {
+          font-size: 1.36em;
+          padding-top: 9px;
+          padding-left: 3px;
+        }
+        &.fa-rss {
+          font-size: 1.2em;
+          padding-top: 9px;
+          padding-left: 4px;
+        }
+
+        &:hover {
+          background-color: #B4A197;
+          box-shadow: 0 1px 1px rgba(black, 0.15), inset 0 0 0 1px #FFFFFF;
+          text-decoration: none;
+        }
+
+        &:active {
+          background-color: #98867C;
+          color: #4E4540 * 0.8;
+          text-shadow: 0 1px 0 #FFFFFF * 0.8, 0 -1px 0 black;
+          box-shadow: inset 0 0 0 1px #FFFFFF, inset 0 0 4px rgba(black,0.9);
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: white; 
+      }
+    }
+  }
+
+  .contact-lightbox {
+    display: none;
+
+    .overlay {
+      background-color: rgba(black, 0.6);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1001;
+    }
+
+    .wpcf7 {
+      background-color: white;
+      border-radius: 7px;
+      box-shadow: 0 4px 12px black;
+      height: auto;
+      left: 25%;
+      overflow: auto;
+      padding: 20px;
+      position: fixed;
+      top: 10%;
+      width: 530px;
+      z-index: 1002;
+
+      .close {
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity: 0.5;
+        padding: 5px 7px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      .title {
+        display: table;
+        font-size: 2.4em;
+        margin: 20px auto 30px;
+      }
+
+      .text {
+        display: block;
+        margin: 21px auto 0;
+        width: 370px;
+
+        input, textarea {
+          border: 1px solid #bbb;
+          border-radius: 3px;
+          box-shadow: 0 1px 2px #dedede inset;
+          color: #3c2420;
+          font-size: 1.2em;
+          line-height: 1;
+          padding: 7px 0 4px 7px;
+          width: 100%;
+          transition: border 0.2s ease-in-out 0s;
+
+          &:focus {
+            border-color:#129fea;
+            outline:0;
+            box-shadow: inset 0 1px 3px #aaa;
+          }
+
+          @include input-placeholder {
+            font-style: italic;
+            color: #aaa;
+            padding: 8px 0 3px 7px;
+            line-height: 1;
+          }
+
+          &[aria-invalid="true"] {
+            border: 1px solid red;
+            transition: border 0.2s ease-in-out 0s;
+          }
+          + span {
+            font-size: 0.9em;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .name + .email, .subject + .message {
+        margin-top: 3px;
+      }
+
+
+      .button {
+        width: 210px;
+        margin: 21px auto 0;
+
+        input {
+          width: 100%; 
+          height: 30px;
+          font-size: 16px;
+          color: #3c2420;
+          line-height: 2;
+        }
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+
+        & + div {
+          margin: 0 auto;
+          border-radius: 4px;
+          border-width: 1px;
+          font-size: 0.9em;
+          padding: 13px;
+        }
+      }
+    }
+  }
+
+  .mediadei {
+    a {
+      color: $footer-text;
+      font-size: 0.9em;
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
+  }
+}//------------END FOOTER
+
+
+
+
+
+
+
+
 
 
 //----------------------------------------------- RESOURCES
