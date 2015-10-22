@@ -5,18 +5,17 @@
 //Font-Stacks
 @font-face {
   font-family: 'SortsMillGoudy';
-  src: url('../fonts/GoudyStM-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/GoudyStM-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/GoudyStM-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/OFLGoudyStM.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/OFLGoudyStM.otf')  format('opentype'); /* Compatibility */
   font-style: normal;
 }
 @font-face {
   font-family: 'SortsMillGoudy';
-  src: url('../fonts/GoudyStM-Italic-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/GoudyStM-Italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/GoudyStM-Italic-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/OFLGoudyStM-Italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/OFLGoudyStM-Italic.otf')  format('opentype'); /* Compatibility */
   font-style: italic;
 }
+
 
 //Styling
 * {
