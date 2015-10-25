@@ -382,6 +382,273 @@ th {
   display: table;
   clear: both; }
 
+body.page-id-4 section {
+  padding-top: 50px; }
+  body.page-id-4 section article {
+    margin: 0 auto;
+    width: 637px;
+    padding-bottom: 55px; }
+    body.page-id-4 section article h1 {
+      color: #585858;
+      font-style: italic;
+      font-size: 1.4em;
+      padding-bottom: 5px; }
+    body.page-id-4 section article p {
+      color: #6E6E6E;
+      line-height: 1.5;
+      margin: 0px; }
+
+body.page-id-6 section article {
+  max-width: 585px;
+  margin: 0 auto;
+  padding: 80px 0px 120px;
+  color: #585858;
+  font-size: 1.2em;
+  line-height: 1.2;
+  display: block; }
+  body.page-id-6 section article:first-letter {
+    background: url("../images/ornateN.png") no-repeat scroll;
+    font-size: 6em;
+    float: left;
+    margin: 5px 10px 0px 0px;
+    color: transparent; }
+  body.page-id-6 section article span {
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-left: -14px; }
+body.page-id-6 section h1 {
+  font-style: italic;
+  color: #585858;
+  padding-bottom: 60px;
+  font-size: 2.5em;
+  display: table;
+  margin: 0 auto;
+  position: relative; }
+  body.page-id-6 section h1:before {
+    content: "";
+    background: url("../images/pmark.png") no-repeat scroll;
+    width: 25px;
+    height: 45px;
+    left: -30px;
+    position: absolute; }
+body.page-id-6 section div.project {
+  display: table;
+  margin: 0 auto; }
+  body.page-id-6 section div.project figure {
+    width: 816px;
+    height: 442px;
+    margin: 0 auto 40px;
+    border-radius: 12px;
+    border: 1px solid #B4A177;
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.5);
+    position: relative; }
+    body.page-id-6 section div.project figure.img1 {
+      background: transparent url("../images/project1.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure.img2 {
+      background: transparent url("../images/project2.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure.img3 {
+      background: transparent url("../images/project3.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure.img4 {
+      background: transparent url("../images/project4.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure.img5 {
+      background: transparent url("../images/project5.jpg") no-repeat scroll 0px 0px/815px auto; }
+    body.page-id-6 section div.project figure:active {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); }
+    body.page-id-6 section div.project figure label {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: absolute;
+      z-index: 3; }
+    body.page-id-6 section div.project figure figcaption {
+      width: 511px;
+      height: 217px;
+      margin: 0 auto;
+      border-radius: 14px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.16);
+      position: relative;
+      margin-top: 110px;
+      z-index: 3; }
+      body.page-id-6 section div.project figure figcaption:after {
+        background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==') no-repeat scroll 0 0;
+        background: transparent -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(100%, rgba(255, 255, 255, 0.3))) no-repeat scroll 0 0;
+        background: transparent -moz-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.3)) no-repeat scroll 0 0;
+        background: transparent -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.3)) no-repeat scroll 0 0;
+        background: transparent linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.3)) no-repeat scroll 0 0;
+        border-radius: 14px;
+        border-bottom-left-radius: 500px 20px;
+        border-bottom-right-radius: 500px 20px;
+        content: "";
+        height: 50%;
+        left: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 2px;
+        width: 100%; }
+      body.page-id-6 section div.project figure figcaption.first:before {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 800px 20px;
+        border-bottom-right-radius: 800px 20px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 14px;
+        filter: blur(6px);
+        z-index: -1;
+        background: transparent url("../images/project1.jpg") repeat scroll -152px -105px; }
+      body.page-id-6 section div.project figure figcaption.second:before {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 800px 20px;
+        border-bottom-right-radius: 800px 20px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 14px;
+        filter: blur(7px);
+        z-index: -1;
+        background: transparent url("../images/project2.jpg") repeat scroll -152px -105px; }
+      body.page-id-6 section div.project figure figcaption.third:before {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 800px 20px;
+        border-bottom-right-radius: 800px 20px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 14px;
+        filter: blur(6px);
+        z-index: -1;
+        background: transparent url("../images/project3.jpg") repeat scroll -152px -105px; }
+      body.page-id-6 section div.project figure figcaption.fourth:before {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 800px 20px;
+        border-bottom-right-radius: 800px 20px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 14px;
+        filter: blur(9px);
+        z-index: -1;
+        background: transparent url("../images/project4.jpg") repeat scroll -152px -105px; }
+      body.page-id-6 section div.project figure figcaption.fifth:before {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 800px 20px;
+        border-bottom-right-radius: 800px 20px;
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 14px;
+        filter: blur(9px);
+        z-index: -1;
+        background: transparent url("../images/project5.jpg") repeat scroll -152px -105px; }
+      body.page-id-6 section div.project figure figcaption h2 {
+        color: #FFFFFF;
+        font-size: 3.1em;
+        font-style: italic;
+        padding: 30px 0 65px;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9); }
+      body.page-id-6 section div.project figure figcaption p {
+        color: #F5F5F4;
+        font-size: 1.2em;
+        margin: 0 auto;
+        text-shadow: 0px 1px 3px black;
+        letter-spacing: 1.2px;
+        line-height: 1.3; }
+        body.page-id-6 section div.project figure figcaption p.first {
+          width: 295px; }
+        body.page-id-6 section div.project figure figcaption p.second {
+          width: 290px; }
+        body.page-id-6 section div.project figure figcaption p.third {
+          width: 295px; }
+        body.page-id-6 section div.project figure figcaption p.fourth {
+          width: 365px; }
+        body.page-id-6 section div.project figure figcaption p.fifth {
+          width: 260px; }
+    body.page-id-6 section div.project figure div.arrow {
+      background-color: #616161;
+      bottom: -90px;
+      box-shadow: 11px 11px 7px -5px black inset;
+      width: 50px;
+      height: 50px;
+      right: 47%;
+      transform: rotate(45deg);
+      z-index: 3;
+      position: absolute;
+      display: none; }
+body.page-id-6 section input {
+  display: none; }
+  body.page-id-6 section input[type="radio"][name="project1"]:checked ~ .modal-info.m1 {
+    height: 346px; }
+  body.page-id-6 section input[type="radio"][name="project1"]:checked ~ .project div.arrow.first {
+    display: block; }
+  body.page-id-6 section input[type="radio"][name="project2"]:checked ~ .modal-info.m2 {
+    height: 346px; }
+  body.page-id-6 section input[type="radio"][name="project2"]:checked ~ .project div.arrow.second {
+    display: block; }
+  body.page-id-6 section input[type="radio"][name="project3"]:checked ~ .modal-info.m3 {
+    height: 346px; }
+  body.page-id-6 section input[type="radio"][name="project3"]:checked ~ .project div.arrow.third {
+    display: block; }
+  body.page-id-6 section input[type="radio"][name="project4"]:checked ~ .modal-info.m4 {
+    height: 346px; }
+  body.page-id-6 section input[type="radio"][name="project4"]:checked ~ .project div.arrow.fourth {
+    display: block; }
+  body.page-id-6 section input[type="radio"][name="project5"]:checked ~ .modal-info.m5 {
+    height: 346px; }
+  body.page-id-6 section input[type="radio"][name="project5"]:checked ~ .project div.arrow.fifth {
+    display: block; }
+body.page-id-6 section div.modal-info.m1, body.page-id-6 section div.modal-info.m2, body.page-id-6 section div.modal-info.m3, body.page-id-6 section div.modal-info.m4, body.page-id-6 section div.modal-info.m5 {
+  background-color: #626262;
+  box-shadow: 0 12px 8px -5px #000 inset, 0 -80px 60px -60px rgba(255, 255, 255, 0.2) inset;
+  height: 0px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+  -moz-transition: height 0.3s ease 0s;
+  -o-transition: height 0.3s ease 0s;
+  -webkit-transition: height 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: height 0.3s ease 0s;
+  z-index: 2; }
+body.page-id-6 section div.modal-info div.bio h2 {
+  color: #FFFFFF;
+  font-style: italic;
+  padding: 50px 0 20px;
+  font-size: 2em;
+  text-align: center;
+  display: table;
+  margin: 0 auto; }
+body.page-id-6 section div.modal-info div.bio p {
+  color: #F0F0F0;
+  text-shadow: 0px -1px 0px black;
+  font-size: 1.1em;
+  width: 705px;
+  margin: 0 auto;
+  line-height: 1.3;
+  letter-spacing: 1px; }
+  body.page-id-6 section div.modal-info div.bio p:first-letter {
+    font-size: 2.5em;
+    display: inline-block;
+    margin: 8px 10px 0px 0px;
+    float: left; }
+  body.page-id-6 section div.modal-info div.bio p span {
+    color: #D1D1D1;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin: 0px 8px 0px -10px;
+    letter-spacing: 2px; }
+
 html {
   font-family: "SortsMillGoudy", serif;
   font-size: 16px;
@@ -842,165 +1109,3 @@ footer {
     text-align: right;
     margin-top: 20px;
     padding-bottom: 10px; }
-
-body.page-id-4 section {
-  padding-top: 50px; }
-  body.page-id-4 section article {
-    margin: 0 auto;
-    width: 637px;
-    padding-bottom: 55px; }
-    body.page-id-4 section article h1 {
-      color: #585858;
-      font-style: italic;
-      font-size: 1.4em;
-      padding-bottom: 5px; }
-    body.page-id-4 section article p {
-      color: #6E6E6E;
-      line-height: 1.5;
-      margin: 0px; }
-
-body.page-id-6 section article {
-  max-width: 585px;
-  margin: 0 auto;
-  padding: 80px 0px;
-  color: #585858;
-  font-size: 1.2em;
-  line-height: 1.2;
-  display: block; }
-  body.page-id-6 section article:first-letter {
-    background: url("../images/ornateN.png") no-repeat scroll;
-    font-size: 6em;
-    float: left;
-    margin: 5px 10px 0px 0px;
-    color: transparent; }
-  body.page-id-6 section article span {
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-left: -14px; }
-body.page-id-6 section h1 {
-  font-style: italic;
-  color: #585858;
-  padding-bottom: 40px;
-  font-size: 2.5em;
-  display: table;
-  margin: 0 auto;
-  position: relative; }
-  body.page-id-6 section h1:before {
-    content: "";
-    background: url("../images/pmark.png") no-repeat scroll;
-    width: 25px;
-    height: 45px;
-    left: -30px;
-    position: absolute; }
-body.page-id-6 section div.project {
-  display: table;
-  margin: 0 auto; }
-  body.page-id-6 section div.project figure {
-    width: 816px;
-    height: 442px;
-    margin: 0 auto 40px;
-    border-radius: 12px;
-    border: 1px solid #B4A177;
-    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.5);
-    position: relative; }
-    body.page-id-6 section div.project figure.img1 {
-      background: transparent url("../images/project1.jpg") no-repeat scroll 0px 0px/815px auto; }
-    body.page-id-6 section div.project figure.img2 {
-      background: transparent url("../images/project2.jpg") no-repeat scroll 0px 0px/815px auto; }
-    body.page-id-6 section div.project figure.img3 {
-      background: transparent url("../images/project3.jpg") no-repeat scroll 0px 0px/815px auto; }
-    body.page-id-6 section div.project figure.img4 {
-      background: transparent url("../images/project4.jpg") no-repeat scroll 0px 0px/815px auto; }
-    body.page-id-6 section div.project figure.img5 {
-      background: transparent url("../images/project5.jpg") no-repeat scroll 0px 0px/815px auto; }
-    body.page-id-6 section div.project figure:active {
-      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); }
-    body.page-id-6 section div.project figure label {
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      position: absolute;
-      z-index: 3; }
-    body.page-id-6 section div.project figure figcaption {
-      width: 511px;
-      height: 217px;
-      margin: 0 auto;
-      border-radius: 14px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      background: rgba(0, 0, 0, 0.16);
-      position: relative;
-      margin-top: 110px; }
-      body.page-id-6 section div.project figure figcaption:before {
-        background: transparent linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.3)) repeat scroll 0 0;
-        border-bottom-left-radius: 800px 20px;
-        border-bottom-right-radius: 800px 20px;
-        content: "";
-        height: 45%;
-        left: 0px;
-        overflow: hidden;
-        position: absolute;
-        top: 2px;
-        width: 100%; }
-      body.page-id-6 section div.project figure figcaption h2 {
-        color: #FFFFFF;
-        font-size: 3em;
-        font-style: italic;
-        padding: 25px 0 65px;
-        text-shadow: 0px 2px 4px black; }
-      body.page-id-6 section div.project figure figcaption p {
-        color: #F5F5F4;
-        font-size: 1.3em;
-        width: 365px;
-        margin: 0 auto;
-        text-shadow: 0px 2px 2px black;
-        letter-spacing: 1.2px;
-        line-height: 1.3; }
-    body.page-id-6 section div.project figure div.arrow {
-      background-color: #616161;
-      bottom: -90px;
-      box-shadow: 11px 11px 7px -5px black inset;
-      width: 50px;
-      height: 50px;
-      right: 48%;
-      transform: rotate(45deg);
-      z-index: 3;
-      position: absolute; }
-body.page-id-6 section div.modal-info {
-  background-color: #626262;
-  box-shadow: 0 12px 8px -5px #000 inset, 0 -80px 60px -60px rgba(255, 255, 255, 0.2) inset;
-  height: 346px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  overflow: hidden;
-  position: relative;
-  transition: height 0.3s ease 0s;
-  width: 100%;
-  z-index: 2; }
-  body.page-id-6 section div.modal-info div.bio h2 {
-    color: #FFFFFF;
-    font-style: italic;
-    padding: 50px 0 20px;
-    font-size: 2em;
-    text-align: center;
-    display: table;
-    margin: 0 auto; }
-  body.page-id-6 section div.modal-info div.bio p {
-    color: #F0F0F0;
-    text-shadow: 0px -1px 0px black;
-    font-size: 1.1em;
-    width: 705px;
-    margin: 0 auto;
-    line-height: 1.3;
-    letter-spacing: 1px; }
-    body.page-id-6 section div.modal-info div.bio p:first-letter {
-      font-size: 2.5em;
-      display: inline-block;
-      margin: 8px 10px 0px 0px;
-      float: left; }
-    body.page-id-6 section div.modal-info div.bio p span {
-      color: #D1D1D1;
-      text-transform: uppercase;
-      font-size: .7em;
-      margin: 0px 8px 0px -10px;
-      letter-spacing: 2px; }
