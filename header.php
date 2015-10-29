@@ -49,7 +49,7 @@
 			<nav class="main-nav"><div class="container">
 			  <a class="home" href="/">Home</a>
 			  <a class="about" href="/about/">About</a>
-			  <a class="ministries" href="#">Ministries</a>
-			  <a class="resources" href="#">Resources</a>
-			  <a class="contribute" href="/contribute">Contribute</a>
+			  <a class="ministries" href="/ministries/">Ministries</a>
+			  <a class="resources" href="/resources/">Resources</a>
+			  <a class="contribute" href="/contribute/">Contribute</a>
 			</div></nav>

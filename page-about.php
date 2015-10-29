@@ -23,7 +23,7 @@
 	<p class="capital-ornate T"><span class="smallcaps">The Book of Common Prayer</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
 
 	<p><span class="smallcaps">Lorem Ipsum</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
-
+  </div>
 </section>
 
 

@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 </header>
-<section>
+
+
+<section class="resources">
 	<article>
 		<h1>
 			Anglican Books Revitalized

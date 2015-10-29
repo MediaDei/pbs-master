@@ -9,7 +9,9 @@
 	  atem volutpat ante semper diam et aliquam erat.
 	</article>
 </section>
-<section>
+
+
+<section class="ministries">
 	<script>
 		$(document).ready(function() {
 				var radioButtons = [false, false, false, false, false];
