@@ -79,8 +79,7 @@
 
 
 			<div class="branding">
-				<p class="title" style="height: 100px"></p>
-				<figure class="cross"></figure>
+				<figure class="logo"></figure>
 				<p class="benediction"><span>The grace of our Lord Jesus Christ, and<br>
 				the love of God, and the fellowship of<br>
 				the Holy Ghost, be with us all<br>

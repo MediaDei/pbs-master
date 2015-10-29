@@ -7,6 +7,23 @@
   clear: both;
 }
 
+.smallcaps {
+	font-variant: small-caps;
+	letter-spacing: 0.4px;
+}
+
+.grid-1-3 {
+	width: 33%;
+	display: inline-block;
+}
+
+.grid-1-2 {
+	width: 36%;
+	display: inline-block;
+	&:first-of-type {
+	  margin-left: 100px;
+	}
+}
 
 
 //Nav
@@ -20,3 +37,19 @@ $social-bg: #BDB1A9;
 $social-border: #877B74;
 $social-text: #ECE5E2;
 $footer-text: #E0DAD7 * 0.9;
+
+
+
+//Main
+$main-h1: #585858;
+$main-text: #585858;
+$gold: #95793A;
+
+
+// About page
+$search-gr1: #e4f1f9;
+$search-gr2: #B4CEDF;
+$search-text: #414A53;
+$border: #bbb;
+
+$personBoxShadow: rgba(black, 0.6);
