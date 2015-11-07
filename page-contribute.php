@@ -13,18 +13,21 @@
 
   <div class="member-benefits">
     <div class="grid-1-3">
-  	<p class="tout image grow">
-    <span class="smallcaps">Grow</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+    <div class="tout image grow">
+    	<p class="p capital G"><span class="smallcaps">Grow</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+    </div>
     </div>
 
     <div class="grid-1-3">
-    <p class="tout image support">
-    <span class="smallcaps">Support</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+    <div class="tout image support">
+      <p class="p capital S"><span class="smallcaps">Support</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+    </div>
     </div>
 
     <div class="grid-1-3">
-    <p class="tout image flourish">
-    <span class="smallcaps">Flourish</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+    <div class="tout image flourish">
+      <p class="p capital F"><span class="smallcaps">Flourish</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+    </div>
     </div>
   </div>
 
@@ -38,10 +41,8 @@
   </aside>
 
   <div class="member-receive">
-
     <div class="inner">
       <div class="title">Receive —</div>
-
       <ul>
         <li>Mailed print editions of Anglican Way</li>
         <li>Special deals on Prayerbooks & other items</li>
@@ -51,12 +52,14 @@
   </div>
 
   <a href="#/" class="button-gold">
-    <span role="img" class="logo"></span> 
-      Join 
-    <span class="arrow">→</span>
+  <span>
+    <span class="logo" role="img"></span> 
+    <span class="text">Join</span> 
+    <span class="arrow" role="img">→</span>
+  </span>
   </a>
 
-  <a href="#" class="join-offline">See Offline Ways to Join</a>
+  <a href="#/" class="join-offline">See Offline Ways to Join</a>
 </section>
 
 

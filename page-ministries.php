@@ -1,18 +1,17 @@
 <?php get_header(); ?>
 
+	
+	<div role="img" class="hero-image ministries"></div>
+	<div class="page-title"><h1>Ministries</h1></div>
 </header>
-<section>
-	<article>
-		N <span>ew society projects</span> ipse lorem ipsum dolor abesset velum 
-	  amet, consectetur adipiscing elit. Ut pretium non datur.
-	  rest pretium tempor. Ut eget imperdiet neque. In verita-
-	  atem volutpat ante semper diam et aliquam erat.
-	</article>
-</section>
 
 
 <section class="ministries">
-	<script>
+	<p class="capital-ornate N intro"><span class="smallcaps">New society projects</span> ipse lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
+
+
+	<script type="text/javascript">
+		var $ = jQuery.noConflict();
 		$(document).ready(function() {
 				var radioButtons = [false, false, false, false, false];
 

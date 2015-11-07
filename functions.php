@@ -2,16 +2,18 @@
 
 
 // REMOVE Defaults
-// ---GoogleFonts OpenSans font, and older jquery
-function my_deregister_styles() {
+// ---GoogleFonts OpenSans font, add default jquery
+function scripts_styles() {
     wp_deregister_style( 'open-sans' );
     wp_register_style( 'open-sans', false );
+    wp_enqueue_script('jquery'); // default jQuery
 }
-add_action( 'wp_enqueue_scripts', 'my_deregister_styles');
+add_action( 'wp_enqueue_scripts', 'scripts_styles');
 
 // ---Auto-loaded emoji scripts
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 
 
 
@@ -45,13 +47,6 @@ function extra_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'extra_wp_title', 10, 2 );
 
-
-
-// Theme Scripts
-function theme_scripts() {
-	wp_enqueue_script('jquery'); // default jQuery
-}
-add_action( 'wp_enqueue_scripts', 'theme_scripts');
 
 
 

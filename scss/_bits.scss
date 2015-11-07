@@ -9,7 +9,7 @@
 
 .smallcaps {
 	font-variant: small-caps;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.5px;
 }
 
 .grid-1-3 {
@@ -31,20 +31,22 @@ $nav-bg: #4D4F53;
 $nav-button-bg: #3F3B36;
 $nav-button-text: #E5DED6;
 
-
 //Social
 $social-bg: #BDB1A9;
 $social-border: #877B74;
 $social-text: #ECE5E2;
 $footer-text: #E0DAD7 * 0.9;
 
-
-
 //Main
 $main-h1: #585858;
 $main-text: #585858;
 $gold: #95793A;
 
+
+
+// Home page
+$home-ministry-largewidth: 600px;
+$home-ministry-largemargin: 20px;
 
 // About page
 $search-gr1: #e4f1f9;

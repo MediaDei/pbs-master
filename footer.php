@@ -91,6 +91,27 @@
 				&copy; <?php echo date("Y"); ?>, Prayer Book Society, USA | <a href="http://www.mediadei.org">Designed and built by Media Dei</a>
 			</div>-->
 
+			<div class="contact-lightbox">
+							<div class="overlay"></div>
+							<div role="form" class="wpcf7" id="wpcf7-f11-o2" lang="en-US" dir="ltr">
+			<div class="screen-reader-response"></div>
+			<form name="ContactForm" action="/#wpcf7-f11-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+			<div style="display: none;">
+			<input type="hidden" name="_wpcf7" value="11" />
+			<input type="hidden" name="_wpcf7_version" value="4.3" />
+			<input type="hidden" name="_wpcf7_locale" value="en_US" />
+			<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f11-o2" />
+			<input type="hidden" name="_wpnonce" value="8ed9d5981f" />
+			</div>
+			<div class="close fa fa-times"></div>
+			<p class="title italic">Contact Us</p>
+			<p class="text name"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" minlength="1" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your name" /></span></p>
+			<p class="text email"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email" /></span></p>
+			<p class="text subject"><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" minlength="1" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Subject" /></span></p>
+			<p class="text message"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="6" minlength="1" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+			<p class="button"><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit submit" /></p>
+			<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>			</div>
+
 		</footer>
 
 
@@ -98,5 +119,21 @@
 
 
 	<?php wp_footer(); ?>
+
+
+	<script type="text/javascript">
+		var $ = jQuery.noConflict();
+		$(document).ready(function(){
+
+		$("header .main-social .contact, footer .svg-container").click(function() {
+			$("div.contact-lightbox").css("display","block");
+		});		
+
+		$("footer .contact-lightbox .close, footer .overlay").click(function() {
+			$("div.contact-lightbox").css("display","none");
+		});
+
+	  });
+	</script>
 </body>
 </html>

@@ -10,9 +10,10 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/global.css" type="text/css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css" type="text/css">
-
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
+	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' type="text/css">
 
+	<script type='text/javascript' src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js?ver=4.3.1'></script>
 	<title>Prayer Book Society</title>
 
 	<?php wp_head(); ?>

@@ -31,8 +31,10 @@
 
 	<h1>Prayerbook Parishes</h1>
 
-	<div class="map">
+	<div id="mapBox">
 	</div>
+
+
 
 	<h2 class="find-title">Find nearby Parish:</h2>
 
@@ -135,17 +137,15 @@
     <div class="modal-info m1">
       <div class="bio1">
         <p>Fr. Gavin Dunbar</p>
-        <p>All of my ministry has been served in parishes along the south coast of England in the Dioceses of Chichester and Winchester: from Seaford, East Sussex to Bournemouth in the West. Most recently, I served as Vicar of All Saints Findon Valley with St Peter’s High Salvington for over 12 years. 
-I have been an Associate of an Anglican religious order, The Community of the Servants of the Will of God based at Crawley Down, West Sussex, for 30 years. I am fascinated by the monastic history of St Andrew’s Church.
-</p>
+        <p>Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="bio1">
         <p>Fr. Edward Rix</p>
-        <p>quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="bio1">
         <p>Cn. Alistair Macdonald-Radcliff</p>
-        <p>quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="close fa fa-times"></div>
     </div>
@@ -177,11 +177,11 @@ I have been an Associate of an Anglican religious order, The Community of the Se
     <div class="modal-info m2">
       <div class="bio2">
         <p>Roberta Bayer</p>
-        <p>quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="bio2">
         <p>Fr. Bill Martin</p>
-        <p>quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="close fa fa-times"></div>
     </div>
@@ -199,8 +199,46 @@ I have been an Associate of an Anglican religious order, The Community of the Se
 	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
 	  </div>
 
-
 </section>
+
+
+<!--dropdown-->
+<script type="text/javascript">
+  var $ = jQuery.noConflict();
+  $(document).ready(function(){
+
+    //// staff          
+    var radioButtons = [false, false, false, false, false];
+    $("input[type='radio']").click(function() {
+      if( radioButtons[$(this).index("input[type='radio']")] == true ) { // if clicking on self
+        $(this).prop('checked', false);                  // unselect self
+        radioButtons[$(this).index("input[type='radio']")] = false;
+      }
+  
+      else {                              // if clicking another
+        radioButtons = [false, false, false, false, false];
+        $("input[type='radio']").prop('checked', false);      // unselect all
+  
+        radioButtons[$(this).index("input[type='radio']")] = true;  // select self
+        $(this).prop('checked', true);
+      }
+    });
+
+    $("div.modal-info .close").click(function() {
+      radioButtons = [false, false, false, false, false];
+      
+      $("input[type='radio']").prop('checked', false);
+    });
+  });
+
+
+  // Mapbox
+  L.mapbox.accessToken = 'pk.eyJ1IjoicGJzdXNhIiwiYSI6ImNpZ285ZmhuNzAwMXp0cGtucTV2ZGZtZmcifQ.EJhg1jhPVol-lYIJK1Vzjw';
+
+  var map = L.mapbox.map('mapBox', 'pbsusa.o3ghdgj0').setView([40.8595,-100.3203], 4);
+  map.scrollWheelZoom.disable();
+</script>
+
 
 
 <?php get_footer(); ?>
