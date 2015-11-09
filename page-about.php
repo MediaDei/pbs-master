@@ -7,9 +7,13 @@
 
 
 <section class="about">
-	<p class="capital-ornate T"><span class="smallcaps">The Mission of the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital T"><span class="smallcaps">The Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Anglican formularies since the first Book of Common Prayer of 1549 in the Church of England, on through the 1928 Prayer Book down to the present day.</p>
 
-	<p><span class="smallcaps">The Book of Common Prayer</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+	<p><span class="smallcaps">The two books</span> pre-eminent above all others in the English Language are the Bible and The Book of Common Prayer. The Prayer Book, through its lectionary provides for the Bible to be read day by day throughout the year, in accord with ‘the method of the ancient Fathers’ together with the entire Psalter every month (from the Great Bible of 1540 as translated by Coverdale),  so that clergy and people might be  “stirred up to godliness themselves,… more able to exhort others by wholesome doctrine” while continually advancing  in “the knowledge of God”, “…inflamed with the love of his true religion.”  (From the Preface. “Concerning the Service of the Church”).</p>
+
+  <p>In furtherance of this, the society is committed to advancing education about the nature and content of the Prayer Book tradition together with its use for Holy Communion, the Daily Offices, baptism, marriages and funerals and to promoting the practical use of the Prayer Book for personal devotions, communal and family prayer.</p>
+
+  <p>This is all central to the wider aim of advancing  understanding of what it means to be Anglican in its fullness of theological heritage, beliefs and liturgical practice.</p>
 
 	<div class="bcp" role="img" aria-label="Book of Common Prayer">
 	</div>
@@ -20,9 +24,13 @@
 	<a href="#learn" class="button why-button">Learn More</a>
 
 	<div class="why-text">
-	<p class="capital-ornate T"><span class="smallcaps">The Book of Common Prayer</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+	<p class="p capital-ornate T"><span class="smallcaps">The Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
 
-	<p><span class="smallcaps">Lorem Ipsum</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis.</p>
+  <p<span class="smallcaps">The Society</p<span> also seeks, therefore, to promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century both through access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
+
+  <p>A particularly important practical resource now being launched for use by parishes in Adult education is the Society’s new  Catechesis course written by its President the Revd Fr. Gavin Dunbar, which is the first part of a continuing and wider project reflecting our conviction that evangelism, baptism and catechesis are the foundations of Christian discipleship.  Thus the new text teaches over the course of twenty five weeks just what the “profession of the Church, her faith and hope” comprise.</p>
+
+  <p>Promotion of Daily Prayer using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
   </div>
 </section>
 

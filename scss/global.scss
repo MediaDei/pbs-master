@@ -883,7 +883,7 @@ section.home {
     margin-bottom: 70px;
 
     &:first-letter {
-      margin-top: -5px;
+      margin-top: 0;
       font-size: 4em;
     }
   }
@@ -1422,7 +1422,7 @@ section.home.join {
 
     .tout {
       margin: 36px auto;
-      width: 210px;
+      width: 240px;
       border-radius: 5px;
       box-shadow: 0 1px 3px rgba(black,0.3);
       font-size: 14px;
@@ -1450,7 +1450,7 @@ section.home.join {
         }
       }
 
-      .p {
+      p {
         padding: 12px 20px 22px;
         margin: 0;
         text-align: left;
@@ -1460,6 +1460,7 @@ section.home.join {
         line-height: 1.2;
         @include hyphens(auto);
         background-color: white;
+        text-align: justify;
 
         &:first-letter {
           font-size: 2.4em;
@@ -2202,8 +2203,8 @@ section.contribute {
 
     .tout {
       margin: 36px auto;
-      padding: 30px 19px;
-      width: 240px;
+      padding: 30px 19px 20px;
+      width: 260px;
       color: $main-text * 1.2;
       line-height: 1.2;
       @include hyphens(auto);

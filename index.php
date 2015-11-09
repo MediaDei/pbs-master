@@ -8,8 +8,9 @@
 
 
 <section class="home">
-	<p class="capital-ornate T intro"><span class="smallcaps">The liturgy</span> is at the heart of Christian worship;
-	<br> and the <span class="smallcaps">Prayerbook</span> is at the heart of the Liturgy.</p>
+	<p class="capital-ornate T intro"><span class="smallcaps">The Prayer Book Tradition</span>&mdash; <br>
+	A place to belong, a Faith to believe, <br>
+	and a Rule of life and worship.</p>
 
 	<h1>Latest News</h1>
 
@@ -28,9 +29,7 @@
 			</aside>
 		</header>
 		<div role="img" class="photo"></div>
-		<p class="p"><span class="smallcaps">A new website</span> for dapibus nisl vitae elit fringilla rutrum. Lores sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.</p>
-
-		<p class="p">Vivamus facilisis dolor et massa placerat, at vestibulum nisi muegestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcus tortor feugiat turpis, quis lacinia augue sapien at tellus.</p>
+		<p class="p capital T">The Prayer Book Society USA is delighted to launch a completely new website. This combines a modern clarity and simplicity of design with visual and typographical features that draw from the rich aesthetic of the historic Prayer Books themselves.  The site provides a highly accessible overview of the Society’s aims and ministries, along with interactive features, such as the page for finding congregations that offer Prayer Book services. It also links to extensive new catechetical resources for teaching our faith as well as the promotion of daily Morning and Evening prayer and an expanding portal into  online editions of the works by Anglican divines since the sixteenth Century.</p>
 	</article>
 
 
@@ -70,7 +69,7 @@
 <section class="home map">
 	<h1>What We Do</h1>
 
-	<p class="capital-ornate T"><span class="smallcaps">The Mission of the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital-ornate T"><span class="smallcaps">The Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Anglican formularies since the first Book of Common Prayer of 1549, in the Church of England, and on through the 1928 Prayer Book down to the present day: worship is at the heart of Christianity and the Common Prayer tradition is at the heart of Anglican worship.</p>
 
 	<div class="map-title">Prayer Book Churches</div>
 	<div id="mapBox"></div>
@@ -149,14 +148,14 @@
 				<div class="text">
 					<h2>I-Pray BCP App</h2>
 					<p>You portable Daily office,
-						 going everywhere you go.</p>
+						 it goes everywhere you go.</p>
 				</div>
 			</div>
 			<div class="small">
 				<div class="bg-blur" aria-hidden="true"></div>
 				<div class="text">
 					<h2>I-Pray BCP App</h2>
-					<p>Your portable daily Office, going every...</p>
+					<p>Your portable daily Office, it goes every...</p>
 				</div>
 			</div>
 		</label>
@@ -167,15 +166,14 @@
 				<div class="bg-blur" aria-hidden="true"></div>
 				<div class="text">
 					<h2>Catechesis Project</h2>
-					<p>What is whispered in the classrooms,
-						 will be uttered on the streets.</p>
+					<p>Forming in Faith.</p>
 				</div>
 			</div>
 			<div class="small">
 				<div class="bg-blur" aria-hidden="true"></div>
 				<div class="text">
 					<h2>Catechesis Project</h2>
-					<p>What is whispered in the classrooms, ...</p>
+					<p>Forming in Faith.</p>
 				</div>
 			</div>
 		</label>
@@ -186,15 +184,14 @@
 				<div class="bg-blur" aria-hidden="true"></div>
 				<div class="text">
 					<h2>New Scriptorium</h2>
-					<p>Anglican classics online,
-						 for today's generation.</p>
+					<p>Anglican classics now.</p>
 				</div>
 			</div>
 			<div class="small">
 				<div class="bg-blur" aria-hidden="true"></div>
 				<div class="text">
 					<h2>New Scriptorium</h2>
-					<p>Anglican classics online, for today's gene...</p>
+					<p>Anglican classics now.</p>
 				</div>
 			</div>
 		</label>
@@ -210,24 +207,24 @@
   <div class="benefits">
     <div class="grid-1-3">
     <div class="tout grow">
-    	<p class="floating one">1</p>
-    	<p class="p capital G"><span class="smallcaps">Grow</span> auris non tempor quam, et lacinia satis. Mauris accumlans eros eget libero posuere vulputate. Iam elit, elementum sed varius at, adipiscing vitae.</p>
+    	<span class="floating one">1</span>
+    	<p class="p capital"><span class="smallcaps">Receive</span> our theological and liturgical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
     	<div role="img" class="image"></div>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout support">
-    	<p class="floating two">2</p>
-      <p class="p capital S"><span class="smallcaps">Support</span> uris non tempor quam, et lacinia satis. Mauris accumlans eros eget libero posuere vulputate. Iam elit, elementum sed varius at, adipiscing vitae.</p>
+    	<span class="floating two">2</span>
+    	<p class="p capital"><span class="smallcaps">Support</span> the renewal of classical Anglicanism with its profound theology, commitment to spirituality and the worship of God in the beauty of holiness in the language of the Prayer Books.</p>
     	<div role="img" class="image"></div>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout flourish">
-	    <p class="floating three">3</p>
-      <p class="p capital F"><span class="smallcaps">Flourish</span> uris non tempor quam, et lacinia satis. Mauris accumlans eros eget libero posuere vulputate. Iam elit, elementum sed varius at, adipiscing vitae.</p>
+	    <span class="floating three">3</span>
+      	<p class="p capital"><span class="smallcaps">Enrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
     	<div role="img" class="image"></div>
     </div>
     </div>

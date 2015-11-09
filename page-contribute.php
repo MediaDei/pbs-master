@@ -14,19 +14,19 @@
   <div class="member-benefits">
     <div class="grid-1-3">
     <div class="tout image grow">
-    	<p class="p capital G"><span class="smallcaps">Grow</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+    	<p class="p capital"><span class="smallcaps">Receive</span> our theological and liturgical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout image support">
-      <p class="p capital S"><span class="smallcaps">Support</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+      <p class="p capital"><span class="smallcaps">Support</span> the renewal of classical Anglicanism with its profound theology, commitment to spirituality and the worship of God in the beauty of holiness in the language of the Prayer Books.</p>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout image flourish">
-      <p class="p capital F"><span class="smallcaps">Flourish</span> euncor tellus tortor. Etiam ates centutum nisl, vitae sagittis orci. Donec id dignissim nunc. Dum recante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum.</p>
+      <p class="p capital"><span class="smallcaps">Enrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
     </div>
     </div>
   </div>

@@ -44,12 +44,8 @@
 			<label class="radioLabel-project" for="project-1st">
 			</label>
 			<figcaption class="first">
-				<h2>
-					Anglican Way
-				</h2>
-				<p class="first">
-					Premier online magazine of Anglican faith and tradition.
-				</p>
+				<h2>Anglican Way</h2>
+				<p class="first">Premier online magazine of Anglican faith and tradition.</p>
 			</figcaption>
 			<div class="arrow first"></div>
 		</figure>
@@ -59,10 +55,7 @@
 			<h2>
 				Anglican Way
 			</h2>
-			<p>
-				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
-	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
-			</p>
+			<p class="p capital T"><span class="smallcaps">Essential, topical and innovative,</span> anglicanway.org is a central website and multimedia resource for all in the Anglican tradition With informative and inspiring content, it explores the riches and distinctiveness of our Anglican theological heritage and Prayer Book tradition It also offers a platform for informed debate about the key issues and challenges facing the Anglicans today. It will also feature inspirational video and audio content in support of our liturgical mission and vision in partnership with our network of parishes.</p>
 		</div>
 	</div>
 
@@ -71,25 +64,16 @@
 			<label class="radioLabel-project" for="project-2nd">
 			</label>
 			<figcaption class="second">
-				<h2>
-					Anglican Way Print
-				</h2>
-				<p class="second">
-					Print edition on the vital topics in the Church.
-				</p>
+				<h2>Anglican Way Print</h2>
+				<p class="second">Print edition on the vital topics in the Church.</p>
 			</figcaption>
 			<div class="arrow second"></div>
 		</figure>
 	</div>
 	<div class="modal-info m2">
 		<div class="bio">
-			<h2>
-				Anglican Way Print
-			</h2>
-			<p>
-				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
-	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
-			</p>
+			<h2>Anglican Way Print</h2>
+			<p class="p capital T"><span class="smallcaps">The print edition</span> of the Society’s journal presents informative and educational articles together with analysis of the vital topics facing the Church. Edited by Dr Roberta Bayer it is both creative and distinctive and presents a powerful Prayer Book perspective on all aspects of Anglican faith and worship together with key perspectives drawn from Anglican history.</p>
 		</div>
 	</div>
 
@@ -98,25 +82,16 @@
 			<label class="radioLabel-project" for="project-3rd">
 			</label>
 			<figcaption class="third">
-				<h2>
-					I-Pray BCP App
-				</h2>
-				<p class="third">
-					Your portable Daily office, going everywhere you go.
-				</p>
+				<h2>I-Pray BCP App</h2>
+				<p class="third">Your portable Daily Office, it goes everywhere you go.</p>
 			</figcaption>
 			<div class="arrow third"></div>
 		</figure>
 	</div>
 	<div class="modal-info m3">
 		<div class="bio">
-			<h2>
-				I-Pray BCP App
-			</h2>
-			<p>
-				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
-	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
-			</p>
+			<h2>I-Pray BCP App</h2>
+			<p><span class="smallcaps">Updated daily,</span> this app provides the full text for saying Morning and Evening Prayer as well as Noonday Prayer and Compline. There is no need to carry a heavy book and makes it even easier to integrate the Office into your daily devotions, in unity with the Church worldwide, in prayer through time.</p>
 		</div>
 	</div>
 
@@ -125,25 +100,16 @@
 			<label class="radioLabel-project" for="project-4th">
 			</label>
 			<figcaption class="fourth">
-				<h2>
-					Catechesis Project
-				</h2>
-				<p class="fourth">
-					What is whispered in the classroom, will be uttered on the street.
-				</p>
+				<h2>Catechesis Project</h2>
+				<p class="fourth">Forming in Faith.</p>
 			</figcaption>
 			<div class="arrow fourth"></div>
 		</figure>
 	</div>
 	<div class="modal-info m4">
 		<div class="bio">
-			<h2>
-				Catechesis Project
-			</h2>
-			<p>
-				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
-	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
-			</p>
+			<h2>Catechesis Project</h2>
+			<p class="p capital T"><span class="smallcaps">Teaching the faith</span>, or Catechesis, is a profoundly important ministry, to which the Prayer Book Society is deeply committed. The challenges and confusions facing the Church in the modern world make the need for accurate teaching greater than ever. Of a previously unprecedented scale among Anglicans, the Catechesis Project aims to provide a solid and sure footing, teaching the fundamentals of Christianity, and essentials of Anglican doctrine, in an accessible and compelling manner. The substantial first volume, <span style="font-style: italic">My Beloved is Mine and I am His</span>, by the Society President, the Revd. Fr. Gavin Dunbar is now being launched. It provides material for Adult Education Classes through twenty five weekly chapters. Its three main sections exploring progressively what it means to belong, to believe and to follow Christ as this has been understood and set out in the Anglican tradition. Each of the cumulative chapters features short essays on the Prayer Book Catechism’s Questions and Answers, followed by suggestions for further reading, and questions for study and discussion.</p>
 		</div>
 	</div>
 
@@ -152,25 +118,16 @@
 			<label class="radioLabel-project" for="project-5th">
 			</label>
 			<figcaption class="fifth">
-				<h2>
-					New Scriptorium
-				</h2>
-				<p class="fifth">
-					Anglican classics online, for today's generation.
-				</p>
+				<h2>New Scriptorium</h2>
+				<p class="fifth">Anglican classics now.</p>
 			</figcaption>
 			<div class="arrow fifth"></div>
 		</figure>
 	</div>
 	<div class="modal-info m5">
 		<div class="bio">
-			<h2>
-				New Scriptorium
-			</h2>
-			<p>
-				T <span>his new</span> online library of Anglican classics offers central texts to the new gen-
-	      eration elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sol-licitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque.
-			</p>
+			<h2>New Scriptorium</h2>
+			<p class="p capital T"><span class="smallcaps">This online library</span> of Anglican classics makes instantly available important texts from the incomparable heritage of theological writing by Anglican Divines since the sixteenth century.  It has at present a particular strength in works about the Prayer Book, Collects, Prayers and Articles and also many of the writings by the distinguished former PBS President the late Revd Dr Peter Toon.</p>
 		</div>
 	</div>
 </section>
