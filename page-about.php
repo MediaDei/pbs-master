@@ -195,7 +195,7 @@
     </div>
 
 
-  <h2 class="more-staff">Other Board Members</h2>
+    <h2 class="more-staff">Other Board Members</h2>
 	  <div class="more-staff">
 	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
 	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>

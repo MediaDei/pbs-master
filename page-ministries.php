@@ -54,9 +54,7 @@
 	</div>
 	<div class="modal-info m1">
 		<div class="bio">
-			<p>
-				Anglican Way
-			</p>
+			<p>Anglican Way</p>
 			<p class="p capital T"><span class="smallcaps">Essential, topical and innovative,</span> anglicanway.org is a central website and multimedia resource for all in the Anglican tradition With informative and inspiring content, it explores the riches and distinctiveness of our Anglican theological heritage and Prayer Book tradition It also offers a platform for informed debate about the key issues and challenges facing the Anglicans today. It will also feature inspirational video and audio content in support of our liturgical mission and vision in partnership with our network of parishes.</p>
 		</div>
 	</div>
