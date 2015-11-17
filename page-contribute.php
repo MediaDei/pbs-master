@@ -7,26 +7,26 @@
 
 
 <section class="contribute">
-	<p class="capital-ornate C"><span class="smallcaps">Contribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
+	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <h1 class="member-title">Become a Member</h1>
 
   <div class="member-benefits">
     <div class="grid-1-3">
     <div class="tout image grow">
-    	<p class="p capital"><span class="smallcaps">Receive</span> our theological and liturgical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
+    	<p class="p capital">R<span class="smallcaps">eceive</span> our theological and litur&shy;gical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout image support">
-      <p class="p capital"><span class="smallcaps">Support</span> the renewal of classical Anglicanism with its profound theology, commitment to spirituality and the worship of God in the beauty of holiness in the language of the Prayer Books.</p>
+      <p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
     </div>
     </div>
 
     <div class="grid-1-3">
     <div class="tout image flourish">
-      <p class="p capital"><span class="smallcaps">Enrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
+      <p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
     </div>
     </div>
   </div>
@@ -66,7 +66,7 @@
 <section class="contribute">
   <h1>Donate</h1>
 
-  <p class="capital-ornate D"><span class="smallcaps">Donate to the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
+  <p class="capital-ornate"><span class="D">D</span><span class="smallcaps">onate to the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <div class="range-input">
     <input type="range" min="0" max="100" />

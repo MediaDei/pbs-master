@@ -19,33 +19,37 @@ section.ministries {
 
   div.projectbg{
     margin: 0 auto 35px;
-    width: 800px;
-    height: 430px;
-    border-radius: 12px;
+    width: 710px;
+    height: 380px;
+    border-radius: 8px;
     border: 1px solid #b4a177;
-    padding: 120px 160px;
-    box-shadow: 0 3px 11px 1px rgba(black, 0.5);
+    padding: 90px 160px;
+    box-shadow: 0 3px 9px 1px rgba(black, 0.6);
     background-repeat: no-repeat;
-    background-size: 800px auto;
-    background-position: center top;
+    background-size: 710px auto;
     position: relative;
     &.img1{
-      background-image: url("../images/project1.jpg");
+      background-image: url("../images/ministries-project1.jpg");
+      background-position: center -20px;
     }
     &.img2{
-      background-image: url("../images/project2.jpg"); 
+      background-image: url("../images/ministries-project2.jpg"); 
+      background-position: center top;
     }
     &.img3{
-      background-image: url("../images/project3.jpg"); 
+      background-image: url("../images/ministries-project3.jpg"); 
+      background-position: center top;
     }
     &.img4{
-      background-image: url("../images/project4.jpg");
+      background-image: url("../images/ministries-project4.jpg");
+      background-position: center -540px;
     }
     &.img5{
-      background-image: url("../images/project5.jpg"); 
+      background-image: url("../images/ministries-project5.jpg"); 
+      background-position: center -20px;
     }
     &:active{
-      box-shadow: 0px 4px 5px rgba(black, 0.8);
+      box-shadow: 0px 2px 3px rgba(black, 0.6);
       top: 1px;
     }
 
@@ -71,24 +75,28 @@ section.ministries {
         bottom: 0px;
         left: 0px;
         z-index: 3;
-        @include filter(blur(7px));
-        background-position: center -120px;
+        @include filter(blur(7px) brightness(70%));
         background-repeat: no-repeat;
-        background-size: 800px auto;
+        background-size: 710px auto;
         &.img1{
-          background-image: url("../images/project1.jpg");
+          background-image: url("../images/ministries-project1.jpg");
+          background-position: center -110px;
         }
         &.img2{
-          background-image: url("../images/project2.jpg"); 
+          background-image: url("../images/ministries-project2.jpg"); 
+          background-position: center -90px;
         }
         &.img3{
-          background-image: url("../images/project3.jpg"); 
+          background-image: url("../images/ministries-project3.jpg"); 
+          background-position: center -90px;
         }
         &.img4{
-          background-image: url("../images/project4.jpg");
+          background-image: url("../images/ministries-project4.jpg");
+          background-position: center -640px;
         }
         &.img5{
-          background-image: url("../images/project5.jpg"); 
+          background-image: url("../images/ministries-project5.jpg"); 
+          background-position: center -110px;
         }
         &:active{
           box-shadow: 0px 0px 0px rgba(black, 0.5);
@@ -97,11 +105,12 @@ section.ministries {
       div.text{
         position: relative;
         z-index: 3;
-        padding: 20px 0px 30px;
+        padding: 40px 0px 30px;
         text-align: center;
-        text-shadow: 0 2px 4px rgba(black,0.7);
-        border-radius: 12px;
-        box-shadow: 0 3px 10px rgba(black, 0.5);
+        text-shadow: 0 2px 2px rgba(black,0.7);
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(black, 0.5), 
+              inset 0 0 30px rgba(white, 0.6);
         background: rgba(0, 0, 0, 0.05);
 
 
@@ -118,17 +127,16 @@ section.ministries {
         
         h2{
           color: #ffffff;
-          font-size: 3em;
+          font-size: 2.3em;
           font-style: italic;
 
         }
         p{
           color: #f5f5f4;
-          font-size: 1.4em;
-          letter-spacing: 1.2px;
-          line-height: 1.3;
-          margin: 0px;
-          padding-top: 55px;
+          font-size: 1.1em;
+          letter-spacing: 0.5px;
+          line-height: 1.1;
+          padding-top: 30px;
           white-space: pre-line;
           
 
@@ -137,10 +145,10 @@ section.ministries {
     }
     div.arrow{
       background-color: #616161;
-      bottom: -62px;
-      box-shadow: 11px 11px 7px -5px rgba(black,1) inset;
-      width: 45px;
-      height: 45px;
+      bottom: -57px;
+      box-shadow: 10px 10px 7px -3px black inset;
+      width: 35px;
+      height: 35px;
       right: 47%;
       @include transform(rotate(45deg));
       z-index: 4;
@@ -206,20 +214,24 @@ section.ministries {
     div.bio{
       display: table;
       margin: 0 auto;
-      p:first-of-type{
-        margin: 0;
-        color: #FFFFFF;
+
+      h3 {
+        //Name
+        margin: 0 auto;
+        padding-top: 40px;
+        color: white;
+        font-size: 1.6em;
         font-style: italic;
-        padding: 40px 0 10px;
-        font-size: 2em;
         text-align: center;
       }
-      p:nth-of-type(2){
-        color: #F0F0F0;
-        text-shadow: 0px -1px 0px rgba(black, 1);
-        width: 710px;
-        margin: 0 auto;
-        line-height: 1.6;
+      p {
+        //Text
+        width: 62%;
+        color: #eaeaea;
+        font-size: 15px;
+        line-height: 1.2;
+        margin: 10px auto;
+        text-shadow: 0 -1px 0 #000000;
       }
     }
   }

@@ -6,8 +6,13 @@
   clear: both;
 }
 
+// current state of small caps (Fall, 2015):
+// -most browsers fail at font-variant:small-caps (Chrome 46, Safari 9), using fake small caps
+// -see this: http://www.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html
+// -fix: standalone SC font (>IE 5.5), http://freakfonts.com/fonts/goudy-oldstyle-ssi-small-caps--font-download.html
+// -regular font file (OFLGoudyStM.woff) still has complete subset (for future use)
 .smallcaps {
-	font-variant: small-caps;
+	font-family: "SortsMillGoudy-SC", "SortsMillGoudy", serif;
 	letter-spacing: 0.5px;
 }
 

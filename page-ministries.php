@@ -7,7 +7,7 @@
 
 
 <section class="ministries">
-	<p class="capital-ornate N intro"><span class="smallcaps">New society ministries</span> ipse lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital-ornate intro"><span class="N">N</span><span class="smallcaps">ew society ministries</span> ipse lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
 
 
 	<script type="text/javascript">
@@ -54,8 +54,8 @@
 	</div>
 	<div class="modal-info m1">
 		<div class="bio">
-			<p>Anglican Way</p>
-			<p class="p capital T"><span class="smallcaps">Essential, topical and innovative,</span> anglicanway.org is a central website and multimedia resource for all in the Anglican tradition With informative and inspiring content, it explores the riches and distinctiveness of our Anglican theological heritage and Prayer Book tradition It also offers a platform for informed debate about the key issues and challenges facing the Anglicans today. It will also feature inspirational video and audio content in support of our liturgical mission and vision in partnership with our network of parishes.</p>
+			<h3>Anglican Way</h3>
+			<p class="p capital">E<span class="smallcaps">ssential, topical and innovative,</span> anglicanway.org is a central website and multi&shy;media resource for all in the Anglican tradition With informative and inspiring content, it explores the riches and distinctiveness of our Anglican theological heritage and Prayer Book tradition It also offers a platform for informed debate about the key issues and challenges facing the Anglicans today. It will also feature inspirational video and audio content in support of our liturgical mission and vision in partnership with our network of parishes.</p>
 		</div>
 	</div>
 
@@ -66,16 +66,16 @@
 			<div role="img" class="overlaybg img2"></div>
 			<div class="text">
 				<h2>Anglican Way Print</h2>
-				<p>Print edition on the vital topics
-				in the Church.</p>
+				<p>Print edition on the vital 
+				topics in the Church.</p>
 			</div>
 		</div>
 		<div class="arrow second"></div>
 	</div>
 	<div class="modal-info m2">
 		<div class="bio">
-			<p>Anglican Way Print</p>
-			<p class="p capital T"><span class="smallcaps">The print edition</span> of the Society’s journal presents informative and educational articles together with analysis of the vital topics facing the Church. Edited by Dr Roberta Bayer it is both creative and distinctive and presents a powerful Prayer Book perspective on all aspects of Anglican faith and worship together with key perspectives drawn from Anglican history.</p>
+			<h3>Anglican Way Print</h3>
+			<p class="p capital">T<span class="smallcaps">he print edition</span> of the Society’s journal presents informative and educational articles together with analysis of the vital topics facing the Church. Edited by Dr Roberta Bayer it is both creative and distinctive and presents a powerful Prayer Book perspective on all aspects of Anglican faith and worship together with key perspectives drawn from Anglican history.</p>
 		</div>
 	</div>
 
@@ -94,8 +94,8 @@
 	</div>
 	<div class="modal-info m3">
 		<div class="bio">
-			<p>I-Pray BCP App</p>
-			<p class="p capital T"><span class="smallcaps">Updated daily,</span> this app provides the full text for saying Morning and Evening Prayer as well as Noonday Prayer and Compline. There is no need to carry a heavy book and makes it even easier to integrate the Office into your daily devotions, in unity with the Church worldwide, in prayer through time.</p>
+			<h3>I-Pray BCP App</h3>
+			<p class="p capital">U<span class="smallcaps">pdated daily,</span> this app provides the full text for saying Morning and Evening Prayer as well as Noonday Prayer and Compline. There is no need to carry a heavy book and makes it even easier to integrate the Office into your daily devotions, in unity with the Church worldwide, in prayer through time.</p>
 		</div>
 	</div>
 
@@ -113,8 +113,10 @@
 	</div>
 	<div class="modal-info m4">
 		<div class="bio">
-			<p>Catechesis Project</p>
-			<p class="p capital T"><span class="smallcaps">Teaching the faith</span>, or Catechesis, is a profoundly important ministry, to which the Prayer Book Society is deeply committed. The challenges and confusions facing the Church in the modern world make the need for accurate teaching greater than ever. Of a previously unprecedented scale among Anglicans, the Catechesis Project aims to provide a solid and sure footing, teaching the fundamentals of Christianity, and essentials of Anglican doctrine, in an accessible and compelling manner. The substantial first volume, <span style="font-style: italic">My Beloved is Mine and I am His</span>, by the Society President, the Revd. Fr. Gavin Dunbar is now being launched. It provides material for Adult Education Classes through twenty five weekly chapters. Its three main sections exploring progressively what it means to belong, to believe and to follow Christ as this has been understood and set out in the Anglican tradition. Each of the cumulative chapters features short essays on the Prayer Book Catechism’s Questions and Answers, followed by suggestions for further reading, and questions for study and discussion.</p>
+			<h3>Catechesis Project</h3>
+			<p class="p capital">T<span class="smallcaps">eaching the faith</span>, or Catechesis, is a profoundly important ministry, to which the Prayer Book Society is deeply committed. The challenges and confusions facing the Church in the modern world make the need for accurate teaching greater than ever. Of a previously unprecedented scale among Anglicans, the Catechesis Project aims to provide a solid and sure footing, teaching the fundamentals of Christianity, and essentials of Anglican doctrine, in an accessible and compelling manner.</p>
+
+			<p class="p">T<span class="smallcaps">he substantial</span> first volume, <span style="font-style: italic">My Beloved is Mine and I am His</span>, by the Society President, the Revd. Fr. Gavin Dunbar is now being launched. It provides material for Adult Education Classes through twenty five weekly chapters. Its three main sections exploring progressively what it means to belong, to believe and to follow Christ as this has been understood and set out in the Anglican tradition. Each of the cumulative chapters features short essays on the Prayer Book Catechism’s Questions and Answers, followed by suggestions for further reading, and questions for study and discussion.</p>
 		</div>
 	</div>
 
@@ -132,8 +134,8 @@
 	</div>
 	<div class="modal-info m5">
 		<div class="bio">
-			<p>New Scriptorium</p>
-			<p class="p capital T"><span class="smallcaps">This online library</span> of Anglican classics makes instantly available important texts from the incomparable heritage of theological writing by Anglican Divines since the sixteenth century.  It has at present a particular strength in works about the Prayer Book, Collects, Prayers and Articles and also many of the writings by the distinguished former PBS President the late Revd Dr Peter Toon.</p>
+			<h3>New Scriptorium</h3>
+			<p class="p capital">T<span class="smallcaps">his online library</span> of Anglican classics makes instantly available important texts from the incomparable heritage of theological writing by Anglican Divines since the sixteenth century.  It has at present a particular strength in works about the Prayer Book, Collects, Prayers and Articles and also many of the writings by the distinguished former PBS President the late Revd Dr Peter Toon.</p>
 		</div>
 	</div>
 </section>

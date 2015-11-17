@@ -8,7 +8,7 @@
 
 
 <section class="home">
-	<p class="capital-ornate T intro"><span class="smallcaps">The Prayer Book Tradition</span>&mdash; <br>
+	<p class="capital-ornate intro"><span class="T">T</span><span class="smallcaps">he Prayer Book Tradition</span>&mdash; <br>
 	A place to belong, a Faith to believe, <br>
 	and a Rule of life and worship.</p>
 
@@ -19,17 +19,16 @@
 		<header>
 			<h1><a href="#">New Prayer Book Society website!</a></h1>
 		
-			<time datetime="2015-12-1" title="December 1st, 2015" class="fa fa-calendar">December 1, 2015</time>
-			<address class="fa fa-user">by <a rel="author" href="/author/pbs-official">Prayer Book Society</a></address>
+			<time datetime="2015-12-1" title="December 1st, 2015"><span role="img" class="fa fa-calendar"></span> December 8, 2015</time>
+			<address><span role="img" class="fa fa-user"></span> by <a rel="author" href="/author/pbs-official">Prayer Book Society</a></address>
 
 			<aside>
 				<span class="top">Dec</span>
 				<span class="bottom">8</span>
-				</span>
 			</aside>
 		</header>
 		<div role="img" class="photo"></div>
-		<p class="p capital T">The Prayer Book Society USA is delighted to launch a completely new website. This combines a modern clarity and simplicity of design with visual and typographical features that draw from the rich aesthetic of the historic Prayer Books themselves.  The site provides a highly accessible overview of the Society’s aims and ministries, along with interactive features, such as the page for finding congregations that offer Prayer Book services. It also links to extensive new catechetical resources for teaching our faith as well as the promotion of daily Morning and Evening prayer and an expanding portal into  online editions of the works by Anglican divines since the sixteenth Century.</p>
+		<p class="p capital">The Prayer Book Society USA is delighted to launch a completely new website. This combines a modern clarity and simplicity of design with visual and typographical features that draw from the rich aesthetic of the historic Prayer Books themselves.  The site provides a highly accessible overview of the Society’s aims and ministries, along with interactive features, such as the page for finding congregations that offer Prayer Book services. It also links to extensive new catechetical resources for teaching our faith as well as the promotion of daily Morning and Evening prayer and an expanding portal into  online editions of the works by Anglican divines since the sixteenth Century.</p>
 	</article>
 
 
@@ -69,7 +68,7 @@
 <section class="home map">
 	<h1>What We Do</h1>
 
-	<p class="capital-ornate T"><span class="smallcaps">The Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Anglican formularies since the first Book of Common Prayer of 1549, in the Church of England, and on through the 1928 Prayer Book down to the present day: worship is at the heart of Christianity and the Common Prayer tradition is at the heart of Anglican worship.</p>
+	<p class="capital-ornate"><span class="T">T</span><span class="smallcaps">he Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Angli&shy;can formularies since the first Book of Common Prayer of 1549, in the Church of England, and on through the 1928 Prayer Book down to the present day: worship is at the heart of Chris&shy;tianity and the Common Prayer tradition is at the heart of Anglican worship.</p>
 
 	<div class="map-title">Prayer Book Churches</div>
 	<div id="mapBox"></div>
@@ -100,7 +99,7 @@
 <section class="home ministry-list">
 	<h1>Our Ministries</h1>
 
-	<p class="capital-ornate N"><span class="smallcaps">New society ministries</span> dei lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital-ornate N"><span class="N">N</span><span class="smallcaps">ew society ministries</span> dei lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
 
 	<div class="ministry-list">
 		<input id="ac-1" type="radio" name="accordion-1" checked="">
@@ -200,15 +199,15 @@
 
 
 <section class="home join">
-	<p class="capital-ornate C"><span class="smallcaps">Contribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
-
   <h1 class="member-title">Become a Member</h1>
+
+	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <div class="benefits">
     <div class="grid-1-3">
     <div class="tout grow">
     	<span class="floating one">1</span>
-    	<p class="p capital"><span class="smallcaps">Receive</span> our theological and liturgical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
+    	<p class="p capital">R<span class="smallcaps">eceive</span> our theological and liturgical resources de&shy;signed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
     	<div role="img" class="image"></div>
     </div>
     </div>
@@ -216,7 +215,7 @@
     <div class="grid-1-3">
     <div class="tout support">
     	<span class="floating two">2</span>
-    	<p class="p capital"><span class="smallcaps">Support</span> the renewal of classical Anglicanism with its profound theology, commitment to spirituality and the worship of God in the beauty of holiness in the language of the Prayer Books.</p>
+    	<p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
     	<div role="img" class="image"></div>
     </div>
     </div>
@@ -224,7 +223,7 @@
     <div class="grid-1-3">
     <div class="tout flourish">
 	    <span class="floating three">3</span>
-      	<p class="p capital"><span class="smallcaps">Enrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
+      	<p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of An&shy;glicans around the world who re&shy;spond to the call to ‘a devout and holy life.’ (William Law)</p>
     	<div role="img" class="image"></div>
     </div>
     </div>

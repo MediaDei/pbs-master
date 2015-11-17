@@ -9,6 +9,12 @@
        url('../fonts/OFLGoudyStM.otf')  format('opentype'); /* Compatibility */
   font-style: normal;
 }
+// see description in _bits on current state of small caps
+@font-face {
+  font-family: 'SortsMillGoudy-SC';
+  src: url('../fonts/Goudy_OldStyle_SSi_Small_Caps_.ttf')  format('truetype'); 
+  font-style: normal;
+}
 @font-face {
   font-family: 'SortsMillGoudy';
   src: url('../fonts/OFLGoudyStM-Italic.woff') format('woff'), /* Modern Browsers */
@@ -24,9 +30,6 @@
 
 a {
   text-decoration: none;
-  &:hover {
-
-  }
 }
 
 h1,h2,h3,h4,h5,h6{
