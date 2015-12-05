@@ -69,18 +69,40 @@
   <p class="capital-ornate"><span class="D">D</span><span class="smallcaps">onate to the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <div class="range-input">
-    <input type="range" min="0" max="100" />
+    <input type="range" min="0" max="100" value="0" />
   </div>
 
   <div class="range-amounts">
-    <a href="#/" class="10">$10</a>
-    <a href="#/" class="25">$25</a>
-    <a href="#/" class="40">$40</a>
-    <a href="#/" class="65">$65</a>
-    <a href="#/" class="80">$80</a>
-    <a href="#/" class="100">$100</a>
-    <a href="#/" class="more">+</a>
+    <button type="button" id="10">$10</button>
+    <button type="button" id="25">$25</button>
+    <button type="button" id="40">$40</button>
+    <button type="button" id="65">$65</button>
+    <button type="button" id="80">$80</button>
+    <button type="button" id="100">$100</button>
+    <button type="button" class="more">+</button>
   </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#10").click(function () {
+        $("#range[type=range]").val(10)
+      });
+      $("#25").click(function () {
+        $("#range[type=range]").val(25)
+      });
+      $("#40").click(function () {
+        $("#range[type=range]").val(40)
+      });
+      $("#65").click(function () {
+        $("#range[type=range]").val(65)
+      });
+      $("#80").click(function () {
+        $("#range[type=range]").val(80)
+      });
+      $("#100").click(function () {
+        $("#range[type=range]").val(100)
+      });
+    });
+  </script>
 
   <div class="recurring">
     <input type="checkbox" name="recurring" />
