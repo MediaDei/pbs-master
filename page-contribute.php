@@ -69,7 +69,8 @@
   <p class="capital-ornate"><span class="D">D</span><span class="smallcaps">onate to the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <div class="range-input">
-    <input type="range" min="0" max="100" value="0" />
+    <span class="range-value"></span>
+    <input type="range" name="range" id="slider" value="0" min="0" max="100" />
   </div>
 
   <div class="range-amounts">
@@ -81,25 +82,40 @@
     <button type="button" id="100">$100</button>
     <button type="button" class="more">+</button>
   </div>
-  <script type="text/javascript">
+  <script>
+    var $ = jQuery.noConflict();
+    var range = $('#slider'),
+        value = $('.range-value');
     $(document).ready(function() {
       $("#10").click(function () {
-        $("#range[type=range]").val(10)
+        $("#slider").val(10)
+        value.html(range.attr('value'));
       });
-      $("#25").click(function () {
-        $("#range[type=range]").val(25)
+      $( "#25").click(function () {
+        $("#slider").val(25)
+        value.html(range.attr('value'));
+
       });
-      $("#40").click(function () {
-        $("#range[type=range]").val(40)
+      $( "#40").click(function () {
+        $("#slider").val(40)
+        value.html(range.attr('value'));
       });
-      $("#65").click(function () {
-        $("#range[type=range]").val(65)
+      $( "#65").click(function () {
+        $("#slider").val(65)
+        value.html(range.attr('value'));
       });
-      $("#80").click(function () {
-        $("#range[type=range]").val(80)
+      $( "#80").click(function () {
+        $("#slider").val(80)
+        value.html(range.attr('value'));
       });
-      $("#100").click(function () {
-        $("#range[type=range]").val(100)
+      $( "#100").click(function () {
+        $("#slider").val(100)
+        value.html(range.attr('value'));
+      });
+      value.html(range.attr('value'));
+
+      range.on('input', function(){
+          value.html(this.value);
       });
     });
   </script>
