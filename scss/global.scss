@@ -3,6 +3,7 @@
 @import "bits";
 @import "resources";
 @import "ministries";
+//@import "new";
 
 html {
 	font-family: "SortsMillGoudy", serif;
@@ -1720,6 +1721,7 @@ section.about {
     height: 0;
     opacity: 0;
     transition: all 0.1s ease-in 0.1s;
+    overflow: hidden;
   }
 
   .anchor {
@@ -1727,13 +1729,13 @@ section.about {
     position: fixed;
   }
 
-  .anchor:target ~ .why-text {
+  .anchor:target + .why-button + .why-text {
     opacity: 0.99;
     height: 100%;
     margin-top: 0;
   }
 
-  .anchor:target ~ .button {
+  .anchor:target + .why-button {
     display: none;
   }
 

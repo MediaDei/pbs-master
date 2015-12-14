@@ -20,17 +20,27 @@
 
 	<h2 class="why-title">Why the Prayer Book?</h2>
 
-	<span id="learn" class="anchor"></span>
-	<a href="#learn" class="button why-button">Learn More</a>
+	<span id="why-prayer-book" class="anchor"></span>
+	<a href="#why-prayer-book" class="button why-button">Learn More</a>
 
 	<div class="why-text">
-	<p class="p why capital-ornate"><span class="T">T</span><span class="smallcaps">he Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
+		<p class="p why capital-ornate"><span class="T">T</span><span class="smallcaps">he Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
 
-  <p><span class="smallcaps">The Society</span> also seeks, therefore, to promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century both through access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
+  	<p><span class="smallcaps">The Society</span> also seeks, therefore, to promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century both through access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
 
-  <p class="p capital-ornate"><span class="A">A</span><span class="smallcaps">n important resource</span> now being launched for use by parishes in Adult education is the Society’s new Catechesis course written by its President the Revd Fr. Gavin Dunbar, which is the first part of a continuing and wider project reflecting our conviction that evangelism, baptism and catechesis are the foundations of Christian discipleship.  Thus the new text teaches over the course of twenty five weeks just what the “profession of the Church, her faith and hope” comprise.</p>
+  	<p class="p capital-ornate"><span class="A">A</span><span class="smallcaps">n important resource</span> now being launched for use by parishes in Adult education is the Society’s new Catechesis course written by its President the Revd Fr. Gavin Dunbar, which is the first part of a continuing and wider project reflecting our conviction that evangelism, baptism and catechesis are the foundations of Christian discipleship.  Thus the new text teaches over the course of twenty five weeks just what the “profession of the Church, her faith and hope” comprise.</p>
 
-  <p><span class="smallcaps">Promotion of Daily Prayer</span> using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
+  	<p><span class="smallcaps">Promotion of Daily Prayer</span> using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
+  </div>
+
+
+  <h2 class="why-title">Why the Society?</h2>
+
+  <span id="why-society" class="anchor"></span>
+  <a href="#why-society" class="button why-button">Learn More</a>
+
+  <div class="why-text">
+  	<p class="p why capital-ornate"><span class="T">T</span><span class="smallcaps">he Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
   </div>
 </section>
 
