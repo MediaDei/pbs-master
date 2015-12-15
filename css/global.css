@@ -1274,57 +1274,6 @@ section {
       transform: translate(-50%, -50%);
       text-shadow: 0 1px 0 white;
       color: #3A4D52; }
-  section .button-blue {
-    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), #4186B6;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), #4186B6;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
-    border-radius: 12px;
-    position: relative;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-    height: 46px;
-    width: 178px;
-    display: block;
-    margin: 30px auto;
-    cursor: pointer; }
-    section .button-blue:after {
-      content: "";
-      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M1ZDhlNSIvPjxzdG9wIG9mZnNldD0iNDIlIiBzdG9wLWNvbG9yPSIjOWJhYmQyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDc3Nzk5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5d8e5), color-stop(42%, #9babd2), color-stop(100%, #477799));
-      background: -moz-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
-      background: -webkit-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
-      background: linear-gradient(to bottom, #c5d8e5 0%, #9babd2 42%, #477799 100%);
-      position: absolute;
-      height: 38px;
-      width: 170px;
-      border-radius: 8px;
-      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
-      left: 4px;
-      top: 4px; }
-    section .button-blue:hover {
-      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), #4186B6;
-      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.25))), #4186B6;
-      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
-      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6; }
-      section .button-blue:hover:after {
-        background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M1ZDhlNSIvPjxzdG9wIG9mZnNldD0iNDIlIiBzdG9wLWNvbG9yPSIjYTNiNGRkIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGI3ZGExIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5d8e5), color-stop(42%, #a3b4dd), color-stop(100%, #4b7da1));
-        background: -moz-linear-gradient(top, #c5d8e5 0%, #a3b4dd 42%, #4b7da1 100%);
-        background: -webkit-linear-gradient(top, #c5d8e5 0%, #a3b4dd 42%, #4b7da1 100%);
-        background: linear-gradient(to bottom, #c5d8e5 0%, #a3b4dd 42%, #4b7da1 100%); }
-    section .button-blue span {
-      position: absolute;
-      z-index: 1;
-      left: 50%;
-      top: 52%;
-      transform: translate(-50%, -50%);
-      font-size: 1.3em;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-      color: #F9F0D9; }
 
 section.home > p.intro {
   color: #727272;
@@ -2304,6 +2253,85 @@ section.about {
       padding-left: 10px;
       font-size: 0.94em; }
 
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form fieldset#give-payment-mode-select div#give-payment-mode-wrap legend.give-payment-mode-label {
+  font-weight: normal;
+  font-size: 1.3em;
+  color: #585858; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form fieldset#give-payment-mode-select div#give-payment-mode-wrap ul#give-gateway-radio-list {
+  margin-bottom: 10px; }
+  body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form fieldset#give-payment-mode-select div#give-payment-mode-wrap ul#give-gateway-radio-list li label.give-gateway-option {
+    color: #585858; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_checkout_user_info legend {
+  display: none; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_checkout_user_info p label {
+  display: none; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_checkout_user_info p input {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #dedede inset;
+  color: #3c2420;
+  font-size: 1.2em;
+  line-height: 1;
+  padding: 7px 0 4px 7px;
+  font-style: italic; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit p#give-final-total-wrap {
+  display: table;
+  margin: 0px auto 15px; }
+  body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit p#give-final-total-wrap span {
+    color: #585858; }
+    body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit p#give-final-total-wrap span.give-donation-total-label {
+      background: none;
+      border: 0px; }
+    body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit p#give-final-total-wrap span.give-final-total-amount {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px #dedede inset; }
+body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit div.give-submit-button-wrap {
+  display: table;
+  margin: 0 auto; }
+  body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit div.give-submit-button-wrap input.give-submit {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), #4186B6;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5))), #4186B6;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), #4186B6;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    height: 46px;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 0px;
+    padding: 0px 15px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    color: #F9F0D9; }
+    body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit div.give-submit-button-wrap input.give-submit:before {
+      content: "";
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M1ZDhlNSIvPjxzdG9wIG9mZnNldD0iNDIlIiBzdG9wLWNvbG9yPSIjOWJhYmQyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDc3Nzk5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5d8e5), color-stop(42%, #9babd2), color-stop(100%, #477799));
+      background: -moz-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      background: -webkit-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      background: linear-gradient(to bottom, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      position: absolute;
+      height: 38px;
+      width: 96%;
+      border-radius: 8px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+      left: 4px;
+      top: 4px; }
+    body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit div.give-submit-button-wrap input.give-submit:hover {
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), #4186B6;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.25))), #4186B6;
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6; }
+  body.give-page div.mfp-wrap div.mfp-container div.mfp-content form.give-form div#give_purchase_form_wrap fieldset#give_purchase_submit div.give-submit-button-wrap span.give-loading-animation {
+    display: none; }
+
 section.contribute .member-title {
   margin-top: 60px;
   padding-bottom: 30px; }
@@ -2494,17 +2522,15 @@ section.contribute .join-offline {
     text-decoration: underline; }
 section.contribute .range-input {
   margin: 40px auto 0px;
-  width: 550px;
+  width: 600px;
   height: 35px;
-  background: #F6F6F6;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   /* Special styling for WebKit/Blink */
   /* All the same stuff for Firefox */ }
   section.contribute .range-input .range-value {
     display: block;
     float: left;
-    width: 30px;
+    width: 60px;
     height: 20px;
     color: #585858;
     font-size: 12px;
@@ -2514,11 +2540,14 @@ section.contribute .range-input {
     background: white;
     padding: 3px;
     margin: 7px 0px 0px 7px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+    section.contribute .range-input .range-value:before {
+      content: "$"; }
   section.contribute .range-input input[type=range] {
     -webkit-appearance: none;
     /* Hides the slider so that custom slider can be made */
-    width: 90%;
+    width: 85%;
     /* Specific width is required for Firefox. */
     float: right;
     margin: 8px 6px 0px 0px; }
@@ -2559,24 +2588,92 @@ section.contribute .range-input {
     background: white;
     cursor: pointer;
     border: 1px solid #CCCCCC; }
+section.contribute div.give-form-wrap {
+  display: table;
+  margin: 0 auto; }
+  section.contribute div.give-form-wrap h2 {
+    display: none; }
+  section.contribute div.give-form-wrap div.give_error {
+    display: none; }
+  section.contribute div.give-form-wrap form.give-form {
+    position: relative; }
+    section.contribute div.give-form-wrap form.give-form p.set-price.give-donation-amount.form-row-wide {
+      opacity: 0;
+      margin: 0; }
+    section.contribute div.give-form-wrap form.give-form div.give-total-wrap {
+      display: table !important; }
+      section.contribute div.give-form-wrap form.give-form div.give-total-wrap div.give-donation-amount p.give-loading-text:active {
+        display: none; }
+      section.contribute div.give-form-wrap form.give-form div.give-total-wrap div.give-donation-amount p.give-loading-text span.give-loading-animation {
+        display: none; }
+      section.contribute div.give-form-wrap form.give-form div.give-total-wrap div.give-donation-amount p.give-loading-text span.elipsis {
+        display: none; }
+    section.contribute div.give-form-wrap form.give-form ul.give-donation-levels-wrap li button {
+      background-color: #F9F4E4;
+      border: 1px solid #D2BB89;
+      border-radius: 6px;
+      padding: 5px 17px;
+      margin: 0 5px;
+      color: #585858;
+      font-size: 1.2em;
+      transition: opacity .5s ease-in-out, width .5s, height .5s; }
+      section.contribute div.give-form-wrap form.give-form ul.give-donation-levels-wrap li button:hover {
+        background-color: #fffbeb;
+        border: 1px solid #d8c18d; }
+      section.contribute div.give-form-wrap form.give-form ul.give-donation-levels-wrap li button:active {
+        background-color: #f4efdf;
+        border: 1px solid #D2BB89;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
+      section.contribute div.give-form-wrap form.give-form ul.give-donation-levels-wrap li button.faded {
+        opacity: 0.5;
+        transition: opacity .5s ease-in-out, width .5s, height .5s; }
+    section.contribute div.give-form-wrap form.give-form ul.give-donation-levels-wrap li input#give-amount {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px #dedede inset;
+      color: #3c2420;
+      font-size: 1.2em;
+      font-style: italic;
+      line-height: 1;
+      padding: 7px 0 4px 7px; }
+    section.contribute div.give-form-wrap form.give-form button.give-btn.give-btn-modal {
+      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M1ZDhlNSIvPjxzdG9wIG9mZnNldD0iNDIlIiBzdG9wLWNvbG9yPSIjOWJhYmQyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDc3Nzk5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5d8e5), color-stop(42%, #9babd2), color-stop(100%, #477799));
+      background: -moz-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      background: -webkit-linear-gradient(top, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      background: linear-gradient(to bottom, #c5d8e5 0%, #9babd2 42%, #477799 100%);
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+      height: 46px;
+      display: block;
+      margin: 30px auto;
+      cursor: pointer;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+      color: #F9F0D9;
+      border: 0px;
+      padding: 0px 15px; }
+      section.contribute div.give-form-wrap form.give-form button.give-btn.give-btn-modal:after {
+        content: "";
+        position: absolute;
+        height: 38px;
+        width: 96%;
+        border-radius: 8px;
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+        left: 4px;
+        top: 4px; }
+      section.contribute div.give-form-wrap form.give-form button.give-btn.give-btn-modal:hover {
+        background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), #4186B6;
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.25))), #4186B6;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.25)), #4186B6; }
 section.contribute .range-amounts {
   display: table;
   margin: 30px auto; }
-  section.contribute .range-amounts button {
-    background-color: #F9F4E4;
-    border: 1px solid #D2BB89;
-    border-radius: 6px;
-    padding: 5px 17px;
-    margin: 0 5px;
-    color: #585858;
-    font-size: 1.2em; }
-    section.contribute .range-amounts button:hover {
-      background-color: #fffbeb;
-      border: 1px solid #d8c18d; }
-    section.contribute .range-amounts button:active {
-      background-color: #f4efdf;
-      border: 1px solid #D2BB89;
-      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
 section.contribute .recurring {
   display: table;
   margin: 0 auto; }

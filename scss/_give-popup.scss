@@ -1,0 +1,131 @@
+//////////////////////////////////// Give Pop-up styling
+body.give-page{
+  div.mfp-wrap{
+    div.mfp-container{
+      div.mfp-content{
+        form.give-form{
+          fieldset#give-payment-mode-select{
+            div#give-payment-mode-wrap{
+              legend.give-payment-mode-label{
+                font-weight: normal;
+                font-size: 1.3em;
+                color: $main-text;
+
+              }
+              ul#give-gateway-radio-list{
+                margin-bottom: 10px;
+                li{
+                  label.give-gateway-option{
+                    color: $main-text;
+
+                  }
+
+                }
+              }
+              p.give-loading-text{
+
+              }
+            }
+          }
+          div#give_purchase_form_wrap{
+            fieldset#give_checkout_user_info{
+              legend{
+                display: none;
+              }
+              p{
+                label{
+                  display: none;
+                }
+                input{
+                  border: 1px solid #bbb;
+                  border-radius: 3px;
+                  box-shadow: 0 1px 2px #dedede inset;
+                  color: #3c2420;
+                  font-size: 1.2em;
+                  line-height: 1;
+                  padding: 7px 0 4px 7px;
+                  font-style: italic;
+                }
+              }
+            }
+            fieldset#give_purchase_submit{
+              p#give-final-total-wrap{
+                display: table;
+                margin: 0px auto 15px;
+                span{
+                  color: $main-text;
+                  
+                  &.give-donation-total-label{
+                    background: none;
+                    border: 0px;
+
+
+                  }
+                  &.give-final-total-amount{
+                    border: 1px solid #bbb;
+                    border-radius: 3px;
+                    box-shadow: 0 1px 2px #dedede inset;
+
+                  }
+                }
+
+
+                
+              }
+              div.give-submit-button-wrap{
+                display: table;
+                margin: 0 auto;
+                input.give-submit{
+                  @include background(linear-gradient(to bottom, rgba(white,0.5), rgba(black,0.5)),
+                    #4186B6);
+                  position: relative;
+                  border-radius: 12px;
+                  box-shadow: 0 3px 4px rgba(black,0.5);
+                  height: 46px;
+                  display: table;
+                  margin: 0 auto;
+                  cursor: pointer;
+                  border: 0px;
+                  padding: 0px 15px;
+                  font-size: 1.3em;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  text-shadow: 0 -1px 0 rgba(black, 0.4);
+                  color: #F9F0D9;
+
+                  //button extra
+                  &:before {
+                    content: "";
+                    @include background(linear-gradient(to bottom, #C5D8E5 0%, #9BABD2 42%, #477799 100%));
+                    position: absolute;
+                    height: 38px;
+                    width: 96%;
+                    border-radius: 8px;
+                    box-shadow: inset 0 0 10px rgba(white,0.6);
+                    left: 4px;
+                    top: 4px;
+                  }
+                  
+                  &:hover {
+                    @include background(linear-gradient(to bottom, rgba(white,0.6), rgba(black,0.25)),
+                      #4186B6);
+
+                    &:after {
+                      //@include background(linear-gradient(to bottom, #C5D8E5*1 0%, #9BABD2*1.05 42%, #477799*1.05 100%));
+                    }
+                  }
+                }
+                span.give-loading-animation{
+                  display: none;
+                }
+              }
+            }
+          }
+          button.mfp-close{
+          }
+        }
+      }
+    }
+  }
+}
+//// End Give pop-up styling

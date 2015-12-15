@@ -73,60 +73,130 @@
     <input type="range" name="range" id="slider" value="0" min="0" max="100" />
   </div>
 
-  <div class="range-amounts">
-    <button type="button" id="10">$10</button>
-    <button type="button" id="25">$25</button>
-    <button type="button" id="40">$40</button>
-    <button type="button" id="65">$65</button>
-    <button type="button" id="80">$80</button>
-    <button type="button" id="100">$100</button>
-    <button type="button" class="more">+</button>
-  </div>
+  <?php echo do_shortcode( '[give_form id="19"]' ); ?>
+
   <script>
     var $ = jQuery.noConflict();
     var range = $('#slider'),
-        value = $('.range-value');
+        value = $('.range-value'),
+        give_value = $('#give-amount'),
+        fade_on = false;
+
+
+
+    function fadeButton() {
+      //apply fade to all buttons except .dummy-btn
+      $(".give-btn-level-1, .give-btn-level-2, .give-btn-level-3, .give-btn-level-4, .give-btn-level-5, .give-btn-level-6").addClass("faded");
+
+      fade_on = true;
+    }
+
+    function restoreButton() {
+      //remove fade from all buttons except .dummy-btn
+      $(".give-btn-level-1, .give-btn-level-2, .give-btn-level-3, .give-btn-level-4, .give-btn-level-5, .give-btn-level-6").removeClass("faded");
+
+      fade_on = false;
+
+      //change .dummy-btn to button
+      $(".dummy-btn").replaceWith("<button value='0.00' class='give-donation-level-btn give-btn give-btn-level-7  dummy-btn' data-price-id='7' type='button'>+</button>");
+
+    }
+    function checkRestore() {
+      if(fade_on == true) {
+        restoreButton();
+      }
+    }
+    function checkFade() {
+      if(fade_on == false) {
+        fadeButton();
+      }
+    }
+    
+
+
+
     $(document).ready(function() {
-      $("#10").click(function () {
-        $("#slider").val(10)
-        value.html(range.attr('value'));
-      });
-      $( "#25").click(function () {
-        $("#slider").val(25)
-        value.html(range.attr('value'));
 
-      });
-      $( "#40").click(function () {
-        $("#slider").val(40)
+      //update html for .give-btn-level-7 at page load
+      $(".give-btn-level-7").html("+").addClass("dummy-btn");
+
+
+      //click events for all give-btn; update range and value
+      $(".give-btn-level-1").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
         value.html(range.attr('value'));
-      });
-      $( "#65").click(function () {
-        $("#slider").val(65)
+        //checkRestore();
+      }); 
+      $( ".give-btn-level-2").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
         value.html(range.attr('value'));
+        //checkRestore();
       });
-      $( "#80").click(function () {
-        $("#slider").val(80)
+      $( ".give-btn-level-3").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
         value.html(range.attr('value'));
+        //checkRestore();
+        
       });
-      $( "#100").click(function () {
-        $("#slider").val(100)
+      $( ".give-btn-level-4").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
         value.html(range.attr('value'));
+        //checkRestore();
+        
       });
+      $( ".give-btn-level-5").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
+        value.html(range.attr('value'));
+        //checkRestore();
+        
+      });
+      $( ".give-btn-level-6").click(function () {
+        var i = $(this).val();
+        range.attr('value', i);
+        value.html(range.attr('value'));
+        //checkRestore();
+        
+      });
+
+      $( ".dummy-btn").click(function () {
+        $(".give-text-input").focus().blur();
+        //checkFade();
+      });
+
+      //range updates value, .give-text-input, and .dummy-btn
       value.html(range.attr('value'));
-
       range.on('input', function(){
           value.html(this.value);
+          $(".give-text-input").val(this.value);
+          $(".dummy-btn").val(this.value);
       });
+
+      //when using range, click on .dummy-btn(submits value to plugin) and then focus .give-text-input and then unfocus (adds "cents" to textbox)
+      range.on('mouseup', function(){
+        $(".dummy-btn").click();
+        $(".give-text-input").focus().blur();
+      });
+
+      //.give-text-input updates range
+      $(".give-text-input").on('input', function(){
+          range.val(this.value);
+          value.html(this.value);
+      });
+
+      //make dummy-btn change value of .give-text-input
+      $(".dummy-btn").change(function(){
+        $(".give-text-input").val(this.value);
+      });
+
+
     });
   </script>
 
-  <div class="recurring">
-    <input type="checkbox" name="recurring" />
-    <label for"recurring">recurring donation</label>
-  </div>
-
-  <a href="#/" class="button-blue"><span>Donate</span></a>
- 
 </section>
 
 
