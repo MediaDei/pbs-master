@@ -3,7 +3,8 @@
 @import "bits";
 @import "resources";
 @import "ministries";
-//@import "new";
+@import "give-widget";
+@import "give-popup";
 
 html {
 	font-family: "SortsMillGoudy", serif;
@@ -2035,6 +2036,15 @@ section.about {
                 font-size: 4em;
                 z-index: 5;
               }
+            }
+          }
+
+          p {
+            white-space: pre-line;
+
+            span {
+              line-height: 0.5;
+              font-size: 0.9em;
             }
           }
           figure {

@@ -166,7 +166,8 @@
         <div class="person">
           <label class="zoom fa fa-search" for="bio1-right"></label>
           <figure class="photo-mcd"></figure>
-          <p>Cn. Alistair</p>
+          <p>Canon Alistair
+          <span>Macdonald-Radcliff</span></p>
           <p>Special Advisor</p>
           <div class="arrow bio1-right"></div>
         </div>
@@ -183,7 +184,7 @@
         <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="bio1">
-        <p>Cn. Alistair Macdonald-Radcliff</p>
+        <p>Canon Alistair Macdonald-Radcliff</p>
         <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
       </div>
       <div class="close fa fa-times"></div>

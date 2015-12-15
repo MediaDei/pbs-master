@@ -75,7 +75,7 @@
     <input type="range" name="range" id="slider" value="0" min="0" max="100" />
   </div>
 
-  <?php echo do_shortcode( '[give_form id="19"]' ); ?>
+  <?php echo do_shortcode( '[give_form id="20"]' ); ?>
 
   <script>
     var $ = jQuery.noConflict();
