@@ -7,13 +7,15 @@
 
 
 <section class="about">
-	<p class="capital-ornate"><span class="T">T</span><span class="smallcaps">he Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Anglican formularies since the first Book of Common Prayer of 1549 in the Church of England, on through the 1928 Prayer Book down to the present day.</p>
+	<div class="about-text">
+		<p class="p capital-ornate"><span class="T">T</span><span class="smallcaps">he Society exists to promote</span> Anglican belief and worship as expressed in the Common Prayer tradition and Anglican formularies since the first Book of Common Prayer of 1549 in the Church of England, on through the 1928 Prayer Book down to the present day.</p>
 
-	<p><span class="smallcaps">The two books</span> pre-eminent above all others in the English Language are the Bible and The Book of Common Prayer. The Prayer Book, through its lectionary provides for the Bible to be read day by day throughout the year, in accord with ‘the method of the ancient Fathers’ together with the entire Psalter every month (from the Great Bible of 1540 as translated by Coverdale),  so that clergy and people might be  “stirred up to godliness themselves,… more able to exhort others by wholesome doctrine” while continually advancing  in “the knowledge of God”, “…inflamed with the love of his true religion.”  (From the Preface. “Concerning the Service of the Church”).</p>
+		<p class="p"><span class="smallcaps">The two books</span> pre-eminent above all others in the English Language are the Bible and The Book of Common Prayer. The Prayer Book, through its lectionary provides for the Bible to be read day by day throughout the year, in accord with ‘the method of the ancient Fathers’ together with the entire Psalter every month (from the Great Bible of 1540 as translated by Coverdale),  so that clergy and people might be  “stirred up to godliness themselves,… more able to exhort others by wholesome doctrine” while continually advancing  in “the knowledge of God”, “…inflamed with the love of his true religion.”  (From the Preface. “Concerning the Service of the Church”).</p>
 
-  <p class="capital-ornate"><span class="I">I</span><span class="smallcaps">n furtherance of this</span>, the society is committed to adva&shy;ncing education about the nature and content of the Prayer Book tradition together with its use for Holy Communion, the Daily Offices, baptism, marriages and funerals and to promoting the practical use of the Prayer Book for personal devotions, communal and family prayer.</p>
+  	<p class="p capital-ornate"><span class="I">I</span><span class="smallcaps">n furtherance of this</span>, the society is committed to adva&shy;ncing education about the nature and content of the Prayer Book tradition together with its use for Holy Communion, the Daily Offices, baptism, marriages and funerals and to promoting the practical use of the Prayer Book for personal devotions, communal and family prayer.</p>
 
-  <p><span class="smallcaps">This is all central</span> to the wider aim of advancing  understanding of what it means to be Anglican in its fullness of theological heritage, beliefs and liturgical practice.</p>
+  	<p class="p"><span class="smallcaps">This is all central</span> to the wider aim of advancing  understanding of what it means to be Anglican in its fullness of theological heritage, beliefs and liturgical practice.</p>
+  </div>
 
 	<div class="bcp" role="img" aria-label="Book of Common Prayer">
 	</div>
@@ -23,14 +25,14 @@
 	<span id="why-prayer-book" class="anchor"></span>
 	<a href="#why-prayer-book" class="button why-button">Learn More</a>
 
-	<div class="why-text">
+	<div class="about-text why-text">
 		<p class="p why capital-ornate"><span class="T">T</span><span class="smallcaps">he Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
 
-  	<p><span class="smallcaps">The Society</span> also seeks, therefore, to promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century both through access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
+  	<p class="p"><span class="smallcaps">The Society</span> also seeks, therefore, to promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century both through access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
 
   	<p class="p capital-ornate"><span class="A">A</span><span class="smallcaps">n important resource</span> now being launched for use by parishes in Adult education is the Society’s new Catechesis course written by its President the Revd Fr. Gavin Dunbar, which is the first part of a continuing and wider project reflecting our conviction that evangelism, baptism and catechesis are the foundations of Christian discipleship.  Thus the new text teaches over the course of twenty five weeks just what the “profession of the Church, her faith and hope” comprise.</p>
 
-  	<p><span class="smallcaps">Promotion of Daily Prayer</span> using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
+  	<p class="p"><span class="smallcaps">Promotion of Daily Prayer</span> using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
   </div>
 
 
@@ -39,9 +41,28 @@
   <span id="why-society" class="anchor"></span>
   <a href="#why-society" class="button why-button">Learn More</a>
 
-  <div class="why-text">
-  	<p class="p why capital-ornate"><span class="T">T</span><span class="smallcaps">he Prayer Book tradition</span> is an historic bedrock of commonality shared by all who call themselves Anglican and it is commended still as a focus for unity available to all in the Anglican Communion. Recovery of the earlier evangelizing vigour of our Anglican forebears has never been more urgent.</p>
-  </div>
+  <div class="about-text why-text">
+  	<p class="p why capital-ornate"><span class="I">I</span><span class="smallcaps">n Gratitude and Hope.</span> In the doctrine of the Scriptures, grateful remembrance of what the Lord has done for us already is the ground of present faith in the Lord, and of hope for what he will yet do. As we look to new challenges, it behoves Anglican Christians to remember, and to ground themselves in the godly tradition that has been handed down to us.</p>
+
+		<p class="p why capital-ornate"><span class="F">F</span><span class="smallcaps">or the sake of the Gospel.</span> For the sake of the world’s salvation, for the sake of the commission to make disciples of all nations, and to build up the churches in the faith of Jesus Christ, the clarity of the Prayer Book about the Gospel we preach, and the weight of conviction with which it is expressed in language and ceremony, is a critical asset to Anglican Christians in the challenge of evangelization both at home and abroad. The Prayer Book offers Anglican Christians a way of rediscovering the faith of the Gospel by which the world may be saved.</p>
+	
+		<p class="p">Besides its print journal, <i>The Anglican Way</i>, its books and brochures, and occasional teaching events, the Society has recently published the Common Prayer Catechesis Project’s first volume, <i>I Am His</i> - a 25-week Adult Education course on “all that a Christian ought to know and believe to his soul’s health” as this is set forth in the Prayer Book Catechism.</p>
+
+		<p class="p">To promote awareness of that great body of writings composed by classical Anglican theologians since the sixteenth century the Society seeks to provide access to digitized resources and in the future through collections of readings from these sources upon particular theological topics.</p>
+
+		<p class="p why capital-ornate"><span class="F">F</span><span class="smallcaps">or the sake of the Church.</span> In an age when the community of Anglican Christians has become deeply fragmented, the classical Prayer Books commend themselves to Anglicans and Episcopalians as a historic foundation for the eventual rebuilding of this unity, and in our debates and discussions, a touchstone, and point of reference and of mutual recognition, under the authority of Scripture itself, and along with the legacy of the ancient and undivided catholic church, which we share with other Christians. The Prayer Book offers Anglican Christians a way of rediscovering themselves as a community of shared faith and worship within the Church Catholic – a place where all to belong to Christ and to each other.</p>
+	
+		<p class="p">The Society is independent of any denominational structure but seeks to work in every Anglican or Episcopalian jurisdiction in the United States of America, and engage in dialogue with likeminded Anglicans worldwide.</p>
+
+
+		<p class="p why capital-ornate"><span class="F">F</span><span class="smallcaps">or the Life of Prayer in Community.</span> At the core of the Book of Common Prayer is what the preface of the first Prayer Book called “the Common Prayers in the Church”, morning and evening prayer to said daily throughout the year as a shared and corporate discipline. According to the ancient tradition of the Church, the faithful “assemble and meet together” as the Prayer Book says, “humbly to acknowledge our sins before God”, “to render thanks for the great benefits that we have received at his hands, to set forth his most worthy praise, to hear his most holy Word, and to ask those things which are requisite and necessary, as well for the body as the soul”. According to the first Prayer Book of 1549, the intention of this corporate reading of Scripture in the context of praise and prayer, is “that the Clergy, and especially such as were Ministers in the congregation, should (by often reading, and meditation in God's word) be stirred up to godliness themselves and be more able to exhort others by wholesome Doctrine, and to confute them that were adversaries to the Truth; and further, that the people (by daily hearing of holy Scripture read in the Church) might continually profit more and more in the knowledge of God, and be the more inflamed with the love of his true Religion.”</p>
+
+		<p class="p">The promotion of daily prayer using the Prayer Book as a path for deepening spiritual life is a further priority of the Society together with resources in support of this and practical guidance for those wishing to say or sing Mattins and Evensong.</p>
+
+	</div>
+  
+  
+
 </section>
 
 
@@ -155,7 +176,7 @@
     <div class="modal-info m1">
       <div class="bio1">
         <p>Fr. Gavin Dunbar</p>
-        <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p class="p capital">Fr Gavin Dunbar is Rector of Saint John's Church, in Savannah, Georgia, a 1928 Prayer Book parish in the Episcopal Church. Born in Toronto, Ontario, he was educated at Trinity College, Toronto; Dalhousie University, Halifax; and Wycliffe College, Toronto. He was ordained in Nova Scotia in 1992.</p>
       </div>
       <div class="bio1">
         <p>Fr. Edward Rix</p>
@@ -175,7 +196,7 @@
         <div class="person">
           <label class="zoom fa fa-search" for="bio2-left"></label>
           <figure class="photo-bayer"></figure>
-          <p>Roberta Bayer</p>
+          <p>Roberta Bayer, Ph.D.</p>
           <p>Editor, "Anglican Way"</p>
           <div class="arrow bio2-left"></div>
         </div>
@@ -194,12 +215,13 @@
 
     <div class="modal-info m2">
       <div class="bio2">
-        <p>Roberta Bayer</p>
-        <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Roberta Bayer, Ph.D.</p>
+        <p class="p capital">Dr Roberta Bayer is Assistant Professor of Government at Patrick Henry College. A Canadian by birth and educated at the Universities of Notre Dame, the London School of Economics, Toronto and Guelph, Dr. Bayer researches and teaches Medieval Philosophy, Reformation thought, and contemporary Christian philosophy and she is the Editor of the <i>Anglican Way</i>, the magazine of the Prayer Book Society of Canada.  Dr. Bayer has taught in the University of King's College, Halifax, Nova Scotia; Saint Mary's College, Leavenworth, Kansas; and George Mason University, Fairfax, Virginia. In 2012 she published a collection of essays: <i>Reformed and Catholic: Essays in Honor of Peter Toon</i>, (Wipf and Stock).</p>
       </div>
       <div class="bio2">
         <p>Fr. Bill Martin</p>
-        <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p class="p capital">The Rev. William Martin is the priest in charge at the church of St Michael and All Angels, Arden, NC. He was born in Boston and attended Tufts University, earning a BA in Political Science. He attended King's College Halifax, N.S., completing several programs and earning his MA in Classics/Medieval Theology. He supplemented his study with time at St. Stephen's House, Oxford, U.K., before travelling to Nassau of the West Indies to be ordained by Archbishop Drexel Gomez of the Anglican Province of the West Indies, where he served in the late 1990s. After serving in other parishes, Fr. Martin was named to be Priest in Charge of St. Michael and All Angels in January, 2013. 
+</p>
       </div>
       <div class="close fa fa-times"></div>
     </div>
