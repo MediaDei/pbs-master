@@ -1,4 +1,68 @@
 <?php
+//Give Plugin Modifications
+
+
+/**
+ * Custom Form Fields
+ * 
+ * @param $form_id
+ */
+function give_myprefix_custom_form_fields( $form_id ) {
+
+    //Only display for a specific form;
+    //Remove "If" statement to display on all forms
+    if ( $form_id == '31' ) {
+        ?>
+        <p id="give-address-line1-wrap" class="form-row form-row-wide">
+            <input type="text" class="give-input required" name="give_address-line1" id="give-address-line1" placeholder="Street Address"></p>
+        </p>
+        <p id="give-address-line2-wrap" class="form-row form-row-wide">
+            <input type="text" class="give-input required" name="give_address-line2" id="give-address-line2" placeholder="Apartment, Suite, Unit, Building, Floor, Ect"></p>
+        </p>
+        <p id="give-city-wrap">
+            <input type="text" class="give-input required" name="give_city" id="give-city" placeholder="City"></p>
+        </p>
+        <p id="give-state-wrap">
+            <input type="text" class="give-input required" name="give_state" id="give-state" placeholder="State/Province"></p>
+        </p>
+        <p id="give-zip-wrap">
+            <input type="text" class="give-input required" name="give_zip" id="give-zip" placeholder="Zip/Postal Code"></p>
+        </p>
+        <p id="give-country-wrap">
+            <input type="text" class="give-input required" name="give_country" id="give-country" placeholder="Country"></p>
+        </p>
+        <p id="give-phone-wrap">
+            <input type="tel" class="give-input" name="give_phone" id="give-phone" placeholder="Phone"></p>
+        </p>
+    <?php
+    }//endif
+}
+
+add_action( 'give_purchase_form_after_email', 'give_myprefix_custom_form_fields', 10, 1 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // REMOVE Defaults

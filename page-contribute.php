@@ -50,7 +50,8 @@
       </ul>
     </div>
   </div>
-
+  <?php echo do_shortcode( '[give_form id="31"]' ); ?>
+  
   <a href="#/" class="button-gold">
   <span>
     <span class="logo" role="img"></span> 
@@ -58,6 +59,7 @@
     <span class="arrow" role="img">→</span>
   </span>
   </a>
+ 
 
   <a href="#/" class="join-offline">See Offline Ways to Join</a>
 </section>
