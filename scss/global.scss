@@ -85,10 +85,9 @@ header {
         width: 84px;
         height: 84px;
         border-radius: 80px;
-        box-shadow: 0 2px 3px rgba(black, 0.7);
-        background: url("../images/_header-logo.png") no-repeat scroll center center / 86% auto;
+        box-shadow: 0 2px 3px rgba(black, 0.4);
+        background: url("../images/_header-logo.jpg") no-repeat scroll center center / 86% auto;
         display: inline-block;
-        opacity: 0.45;
         margin-right: 10px;
         margin-left: 50px;
         vertical-align: bottom;
@@ -435,22 +434,6 @@ footer {
       margin: 30px auto 30px;
       width: 120px;
       height: 120px;
-      position: relative;
-      filter: invert(100%);
-      opacity: 0.23;
-      
-      &:after {
-        content: "";
-        position: absolute;
-        top: -1px;
-        left: 0;
-        background: url("../images/_footer-logo.png") no-repeat center center / 100% auto;
-        width: 120px;
-        height: 120px;
-        opacity: 0.9;
-        filter: invert(100%);
-
-      }
     }
 
     .benediction {
@@ -801,6 +784,12 @@ section {
     color: #46565D;
     text-shadow: 0 1px 0 rgba(white,0.5);
 
+    &:hover {
+      @include background(
+        linear-gradient(to bottom, rgba(white,0.55) 0%, rgba(#BFA18C,0.25) 100%), 
+        #F5E3BF);      
+    }
+
     &:active {
       margin-top: 1px;
       margin-bottom: -1px;
@@ -869,6 +858,8 @@ section.home {
     line-height: 1.4;
     padding-left: 30px;
     margin-bottom: 70px;
+    white-space: pre-line;
+    width: 360px;
 
     .T {
       margin-top: 2px;
@@ -1143,8 +1134,8 @@ section.home.map {
 
   .map-benefits {
     display: table;
-    margin: 30px auto 30px;
-    padding: 15px 40px 0 50px;
+    margin: 30px auto 0;
+    padding: 15px 40px 30px 50px;
     background: url("../images/home-fleuron.png") no-repeat top left / 20% auto;
 
     .title {
@@ -1164,21 +1155,19 @@ section.home.map {
       }
     }
   }
-  .button-gold {
-    width: 152px;
-    height: 38px;
-    border-radius: 14px;
+  .button {
+    display: table;
+    margin-left: auto; margin-right: auto;
+    padding: 8px 16px 7px 26px;
 
-    &:after {
-      width: 144px;
-      height: 30px;
-      border-radius: 10px;
-    }
-    span {
+    .text {
+      font-size: 1.2em;
       letter-spacing: 1px;
-      width: 100%;
-      text-shadow: 0 1px 0 rgba(white,0.5);
-      text-align: center;
+      font-family: "SortsMillGoudy-SC", "SortsMillGoudy", serif;
+    }
+
+    .arrow {
+      padding-left: 3px;
     }
   }
 }
@@ -1402,52 +1391,87 @@ section.home.ministry-list {
 
 
 section.home.join {
-  .member-title {
-    margin-top: 60px;
-    padding-bottom: 30px;
-  }
+  margin-bottom: 40px;
 
-  .benefits {
+  .member-benefits {
+    margin-top: 40px;
+    position: relative;
+    padding: 90px 0 50px;
 
-    // sepia upward gradient
-    box-shadow: inset 0 -9px 7px -8px black;
-    @include background(linear-gradient(to top, #D5CFBB*1.05 0%, rgba(white,0) 25%, rgba(white,0) 100%), 
-      rgba(white,0));
+    &:before { // background
+      content: "";
+      position: absolute;
+      display: block;
 
+    	@include background(linear-gradient(to bottom, rgba(#fcfcfc,0), #fcfcfc 45%), 
+        url("../images/contribute-join-bg.jpg"), 
+        white);
+      @include transform (scaleX(-1));
+      filter: FlipH;
+      -ms-filter: "FlipH";
+      background-repeat: no-repeat;
+      background-position: -5px 0;
+      background-size: 113% 140%;
+
+      top: 0; bottom: 0;
+      left: 0; right: 0;      
+    }
+
+    .grid-1-3 {
+      vertical-align: bottom;
+
+      &:first-of-type .tout {
+        float: right;
+      }
+      &:last-of-type .tout {
+        float: left;
+      }
+    }
 
     .tout {
-      margin: 47px auto;
-      width: 240px;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(black,0.3);
-      font-size: 14px;
+      margin: 0 auto;
+      width: 220px;
       vertical-align: bottom;
       position: relative;
-      @include background(linear-gradient(to top, #E6E6E6 0%, white 20%, white 100%), 
-        white);
 
       .floating {
         position: absolute;
-        top: -28px;
-        font-size: 9.5em;
+        top: -22px;
+        font-size: 8.5em;
         font-style: italic;
-        color: #EDE4D6;
-        margin: 0;
+        color: #E8D8C8;
+        text-shadow: 0 1px 0 rgba(black, 0.5),
+                     0 -1px 0 white;
+        &.one { left: -32px; &:after { margin-left: 0px; }}
+        &.two { left: -40px; }
+        &.three { left: -34px; }
 
-        &.one {
-          left: -32px;          
-        }
-        &.two {
-          left: -40px;
-        }
-        &.three {
-          left: -34px;
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 100px;
+          background-color: #BEB8AE;
+          margin-top: -20px;
+          margin-left: -20px;
+          box-shadow: 0 1px 1px #827970;
+          opacity: 0.99;
         }
       }
 
       p {
-        padding: 12px 20px 22px;
+        padding: 12px 16px 22px;
         margin: 0;
+
+        border: 1px solid #b0a898;
+        border-radius: $home-tout-radius;
+        box-shadow: 0 1px 4px rgba(black,0.2),
+                    0 1px 63px rgba(black, 0.4);
+        font-size: 13px;
+        @include background(linear-gradient(to top, #D6D6D6 0%, white 20%, white 100%), 
+          white);
+        z-index: 1;
+
         text-align: left;
         color: $main-text * 1.3;
         line-height: 1.3;
@@ -1471,8 +1495,9 @@ section.home.join {
         width: 50px;
         height: 50px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 1px;
+        right: 1px;
+        border-bottom-right-radius: $home-tout-radius;
 
         background: url("../images/contribute-join-tout-grow.png") no-repeat scroll left 20px;
         background-size: 190% auto;
@@ -1483,8 +1508,9 @@ section.home.join {
         width: 50px;
         height: 50px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 1px;
+        right: 1px;
+        border-bottom-right-radius: $home-tout-radius;
 
         background: url("../images/contribute-join-tout-support.png") no-repeat scroll 13px 18px;
         background-size: 85% auto;
@@ -1495,137 +1521,27 @@ section.home.join {
         width: 50px;
         height: 50px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 1px;
+        right: 1px;
+        border-bottom-right-radius: $home-tout-radius;
 
-        background: url("../images/contribute-join-tout-flourish.png") no-repeat scroll 18px 13px;
-        background-size: 72% auto;
-      }
-
-
-
-    }
-
-    .grid-1-3 {
-      vertical-align: bottom;
-
-      &:first-of-type .tout {
-        float: right;
-      }
-      &:last-of-type .tout {
-        float: left;
+        background: url("../images/contribute-join-tout-flourish.png") no-repeat scroll 17px 11px;
+        background-size: 75% auto;
       }
     }
   }
 
-  .member-partners {
-    padding: 24px 0 13px;
-    margin: 0 auto;
+
+  .button {
     display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 16px 5px 26px;
 
-    .title {
-      text-align: center;
-      color: $gold;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 0.84em;
-    }
-
-    .partner {
-      width: 100px;
-      height: 50px;
-      margin: 0 20px;
-      display: inline-block;
-
-      &.afl {
-        background: url("../images/contribute-partner-afl.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-      &.ird {
-        background: url("../images/contribute-partner-ird.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-      &.acna {
-        background: url("../images/contribute-partner-acna.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-      &.jji {
-        background: url("../images/contribute-partner-jji.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-      &.ba {
-        background: url("../images/contribute-partner-ba.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-    }
-  }
-
-  .join-bg {
-    @include background(linear-gradient(to bottom, rgba(white,0), white 45%), 
-      url("../images/contribute-join-bg.jpg"), 
-      white);
-    @include transform (scaleX(-1));
-    filter: FlipH;
-    -ms-filter: "FlipH";
-
-    background-repeat: no-repeat;
-    background-position: -5px -60px;
-    background-size: 105% 310%;
-
-    box-shadow: inset 0 9px 7px -8px black;
-    overflow: hidden;
-    padding-top: 60px;
-    margin-bottom: 40px;
-
-    .button-gold {
-      @include transform (scaleX(-1));
-      filter: FlipH;
-      -ms-filter: "FlipH";
-
-      // inner
-      > span {
-        width: 100%;
-        padding-bottom: 2px;
-
-        .logo {
-          background: url("../images/contribute-join-btn-logo.png") no-repeat scroll top left;
-          background-size: 100% auto;
-          height: 28px;
-          width: 28px;
-          display: inline-block;
-          margin: 0 14px -8px 16px;
-        }
-
-        // inner text
-        .text {
-          font-size: 1.4em;
-          text-transform: uppercase;
-          letter-spacing: 4px;
-        }
-
-        .arrow {
-          position: relative;
-          top: -4px;
-          padding-left: 10px;
-        }
-      }
-    }
-
-    .join-offline {
-      @include transform (scaleX(-1));
-      filter: FlipH;
-      -ms-filter: "FlipH";
-
-      color: $gold;
-      text-transform: uppercase;
+    .text {
+      font-size: 1.6em;
       letter-spacing: 2px;
-      font-size: 0.8em;
-      display: table;
-      margin: 40px auto 0;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      font-family: "SortsMillGoudy-SC", "SortsMillGoudy", serif;
     }
   }
 }
@@ -2075,9 +1991,12 @@ section.about {
             &.photo-bayer {
               background: url("../images/about-photo-bayer.jpg") no-repeat scroll -1px 0 / 100% auto;
             }
-            &.photo-martin {
-              background: url("../images/about-photo-martin.jpg") no-repeat scroll -51px -2px / 225px auto;
+            &.photo-stephans {
+              background: url("../images/about-photo-stephans.jpeg") no-repeat scroll -111px -98px / 380px auto;
             }
+            //&.photo-martin {
+            //  background: url("../images/about-photo-martin.jpg") no-repeat scroll -51px -2px / 225px auto;
+            //}
             
           }
           p {
@@ -2176,10 +2095,8 @@ section.about {
     letter-spacing: 2px;
     font-size:0.8em;
     margin: 30px 0 10px;
-    display: none;
   }
   div.more-staff {
-    display: none;
     width: 560px;
     margin: 0 auto;
     @include column-count(2);
@@ -2206,9 +2123,94 @@ section.about {
 }
 
 
+
+section.print-magazine {
+  width: 660px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+
+    &.missing {
+      color: red;
+    }
+  }
+
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    margin: 10px auto 40px;
+    height: 180px;
+  }
+}
+
+section.catechesis-project {
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+    //padding-bottom: 15px;
+    white-space: pre-line;
+  }
+
+  p {
+    width: 640px;
+  }
+
+  ul {
+    width: 640px;
+    li {
+      list-style: disc outside none;
+      margin-left: 20px;
+
+      ul li {
+        list-style: circle outside none;
+        margin-left: 20px;
+        margin-right: 60px;
+      }
+    }
+
+    &.contents {
+      margin-top: 50px;
+      width: 360px;
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: inset 0 0 25px rgba(black, 0.1);
+      padding: 20px;
+    }
+
+    time {
+      display: block;
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: black;
+    }
+  }
+
+  img.logo {
+    float: right;
+    width: 230px;
+    margin-top: 20px;
+    margin-right: 60px;
+  }
+  img.banner {
+    display: block;
+    margin: 40px auto 60px;
+    width: 440px;
+    border: 2px solid gray;
+    box-shadow: 0 9px 10px -10px black, 0 0 40px rgba(black,0.2);
+  }
+
+  blockquote {
+    width: 570px;
+  }
+}
+
+
+
 @import "give-popup";
-
-
 
 section.contribute {
 
@@ -2219,73 +2221,93 @@ section.contribute {
 
   .member-benefits {
 
-    @include background(linear-gradient(to bottom, white 0%, white 45%, rgba(white, 0.9) 50%, rgba(white, 0)), 
-      url("../images/contribute-join-bg.jpg"), 
-      white);
-    background-repeat: no-repeat;
-    background-position: -8px -93px;
-    background-size: 103% 153%;
-
+    // sepia upward gradient
     box-shadow: inset 0 -9px 7px -8px black;
+    @include background(linear-gradient(to top, #D5CFBB 0%, rgba(white,0) 30%, rgba(white,0) 100%), 
+      rgba(white,0));
+
 
     .tout {
       margin: 47px auto;
-      padding: 30px 19px 20px;
-      width: 260px;
-      color: $main-text * 1.2;
-      line-height: 1.2;
-      @include hyphens(auto);
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(black,0.3);
-      font-size: 14px;
+      width: 240px;
       vertical-align: bottom;
       position: relative;
 
-      &.image.grow:before {
-        content: "";
-        width: 100px;
-        height: 100px;
+      .floating {
         position: absolute;
-        top: -48px;
-        left: 0; right: 0;
-        margin-left: auto; margin-right: auto;
-
-        background: url("../images/contribute-join-tout-grow.png") no-repeat scroll center center;
-        background-size: 90% auto;
-      }
-
-      &.image.support:before {
-        content: "";
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -56px;
-        left: 0; right: 0;
-        margin-left: auto; margin-right: auto;
-
-        background: url("../images/contribute-join-tout-support.png") no-repeat scroll center center;
-        background-size: 62% auto;
-      }
-
-      &.image.flourish:before {
-        content: "";
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -62px;
-        left: 0; right: 0;
-        margin-left: auto; margin-right: auto;
-
-        background: url("../images/contribute-join-tout-flourish.png") no-repeat scroll center center;
-        background-size: 63% auto;
-      }
-      p {
+        top: -28px;
+        font-size: 8.5em;
+        font-style: italic;
+        color: #EDE4D6;
         margin: 0;
+
+        &.one { left: -32px; }
+        &.two { left: -40px; }
+        &.three { left: -34px; }
+      }
+
+      p {
+        padding: 12px 20px 22px;
+        margin: 0;
+        text-align: left;
+        color: $main-text * 1.3;
+        line-height: 1.3;
+        position: relative;
+        line-height: 1.2;
+        @include hyphens(auto);
+        background-color: white;
+        text-align: justify;
+
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(black,0.3);
+        font-size: 14px;
+        @include background(linear-gradient(to top, #E6E6E6 0%, white 20%, white 100%), 
+          white);
+
+
         &:first-letter {
           font-size: 2.4em;
           margin-top: 7px;
         }
+        .smallcaps {
+          font-size: 1.2em;
+        }
+      }
+
+      &.grow .image {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        background: url("../images/contribute-join-tout-grow.png") no-repeat scroll left 20px;
+        background-size: 190% auto;
+      }
+
+      &.support .image {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        background: url("../images/contribute-join-tout-support.png") no-repeat scroll 13px 18px;
+        background-size: 85% auto;
+      }
+
+      &.flourish .image {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        background: url("../images/contribute-join-tout-flourish.png") no-repeat scroll 18px 13px;
+        background-size: 72% auto;
       }
     }
 
@@ -2334,10 +2356,6 @@ section.contribute {
       }
       &.jji {
         background: url("../images/contribute-partner-jji.jpg") no-repeat scroll center center;
-        background-size: 100% auto;
-      }
-      &.ba {
-        background: url("../images/contribute-partner-ba.jpg") no-repeat scroll center center;
         background-size: 100% auto;
       }
     }
@@ -2424,12 +2442,6 @@ section.contribute {
         font-size: 1.4em;
         text-transform: uppercase;
         letter-spacing: 4px;
-      }
-
-      .arrow {
-        position: relative;
-        top: -4px;
-        padding-left: 10px;
       }
     }
   }

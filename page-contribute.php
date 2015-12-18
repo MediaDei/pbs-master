@@ -6,30 +6,36 @@
 </header>
 
 
-<section class="contribute">
+<section class="contribute" id="join">
 	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
   <h1 class="member-title">Become a Member</h1>
 
-  <div class="member-benefits">
-    <div class="grid-1-3">
-    <div class="tout image grow">
-    	<p class="p capital">R<span class="smallcaps">eceive</span> our theological and litur&shy;gical resources designed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
-    </div>
-    </div>
+	<div class="member-benefits">
+		<div class="grid-1-3">
+		<div class="tout grow">
+			<span class="floating one">1</span>
+			<p class="p capital">R<span class="smallcaps">eceive</span> our theological and liturgical resources de&shy;signed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
 
-    <div class="grid-1-3">
-    <div class="tout image support">
-      <p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
-    </div>
-    </div>
+		<div class="grid-1-3">
+		<div class="tout support">
+			<span class="floating two">2</span>
+			<p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
 
-    <div class="grid-1-3">
-    <div class="tout image flourish">
-      <p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of Anglicans around the world who respond to the call to ‘a devout and holy life’ (William Law)</p>
-    </div>
-    </div>
-  </div>
+		<div class="grid-1-3">
+		<div class="tout flourish">
+			<span class="floating three">3</span>
+			<p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of An&shy;glicans around the world who re&shy;spond to the call to ‘a devout and holy life.’ (William Law)</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
+	</div>
 
   <aside class="member-partners">
     <div class="title">Our Partners</div>
@@ -37,7 +43,6 @@
     <a class="partner ird" href="https://theird.org/"></a>
     <a class="partner acna" href="http://anglicanchurch.net"></a>
     <a class="partner jji" href="http://www.johnjayinstitute.org/"></a>
-    <a class="partner ba" href="http://barnabasaid.org/"></a>
   </aside>
 
   <div class="member-receive">
@@ -56,7 +61,6 @@
   <span>
     <span class="logo" role="img"></span> 
     <span class="text">Join</span> 
-    <span class="arrow" role="img">→</span>
   </span>
   </a>
  
