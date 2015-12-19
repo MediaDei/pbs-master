@@ -165,9 +165,9 @@
       <div class="grid-1-3">
         <div class="person">
           <label class="zoom fa fa-search" for="bio1-right"></label>
-          <figure class="photo-mcd"></figure>
-          <p>Cn. Alistair</p>
-          <p>Special Advisor</p>
+          <figure class="photo-bayer"></figure>
+          <p>Roberta Bayer, Ph.D.</p>
+          <p>Editor, "Anglican Way"</p>
           <div class="arrow bio1-right"></div>
         </div>
       </div>
@@ -176,15 +176,15 @@
     <div class="modal-info m1">
       <div class="bio1">
         <p>Fr. Gavin Dunbar</p>
-        <p class="p capital">Fr Gavin Dunbar is Rector of Saint John's Church, in Savannah, Georgia, a 1928 Prayer Book parish in the Episcopal Church. Born in Toronto, Ontario, he was educated at Trinity College, Toronto; Dalhousie University, Halifax; and Wycliffe College, Toronto. He was ordained in Nova Scotia in 1992.</p>
+        <p class="p capital"><i>Fr. Gavin Dunbar is Rector of Saint John's Church, in Savannah, Georgia</i>. Saint John's is a 1928 Prayer Book parish in the Episcopal Church. Born in Toronto, Ontario, he was educated at Trinity College, Toronto; Dalhousie University, Halifax; and Wycliffe College, Toronto. He was ordained in Nova Scotia in 1992.</p>
       </div>
       <div class="bio1">
         <p>Fr. Edward Rix</p>
-        <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p class="p capital"><i>Fr. Edward Rix is Priest-in-charge of All Saints’ Church in Wynnewood, PA</i>. A native of Canada, he is a graduate of King's College and Wycliffe College. Before ordination he pursued graduate studies in Classics, student hospital chaplaincy, University administration and assisted in parishes in Boston, Toronto, New Brunswick, Guyana, Quebec and Labrador. In 1996 he was ordained for ministry in the Diocese Lusaka, Zambia, and served first as a school chaplain and then as a deacon in rural, shanty-town and urban parishes. Having come to All Saints, he became Youth Director in 1998, Interim Rector in 2001, and Priest-in-charge in 2013.</p>
       </div>
       <div class="bio1">
-        <p>Cn. Alistair Macdonald-Radcliff</p>
-        <p class="p capital">Quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
+        <p>Roberta Bayer, Ph.D.</p>
+        <p class="p capital"><i>Dr. Roberta Bayer serves as the Editor of the <u>Anglican Way</u>, the print magazine of the Prayer Book Society</i>. A Canadian by birth and educated at the Universities of Notre Dame, the London School of Economics, Toronto and Guelph, Dr. Bayer is Assistant Professor of Government at Patrick Henry College. She researches and teaches Medieval Philosophy, Reformation thought, and contemporary Christian philosophy. Dr. Bayer has taught in the University of King's College, Halifax, Nova Scotia; Saint Mary's College, Leavenworth, Kansas; and George Mason University, Fairfax, Virginia. In 2012 she published a collection of essays: <i>Reformed and Catholic: Essays in Honor of Peter Toon</i>, (Wipf and Stock).</p>
       </div>
       <div class="close fa fa-times"></div>
     </div>
@@ -195,9 +195,9 @@
       <div class="grid-1-2">
         <div class="person">
           <label class="zoom fa fa-search" for="bio2-left"></label>
-          <figure class="photo-bayer"></figure>
-          <p>Roberta Bayer, Ph.D.</p>
-          <p>Editor, "Anglican Way"</p>
+          <figure class="photo-stephans"></figure>
+          <p>Kathleen Stephans</p>
+          <p>Treasurer</p>
           <div class="arrow bio2-left"></div>
         </div>
       </div>
@@ -205,9 +205,10 @@
       <div class="grid-1-2">
         <div class="person">
           <label class="zoom fa fa-search" for="bio2-right"></label>
-          <figure class="photo-martin"></figure>
-          <p>Fr. Bill Martin</p>
-          <p>Editor, online media</p>
+          <figure class="photo-mcd"></figure>
+          <p>Canon Alistair
+          <span>Macdonald-Radcliff</span></p>
+          <p>Special Advisor</p>
           <div class="arrow bio2-right"></div>
         </div>
       </div>
@@ -215,13 +216,12 @@
 
     <div class="modal-info m2">
       <div class="bio2">
-        <p>Roberta Bayer, Ph.D.</p>
-        <p class="p capital">Dr Roberta Bayer is Assistant Professor of Government at Patrick Henry College. A Canadian by birth and educated at the Universities of Notre Dame, the London School of Economics, Toronto and Guelph, Dr. Bayer researches and teaches Medieval Philosophy, Reformation thought, and contemporary Christian philosophy and she is the Editor of the <i>Anglican Way</i>, the magazine of the Prayer Book Society of Canada.  Dr. Bayer has taught in the University of King's College, Halifax, Nova Scotia; Saint Mary's College, Leavenworth, Kansas; and George Mason University, Fairfax, Virginia. In 2012 she published a collection of essays: <i>Reformed and Catholic: Essays in Honor of Peter Toon</i>, (Wipf and Stock).</p>
+        <p>Kathleen Stephans</p>
+        <p class="p capital"><i>Kathleen Stephans serves as the Treasurer for the Prayer Book Society</i>.  A long-time member of All Saints Church, Wynnewood, PA and coming from a multi-generational Anglican family, she holds in very high regard the Anglican tradition and the 1928 Prayer Book, particularly the Daily Office and the liturgical practices. An accountant by training, she began her career at Price Waterhouse, spent many years in healthcare finance, and is currently Director of Partner Services for a large, international law firm.</p>
       </div>
       <div class="bio2">
-        <p>Fr. Bill Martin</p>
-        <p class="p capital">The Rev. William Martin is the priest in charge at the church of St Michael and All Angels, Arden, NC. He was born in Boston and attended Tufts University, earning a BA in Political Science. He attended King's College Halifax, N.S., completing several programs and earning his MA in Classics/Medieval Theology. He supplemented his study with time at St. Stephen's House, Oxford, U.K., before travelling to Nassau of the West Indies to be ordained by Archbishop Drexel Gomez of the Anglican Province of the West Indies, where he served in the late 1990s. After serving in other parishes, Fr. Martin was named to be Priest in Charge of St. Michael and All Angels in January, 2013. 
-</p>
+        <p>Canon Alistair Macdonald-Radcliff</p>
+        <p class="p capital"><i>International Advisor to the Society on special projects</i>. He has served as Director General of the World Dialogue Network and C-1 (successor body to the Council of One Hundred Leaders West-Islamic Dialogue launched by World Economic Forum with Lord Carey 103<sup>rd</sup> Archbishop of Canterbury) as well as the King Abdullah Centre (KAICIID) in Vienna launched by Spain, Austria, Saudi Arabia and the Holy See.  Educated at the Universities of London, Oxford and Yale he also served as Quondam Dean of All Saints’ Anglican Cathedral in Cairo.</p>
       </div>
       <div class="close fa fa-times"></div>
     </div>
@@ -229,14 +229,14 @@
 
     <h2 class="more-staff">Other Board Members</h2>
 	  <div class="more-staff">
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
-	    <div class="name">Lorem Ipsum</div> <div class="desc">Dolor sit amet</div>
+	    <div class="name">Mrs. Rhea Bright</div> <div class="desc">Secretary</div>
+	    <div class="name">The Rev’d William Martin</div> <div class="desc">Board member</div>
+	    <div class="name">The Rev’d J. Gordon Anderson</div> <div class="desc">Board member</div>
+	    <div class="name">Dr. Gillis Harp</div> <div class="desc">Board member</div>
+	    <div class="name">The Rev’d Jonathan Kell</div> <div class="desc">Board member</div>
+	    <div class="name">Mr. William Murchison</div> <div class="desc">Board member</div>
+	    <div class="name">The Very Rev’d David Thurlow</div> <div class="desc">Board member</div>
+	    <div class="name">The Rev’d Elijah White</div> <div class="desc">Board member</div>
 	  </div>
 
 </section>

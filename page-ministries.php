@@ -76,6 +76,13 @@
 		<div class="bio">
 			<h3>Anglican Way Print</h3>
 			<p class="p capital">T<span class="smallcaps">he print edition</span> of the Society’s journal presents informative and educational articles together with analysis of the vital topics facing the Church. Edited by Dr Roberta Bayer it is both creative and distinctive and presents a powerful Prayer Book perspective on all aspects of Anglican faith and worship together with key perspectives drawn from Anglican history.</p>
+
+			<br>
+
+			<p style="text-align: center"><span class="smallcaps">Read issues here:</span><br>
+				<a href="/print-magazine/">Anglican Way issues</a>
+			</p>
+
 		</div>
 	</div>
 
@@ -136,6 +143,12 @@
 		<div class="bio">
 			<h3>New Scriptorium</h3>
 			<p class="p capital">T<span class="smallcaps">his online library</span> of Anglican classics makes instantly available important texts from the incomparable heritage of theological writing by Anglican Divines since the sixteenth century.  It has at present a particular strength in works about the Prayer Book, Collects, Prayers and Articles and also many of the writings by the distinguished former PBS President the late Revd Dr Peter Toon.</p>
+
+			<br>
+
+			<p style="text-align: center"><span class="smallcaps">Visit the New Scriptorium here:</span><br>
+				<a href="http://newscriptorium.com/">http://newscriptorium.com/</a>
+			</p>
 		</div>
 	</div>
 </section>

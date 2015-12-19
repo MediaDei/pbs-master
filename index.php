@@ -8,8 +8,8 @@
 
 
 <section class="home">
-	<p class="capital-ornate intro"><span class="T">T</span><span class="smallcaps">he Prayer Book Tradition</span>&mdash; <br>
-	A place to belong, a Faith to believe, <br>
+	<p class="capital-ornate intro"><span class="T">T</span><span class="smallcaps">he Prayer Book Tradition</span>&mdash;
+	A place to belong, a Faith to believe,
 	and a Rule of life and worship.</p>
 
 	<h1>Latest News</h1>
@@ -18,7 +18,6 @@
 	<article class="news">
 		<header>
 			<h1><a href="#">New Prayer Book Society website!</a></h1>
-		
 			<time datetime="2015-12-1" title="December 1st, 2015"><span role="img" class="fa fa-calendar"></span> December 8, 2015</time>
 			<address><span role="img" class="fa fa-user"></span> by <a rel="author" href="/author/pbs-official">Prayer Book Society</a></address>
 
@@ -81,7 +80,10 @@
 	      <li>Contribute to authentic Anglican revival</li>
 	    </ul>
 	</div>
-	<div class="button-gold"><span>Learn More</span></div>
+	<a href="/about/" class="button">
+		<span class="text">Learn About Us </span>
+		<span class="arrow" role="img">→</span>
+	</a>
 
 
 	<!--dropdown-->
@@ -203,55 +205,38 @@
 
 	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
 
-  <div class="benefits">
-    <div class="grid-1-3">
-    <div class="tout grow">
-    	<span class="floating one">1</span>
-    	<p class="p capital">R<span class="smallcaps">eceive</span> our theological and liturgical resources de&shy;signed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
-    	<div role="img" class="image"></div>
-    </div>
-    </div>
+	<div class="member-benefits">
+		<div class="grid-1-3">
+		<div class="tout grow">
+			<span class="floating one">1</span>
+			<p class="p capital">R<span class="smallcaps">eceive</span> our theological and liturgical resources de&shy;signed to help strengthen both personal faith and parish life within the wider whole of our Anglican tradition.</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
 
-    <div class="grid-1-3">
-    <div class="tout support">
-    	<span class="floating two">2</span>
-    	<p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
-    	<div role="img" class="image"></div>
-    </div>
-    </div>
+		<div class="grid-1-3">
+		<div class="tout support">
+			<span class="floating two">2</span>
+			<p class="p capital">S<span class="smallcaps">upport</span> the renewal of cla&shy;ssical Anglicanism with its profound theology, commitment to spirituality and worship of God in the beauty of holiness in the Prayer Books.</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
 
-    <div class="grid-1-3">
-    <div class="tout flourish">
-	    <span class="floating three">3</span>
-      	<p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of An&shy;glicans around the world who re&shy;spond to the call to ‘a devout and holy life.’ (William Law)</p>
-    	<div role="img" class="image"></div>
-    </div>
-    </div>
-  </div>
+		<div class="grid-1-3">
+		<div class="tout flourish">
+			<span class="floating three">3</span>
+			<p class="p capital">E<span class="smallcaps">nrich</span> and deepen your sense of unity with the daily prayer and devotions of An&shy;glicans around the world who re&shy;spond to the call to ‘a devout and holy life.’ (William Law)</p>
+			<div role="img" class="image"></div>
+		</div>
+		</div>
+	</div>
 
-  <aside class="member-partners">
-    <div class="title">Our Partners</div>
-    <a class="partner afl" href="http://anglicansforlife.org/"></a>
-    <a class="partner ird" href="https://theird.org/"></a>
-    <a class="partner acna" href="http://anglicanchurch.net"></a>
-    <a class="partner jji" href="http://www.johnjayinstitute.org/"></a>
-    <a class="partner ba" href="http://barnabasaid.org/"></a>
-  </aside>
-
-  <div class="join-bg">
-
-  	<a href="#/" class="button-gold">
-  	<span>
-  	  <span class="logo" role="img"></span> 
-  	  <span class="text">Join</span> 
-  	  <span class="arrow" role="img">→</span>
-  	</span>
-  	</a>
-
-  	<a href="#/" class="join-offline">See Offline Ways to Join</a>
-
-    
-  </div>
+	<a href="/contribute/#join" class="button">
+	<span>
+		<span class="text">Join</span> 
+		<span class="arrow" role="img">→</span>
+	</span>
+	</a>
 
 </section>
 
