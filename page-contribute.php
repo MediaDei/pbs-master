@@ -57,14 +57,6 @@
   </div>
   <?php echo do_shortcode( '[give_form id="31"]' ); ?>
   
-  <a href="#/" class="button-gold">
-  <span>
-    <span class="logo" role="img"></span> 
-    <span class="text">Join</span> 
-  </span>
-  </a>
- 
-
   <a href="#/" class="join-offline">See Offline Ways to Join</a>
 </section>
 
@@ -79,7 +71,7 @@
     <input type="range" name="range" id="slider" value="0" min="0" max="100" />
   </div>
 
-  <?php echo do_shortcode( '[give_form id="20"]' ); ?>
+  <?php echo do_shortcode( '[give_form id="19"]' ); ?>
 
   <script>
     var $ = jQuery.noConflict();
@@ -125,6 +117,21 @@
 
       //update html for .give-btn-level-7 at page load
       $(".give-btn-level-7").html("+").addClass("dummy-btn");
+
+      //add class to join button so can style
+      $("button:contains(Join)").addClass("join-button");
+
+      //add class to join modal button so can style
+      $( "input[value='Join']" ).closest( "div.give-submit-button-wrap" ).addClass("join-button");
+
+      //add class to donate button so can style
+      $("button:contains(Donate)").addClass("donate-button");
+
+      //add class to donate modal button so can style
+      $( "input[value='Donate']" ).closest( "div.give-submit-button-wrap" ).addClass("donate-button");
+
+
+
 
 
       //click events for all give-btn; update range and value
