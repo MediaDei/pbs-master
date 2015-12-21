@@ -10,17 +10,19 @@
 <section class="print-magazine">
 	<h1>2015</h1>
 	<div class="grid-1-2">
-		<h2>Spring 2015</h2>
+		<h2>Vol.1 2015</h2>
+		<a href="<?php bloginfo('template_url'); ?>/files/2015-01.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2015-01-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Summer 2015</h2>
+		<h2>Vol.2 2015</h2>
+		<a href="<?php bloginfo('template_url'); ?>/files/2015-02.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2015-02-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Fall 2015</h2>
+		<h2>Vol.3 2015</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2015-03.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2015-03-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Winter 2015</h2>
+		<h2 class="missing">Vol.4 2015</h2>
 	</div>
 </section>
 
@@ -28,16 +30,18 @@
 <section class="print-magazine">
 	<h1>2014</h1>
 	<div class="grid-1-2">
-		<h2>Spring 2014</h2>
+		<h2 class="missing">Vol.1 2014</h2>
 	</div>
 	<div class="grid-1-2">
-		<h2>Summer 2014</h2>
+		<h2>Vol.2 2014</h2>
+		<a href="<?php bloginfo('template_url'); ?>/files/2014-02.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2014-02-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Fall 2014</h2>
+		<h2>Vol.3 2014</h2>
+		<a href="<?php bloginfo('template_url'); ?>/files/2014-03.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2014-03-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Winter 2014</h2>
+		<h2 class="missing">Vol.4 2014</h2>
 	</div>
 </section>
 
@@ -45,19 +49,19 @@
 <section class="print-magazine">
 	<h1>2013</h1>
 	<div class="grid-1-2">
-		<h2>Spring 2013</h2>
+		<h2>Vol.1 2013</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2013-01.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2013-01-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Summer 2013</h2>
+		<h2>Vol.2 2013</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2013-02.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2013-02-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Fall 2013</h2>
+		<h2>Vol.3 2013</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2013-03.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2013-03-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Winter 2013</h2>
+		<h2>Vol.4 2013</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2013-04.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2013-04-cover.jpg"/></a>
 	</div>
 </section>
@@ -66,19 +70,19 @@
 <section class="print-magazine">
 	<h1>2012</h1>
 	<div class="grid-1-2">
-		<h2>Spring 2012</h2>
+		<h2>Vol.1 2012</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2012-01.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2012-01-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Summer 2012</h2>
+		<h2>Vol.2 2012</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2012-02.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2012-02-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2 class="missing">Fall 2012</h2>
+		<h2 class="missing">Vol.3 2012</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2012-03.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2012-03-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2 class="missing">Winter 2012</h2>
+		<h2 class="missing">Vol.4 2012</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2012-04.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2012-04-cover.jpg"/></a>
 	</div>
 </section>
@@ -87,19 +91,19 @@
 <section class="print-magazine">
 	<h1>2011</h1>
 	<div class="grid-1-2">
-		<h2 class="missing">Winter 2011</h2>
-	</div>
-	<div class="grid-1-2">
-		<h2>Spring 2011</h2>
+		<h2>Vol.1 2011</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2011-02.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2011-02-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Summer 2011</h2>
+		<h2>Vol.2 2011</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2011-03.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2011-03-cover.jpg"/></a>
 	</div>
 	<div class="grid-1-2">
-		<h2>Fall 2011</h2>
+		<h2>Vol.3 2011</h2>
 		<a href="<?php bloginfo('template_url'); ?>/files/2011-04.pdf"><img src="<?php bloginfo('template_url'); ?>/files/2011-04-cover.jpg"/></a>
+	</div>
+	<div class="grid-1-2">
+		<h2 class="missing">Vol.4 2011</h2>
 	</div>
 </section>
 
