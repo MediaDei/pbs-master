@@ -77,9 +77,8 @@
 			<h3>Anglican Way Print</h3>
 			<p class="p capital">T<span class="smallcaps">he print edition</span> of the Society’s journal presents informative and educational articles together with analysis of the vital topics facing the Church. Edited by Dr Roberta Bayer it is both creative and distinctive and presents a powerful Prayer Book perspective on all aspects of Anglican faith and worship together with key perspectives drawn from Anglican history.</p>
 
-			<br>
-
-			<p style="text-align: center"><span class="smallcaps">Read issues here:</span><br>
+			<p class="link">
+				<span class="smallcaps">Read issues here:</span>
 				<a href="/print-magazine/">Anglican Way issues</a>
 			</p>
 
@@ -124,6 +123,12 @@
 			<p class="p capital">T<span class="smallcaps">eaching the faith</span>, or Catechesis, is a profoundly important ministry, to which the Prayer Book Society is deeply committed. The challenges and confusions facing the Church in the modern world make the need for accurate teaching greater than ever. Of a previously unprecedented scale among Anglicans, the Catechesis Project aims to provide a solid and sure footing, teaching the fundamentals of Christianity, and essentials of Anglican doctrine, in an accessible and compelling manner.</p>
 
 			<p class="p">T<span class="smallcaps">he substantial</span> first volume, <span style="font-style: italic">My Beloved is Mine and I am His</span>, by the Society President, the Revd. Fr. Gavin Dunbar is now being launched. It provides material for Adult Education Classes through twenty five weekly chapters. Its three main sections exploring progressively what it means to belong, to believe and to follow Christ as this has been understood and set out in the Anglican tradition. Each of the cumulative chapters features short essays on the Prayer Book Catechism’s Questions and Answers, followed by suggestions for further reading, and questions for study and discussion.</p>
+
+			<p class="link">
+				<span class="smallcaps">See the Catechesis Project:</span>
+				<a href="/catechesis-project/">Catechesis Project Page</a>
+			</p>
+
 		</div>
 	</div>
 
@@ -144,9 +149,8 @@
 			<h3>New Scriptorium</h3>
 			<p class="p capital">T<span class="smallcaps">his online library</span> of Anglican classics makes instantly available important texts from the incomparable heritage of theological writing by Anglican Divines since the sixteenth century.  It has at present a particular strength in works about the Prayer Book, Collects, Prayers and Articles and also many of the writings by the distinguished former PBS President the late Revd Dr Peter Toon.</p>
 
-			<br>
-
-			<p style="text-align: center"><span class="smallcaps">Visit the New Scriptorium here:</span><br>
+			<p class="link">
+				<span class="smallcaps">Visit the New Scriptorium here:</span>
 				<a href="http://newscriptorium.com/">http://newscriptorium.com/</a>
 			</p>
 		</div>

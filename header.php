@@ -53,4 +53,5 @@
 			  <a class="ministries" href="/ministries/">Ministries</a>
 			  <a class="resources" href="/resources/">Resources</a>
 			  <a class="contribute" href="/contribute/">Contribute</a>
+			  <a class="market" href="http://www.anglicanmarketplace.com"><span class="cart fa fa-shopping-cart"></span>Market</a>
 			</div></nav>

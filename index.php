@@ -31,28 +31,31 @@
 	</article>
 
 
-	<div class="more-title">More News:</div>
-	<section class="more-news">
+
+	<aside class="more">
+
+	<div class="more-news">
+		<div class="title">More News:</div>
 		<ul>
 			<li><a href="#/" class="item">
-				<h2>The new Catechesis project</h2>
-				<p>by Rev. Gavin Dunbar, President of Prayer Book Society</p>
+				<h2>Major update on the Catechesis Project</h2>
+				<p class="p">Rev. Dunbar’s introduction explores catechisms and their purposes. Chapter 1 exposits Christian names and foundations.</p>
 				<time datetime="2015-06-2" title="July 2nd, 2015">
 					<div class="top">Jul</div>
 					<div class="bottom">2</div>
 				</time>
 			</a></li>
 			<li><a href="#/" class="item">
-				<h2>I-Pray BCP iPad app has new daily prayers</h2>
-				<p>by Canon Alistair Macdonald-Radcliff</p>
+				<h2>Latest print edition of Anglican Way</h2>
+				<p class="p">Topics: Liturgy used by apostles. Divine collects of Thomas Cranmer. Parishes becoming traditional. Shakespeare’s prayers.</p>
 				<time datetime="2015-05-17" title="June 17th, 2015">
 					<div class="top">Jun</div>
 					<div class="bottom">17</div>
 				</time>
 			</a></li>
 			<li><a href="#/" class="item">
-				<h2>Big updates coming for the Anglican Way</h2>
-				<p>by Roberta Bayer, Ph.D., editor of "Anglican Way"</p>
+				<h2>A Series of Colloquia on Common Prayer</h2>
+				<p class="p">Scholars from the Prayer Book Society explore aspects of traditional Anglican liturgy, the collects, and the forms of prayer.</p>
 				<time datetime="2015-05-17" title="June 17th, 2015">
 					<div class="top">Jun</div>
 					<div class="bottom">17</div>
@@ -61,8 +64,47 @@
 			<li><a href="#/" class="load">
 				...
 			</a></li>
-	</section>
+		</ul>
+	</div>
+
+	<div class="more-aw">
+		<h2 class="smallcaps">Anglican Way</h2>
+		<p>Dec., 2015 <span>•</span> Vol. 38, No. 3</p>
+
+		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2015-03.pdf"><img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2015-03-cover.jpg" title="Anglican Way Print Magazine"/></a>
+
+		<a class="more-vol" href="/print-magazine">more volumes &thinsp;&rarr;</a>
+	</div>
+
+	</aside>
+
+	<aside class="notice">
+		<h1 class="smallcaps">The Society Announces a Series of Colloquia on Daily Prayer</h1>
+
+		<div class="text">
+			<h2>Stirred up to Godliness
+			the Daily Office in Anglicanism</h2>
+
+			<p class="p">The Society is pleased to announce that it is planning two one day events on the theme of Daily Prayer which it is hoped to hold in Dallas in January and in Savannah after Easter.</p>
+
+			<p class="p">Further details coming soon !</p>
+			<span class="arrow fa fa-reply-all fa-flip-horizontal"> </span>
+		</div>
+
+		<span class="close fa fa-times"> </span>
+	</aside>
 </section>
+
+<script type="text/javascript">
+	var $ = jQuery.noConflict();
+	$(document).ready(function(){
+
+	$(".notice .close").click(function() {
+		$(".notice").css("height","0");
+	});
+
+  });
+</script>
 
 <section class="home map">
 	<h1>What We Do</h1>
