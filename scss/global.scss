@@ -242,6 +242,20 @@ header {
         margin: 4px 2px 2px;
         text-shadow: 0 1px 1px black;
       }
+
+
+      &.market {
+        padding: 8px 15px 6px;
+        margin: 3px 2px 3px 25px;
+
+        &:active {
+          margin: 4px 2px 2px 20px;
+        }
+
+        .cart {
+          padding-right: 5px;
+        }
+      }
     }
   }
 
@@ -985,20 +999,30 @@ section.home {
     }
   }
 
-  .more-title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: $gold;
-    margin: 50px 0 10px;
-    font-size: 0.9em;
+  .more {
+    width: 680px;
+    margin: 60px auto;
   }
+
   .more-news {
-    width: 440px;
-    margin: 0 auto;
-    padding: 0 10px;
+    display: inline-block;
+    padding-left: 40px;
+  }
+  .more-news .title {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $gold;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      width: 440px;
+  }
+
+  .more-news ul {
+    width: 450px;
     border: 1px solid #D8D0BC;
     border-radius: 4px;
+    padding: 0 20px 0 10px;
     box-shadow: 0 1px 3px rgba(#5D5D5D, 0.3),
           inset 0 0 6px 4px white;
 
@@ -1006,12 +1030,13 @@ section.home {
       linear-gradient(to bottom, rgba(white,0) 0%, rgba(#AAA274,0.23) 100%), 
       #FDFBF7);
 
+
     li + li {
       border-top: 1px solid #CDCDCD;
     }
 
     .item {
-      padding: 18px 0 16px 30px;
+      padding: 14px 0 12px 30px;
       display: block;
       position: relative;
       outline: 0;
@@ -1024,7 +1049,7 @@ section.home {
         color: #585858;
         font-size: 1.4em;
         font-style: italic;
-        padding-bottom: 4px;
+        padding-bottom: 6px;
         text-shadow: 0 1px 0 rgba(white, 1);
       }
 
@@ -1077,6 +1102,142 @@ section.home {
 
       &:hover {
         background-color: rgba(white,0.3);
+      }
+    }
+  }
+
+  .more-aw {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 35px 0 0 30px;
+
+    h2 {
+      font-size: 1.3em;
+      color: #595959 * 1.1;
+      letter-spacing: 0px;
+    }
+
+    p {
+      margin: 1px 0 0;
+      font-size: 0.8em;
+      color: #595959 * 1.4;
+    }
+    span {
+      font-size: 0.8em;
+      padding: 0 3px;
+      color: #E6DECC;
+    }
+
+    a.img {
+      display: block;
+      width: 120px;
+      margin: 10px auto;
+      border: 4px solid white;
+      box-shadow: 0 3px 8px rgba(black, 0.4);
+
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 0 3px 8px rgba(black, 0.5);
+      }
+      &:active {
+        box-shadow: 0 2px 5px rgba(black, 0.5);
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .more-vol {
+      font-size: 0.9em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  .notice {
+    //border-top: 1px solid #CFC4B4;
+    //border-bottom: 1px solid #CFC4B4;
+    @include background(linear-gradient(to bottom, rgba(black,0.12), rgba(white,0)), 
+      #F7F9FF);
+    box-shadow: inset 0 7px 6px -5px rgba(black, 0.7),
+                      0 1px 0 rgba(black, 0.3);
+    position: relative;
+    padding-left: 170px;
+    height: 245px;
+    overflow: hidden;
+    @include transition(height 0.3s ease 0s);
+
+    h1 {
+      text-align: center;
+      margin: 20px 0 20px -170px;
+      color: #3C3C3C;
+    }
+
+    .text {
+      width: 400px;
+      margin: 0 auto 20px;
+      box-shadow: -1px 2px 4px rgba(black, 0.5);
+      padding: 15px 22px 15px 22px;
+      @include background(linear-gradient(to bottom, #ECEEF4 0%, #DEE1E9 55%, #F7F9FF 100%));
+      border-left: 1px solid #F4F7FF;
+      border-right: 1px solid #F4F7FF;
+      position: relative;
+
+      h2 {
+        white-space: pre-line;
+        font-style: italic;
+        color: #5F5F5F;
+        font-size: 1.1em;
+      }
+
+      p {
+        font-size: 0.9em;
+        color: #737373;
+        line-height: 1.1;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        left: -150px;
+        top: 40px;
+        font-size: 8em;
+        color: #E2E4EA * 0.97;
+        text-shadow: 0 2px 0 white,
+                     0 -1px 1px rgba(black, 0.3);
+        mouse-events: none;
+        cursor: default;
+      }
+    }
+
+
+    .close {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      //color: white;
+      cursor: pointer;
+      opacity: 0.5;
+      padding: 5px 7px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      &:hover {
+        border: 1px solid #646464;
+        opacity: 0.8;
+        color: #646464;
+      }
+      &:active {
+        box-shadow: inset 0 2px 4px rgba(black, 0.5);
+        opacity: 0.8;
+        color: #666;
       }
     }
   }
@@ -2161,7 +2322,6 @@ section.catechesis-project {
   h2 {
     font-size: 1.3em;
     text-align: center;
-    //padding-bottom: 15px;
     white-space: pre-line;
   }
 

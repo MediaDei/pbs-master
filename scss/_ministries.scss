@@ -161,7 +161,7 @@ section.ministries {
     display: none;
     &[type="radio"][name="project1"]:checked{
       &~ .modal-info.m1{
-        height: 350px;
+        height: 400px;
       }
       &~ .projectbg div.arrow.first{
         display: block;
@@ -169,7 +169,7 @@ section.ministries {
     }
     &[type="radio"][name="project2"]:checked{
       &~ .modal-info.m2{
-        height: 350px;
+        height: 400px;
       }
       &~ .projectbg div.arrow.second{
         display: block;
@@ -177,7 +177,7 @@ section.ministries {
     }
     &[type="radio"][name="project3"]:checked{
       &~ .modal-info.m3{
-        height: 350px;
+        height: 400px;
       }
       &~ .projectbg div.arrow.third{
         display: block;
@@ -185,7 +185,7 @@ section.ministries {
     }
     &[type="radio"][name="project4"]:checked{
       &~ .modal-info.m4{
-        height: 350px;
+        height: 400px;
       }
       &~ .projectbg div.arrow.fourth{
         display: block;
@@ -193,7 +193,7 @@ section.ministries {
     }
     &[type="radio"][name="project5"]:checked{
       &~ .modal-info.m5{
-        height: 350px;
+        height: 400px;
       }
       &~ .projectbg div.arrow.fifth{
         display: block;
@@ -232,6 +232,20 @@ section.ministries {
         line-height: 1.2;
         margin: 10px auto;
         text-shadow: 0 -1px 0 #000000;
+      }
+
+      .link {
+        text-align: center;
+        white-space: pre-line;
+        a {
+          color: #81C4FF;
+          &:visited {
+            color: #81C4FF;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
