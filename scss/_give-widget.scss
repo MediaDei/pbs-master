@@ -101,9 +101,10 @@ div.give-form-wrap{
         font-size: 1.4em;
         letter-spacing: 4px;
         text-transform: uppercase;
+        z-index: 1;
 
         // inner gradient
-        &:after {
+        &:before {
           content: "";
           display: block;
           position: absolute;
@@ -114,6 +115,7 @@ div.give-form-wrap{
           box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.5);
           height: 38px;
           width: 170px;
+          z-index: -1;
         }
 
         &:hover {
@@ -142,9 +144,10 @@ div.give-form-wrap{
         letter-spacing: 2px;
         text-shadow: 0 -1px 0 rgba(black, 0.4);
         color: #F9F0D9;
+        z-index: 1;
 
         // button extra
-        &:after {
+        &:before {
           content: "";
           @include background(linear-gradient(to bottom, #C5D8E5 0%, #9BABD2 42%, #477799 100%));
           position: absolute;
@@ -154,6 +157,7 @@ div.give-form-wrap{
           box-shadow: inset 0 0 10px rgba(white,0.6);
           left: 4px;
           top: 4px;
+          z-index: -1;
         }
 
         &:hover {
