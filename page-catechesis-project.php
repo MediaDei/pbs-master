@@ -35,7 +35,7 @@
 	</ul>
 
 	<img class="banner" src="<?php bloginfo('template_url'); ?>/images/catechesis-project-banner.jpg"/>
-	<ul class="p contents">
+	<ul id="contents" class="p contents">
 	<h2>Look Within</h2>
 		<br>
 		<li><a href="<?php bloginfo('template_url'); ?>/files/CP_I-am-His-Table-of-Contents-Introduction.docx">Table of Contents, & Introduction</a></li>

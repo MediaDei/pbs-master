@@ -14,7 +14,7 @@
 	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' type="text/css">
 
 	<script type='text/javascript' src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js?ver=4.3.1'></script>
-	<title>Prayer Book Society</title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 	<?php wp_head(); ?>
 </head>

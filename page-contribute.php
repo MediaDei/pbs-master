@@ -55,8 +55,17 @@
       </ul>
     </div>
   </div>
-  <?php echo do_shortcode( '[give_form id="31"]' ); ?>
-  
+
+  <?php 
+  $loop = new WP_Query( array( 'post_type' => 'give_forms') );
+  while ( $loop->have_posts() ) : $loop->the_post();
+    if(get_the_excerpt() === "join-form") {
+      echo do_shortcode( '[give_form id="' . get_the_ID() . '"]' );
+    }
+  endwhile; wp_reset_query(); 
+  ?>
+
+
   <a href="#/" class="join-offline">See Offline Ways to Join</a>
 </section>
 
@@ -71,7 +80,16 @@
     <input type="range" name="range" id="slider" value="0" min="0" max="100" />
   </div>
 
-  <?php echo do_shortcode( '[give_form id="19"]' ); ?>
+
+  <?php 
+  $loop = new WP_Query( array( 'post_type' => 'give_forms') );
+  while ( $loop->have_posts() ) : $loop->the_post();
+    if(get_the_excerpt() === "donate-form") {
+      echo do_shortcode( '[give_form id="' . get_the_ID() . '"]' );
+    }
+  endwhile; wp_reset_query(); 
+  ?>
+
 
   <script>
     var $ = jQuery.noConflict();

@@ -14,69 +14,75 @@
 
 	<h1>Latest News</h1>
 
+	<?php 
+		global $post;
+		$args = array('numberposts'=>4);
+		$posts = get_posts($args);
+		$i = 1;
+	?>
 
-	<article class="news">
+	<?php foreach($posts as $post) : setup_postdata($post); ?>
+		<?php if ($i==1) { ?>
+
+		<article class="news">
 		<header>
-			<h1><a href="#">New Prayer Book Society website!</a></h1>
-			<time datetime="2015-12-1" title="December 1st, 2015"><span role="img" class="fa fa-calendar"></span> December 8, 2015</time>
-			<address><span role="img" class="fa fa-user"></span> by <a rel="author" href="/author/pbs-official">Prayer Book Society</a></address>
+			<h1><a href="<?php the_permalink(); ?>#read"><?php the_title(); ?></a></h1>
+			<time class="line" datetime="<?php echo get_the_date('Y-m-d'); ?>" title="<?php echo get_the_date('F j, Y'); ?>"><span role="img" class="fa fa-calendar"></span><?php echo get_the_date('F j, Y'); ?></time>
+			<address><span role="img" class="fa fa-user"></span> by <span rel="author"><?php the_author(); ?></span></address>
 
-			<aside>
-				<span class="top">Dec</span>
-				<span class="bottom">8</span>
-			</aside>
+			<time class="circle">
+				<div class="top"><?php echo get_the_date('M'); ?></div>
+				<div class="bottom"><?php echo get_the_date('d'); ?></div>
+			</time>
 		</header>
-		<div role="img" class="photo"></div>
-		<p class="p capital">The Prayer Book Society USA is delighted to launch a completely new website. This combines a modern clarity and simplicity of design with visual and typographical features that draw from the rich aesthetic of the historic Prayer Books themselves.  The site provides a highly accessible overview of the Society’s aims and ministries, along with interactive features, such as the page for finding congregations that offer Prayer Book services. It also links to extensive new catechetical resources for teaching our faith as well as the promotion of daily Morning and Evening prayer and an expanding portal into  online editions of the works by Anglican divines since the sixteenth Century.</p>
-	</article>
+		<div class="p">
+		<?php the_content(); ?>
+		</div>
+		</article>
 
+		<aside class="more">
 
+		<div class="more-news">
+			<div class="title">More News:</div>
+			<ul>
 
-	<aside class="more">
+		<?php 
+			$i++;
+			} else {
+		?>
 
-	<div class="more-news">
-		<div class="title">More News:</div>
-		<ul>
-			<li><a href="#/" class="item">
-				<h2>Major update on the Catechesis Project</h2>
-				<p class="p">Rev. Dunbar’s introduction explores catechisms and their purposes. Chapter 1 exposits Christian names and foundations.</p>
+			<li><a href="<?php the_permalink(); ?>#read" class="item">
+				<h2><?php the_title(); ?></h2>
+				<p class="p"><?php echo wp_trim_words( get_the_excerpt(), 22 ); ?></p>
 				<time datetime="2015-06-2" title="July 2nd, 2015">
-					<div class="top">Jul</div>
-					<div class="bottom">2</div>
+					<div class="top"><?php echo get_the_date('M'); ?></div>
+					<div class="bottom"><?php echo get_the_date('d'); ?></div>
 				</time>
 			</a></li>
-			<li><a href="#/" class="item">
-				<h2>Latest print edition of Anglican Way</h2>
-				<p class="p">Topics: Liturgy used by apostles. Divine collects of Thomas Cranmer. Parishes becoming traditional. Shakespeare’s prayers.</p>
-				<time datetime="2015-05-17" title="June 17th, 2015">
-					<div class="top">Jun</div>
-					<div class="bottom">17</div>
-				</time>
-			</a></li>
-			<li><a href="#/" class="item">
-				<h2>A Series of Colloquia on Common Prayer</h2>
-				<p class="p">Scholars from the Prayer Book Society explore aspects of traditional Anglican liturgy, the collects, and the forms of prayer.</p>
-				<time datetime="2015-05-17" title="June 17th, 2015">
-					<div class="top">Jun</div>
-					<div class="bottom">17</div>
-				</time>
-			</a></li>
-			<li><a href="#/" class="load">
-				...
-			</a></li>
-		</ul>
+		<?php 
+		}
+	endforeach; ?>
+
+	<li><a href="/news-archives/" class="all smallcaps">
+		All news →
+	</a></li>
+	</ul>
 	</div>
 
 	<div class="more-aw">
 		<h2 class="smallcaps">Anglican Way</h2>
-		<p>Dec., 2015 <span>•</span> Vol. 38, No. 3</p>
+		<time datetime="2015-12">Dec., 2015 <span>•</span> Vol. 38, No. 3</time>
 
-		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2015-03.pdf"><img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2015-03-cover.jpg" title="Anglican Way Print Magazine"/></a>
+		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2015-03.pdf">
+			<img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2015-03-cover.jpg" title="Anglican Way Print Magazine"/>
+			<span class="zoom fa fa-search"></span>
+		</a>
 
-		<a class="more-vol" href="/print-magazine">more volumes &thinsp;&rarr;</a>
+		<a class="more-vol smallcaps" href="/print-magazine/">All issues →</a>
 	</div>
 
 	</aside>
+
 
 	<aside class="notice">
 		<h1 class="smallcaps">The Society Announces a Series of Colloquia on Daily Prayer</h1>
@@ -123,7 +129,7 @@
 	    </ul>
 	</div>
 	<a href="/about/" class="button">
-		<span class="text">Learn About Us </span>
+		<span class="text smallcaps">About Us </span>
 		<span class="arrow" role="img">→</span>
 	</a>
 
@@ -275,7 +281,7 @@
 
 	<a href="/contribute/#join" class="button">
 	<span>
-		<span class="text">Join</span> 
+		<span class="text smallcaps">Join</span> 
 		<span class="arrow" role="img">→</span>
 	</span>
 	</a>

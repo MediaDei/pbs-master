@@ -8,6 +8,11 @@
 
 <section class="resources">
 	<article>
+		<h2><a href="http://anglicanwaymagazine.com/">Anglican Way Magazine</a></h2>
+		<p class="p">An online magazine of the Society, discussing perspectives on theology and doctrine from the traditional Anglican perspective.</p>
+	</article>
+
+	<article>
 		<h2><a href="http://newscriptorium.com/">Anglican Books Revitalized</a></h2>
 		<p class="p">A site dedicated to preserving and presenting books representing central Anglican faith and practice for clergy and lay education. Includes many of Peter Toon's books.</p>
 	</article>
