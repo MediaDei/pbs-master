@@ -2600,11 +2600,56 @@ section.contribute {
     font-size: 0.8em;
     display: table;
     margin: 0 auto;
+    padding-top: 10px;
+
   
     &:hover {
       text-decoration: underline;
     }
   }
+
+  #join-offline-text{
+    color: $main-text;
+    padding-top: 20px;
+    line-height: 1.2;
+    height: 0;
+    opacity: 0;
+    transition: all 0.1s ease-in 0.1s;
+    overflow: hidden;
+
+    &:target{
+      display: table;
+      margin: 0 auto;
+      opacity: 0.99;
+      height: 100%;
+      margin-top: 0;
+
+      &+.join-offline{
+        display: none;
+      }
+    }
+
+    .fee{
+      font-size: 1.1em;
+      margin: 0px;
+      padding: 5px;
+      text-align: center;
+    }
+    .msg{
+      white-space: pre-line;
+      margin: 0px;
+      padding: 5px;
+    }
+    .address{
+      white-space: pre-line;
+      font-style: italic;
+      margin: 0px;
+      padding: 5px;
+
+    }
+
+  }
+
 
 
   .range-input {

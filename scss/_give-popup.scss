@@ -49,7 +49,8 @@ body.give-page{
             fieldset#give_purchase_submit{
               p#give-final-total-wrap{
                 display: table;
-                margin: 0px auto 15px;
+                margin: 0px auto;
+                padding-bottom: 15px;
                 span{
                   color: $main-text;
                   
@@ -73,7 +74,8 @@ body.give-page{
                 &.join-button{
                   position: relative;
                   background-color: red;
-                  margin: 10px auto;
+                  margin: 0px auto;
+                  padding: 10px 0px;
                   display: table;
                   @include background(linear-gradient(to bottom, rgba(white,0.5), rgba(black,0.5)),
                       #F8CF7A);
@@ -105,8 +107,15 @@ body.give-page{
                       @include background(linear-gradient(to bottom, rgba(#EFE5E5,0.6) 0%, rgba(#D2BA8D,0.6) 55%, rgba(#FDFFD4,0.43) 100%));
                     }
                   }
+                  &:active{
+                    margin-top: 1px;
+                    margin-bottom: -1px;
+                    box-shadow: 0 3px 4px rgba(black,0.2);
+                  }
 
                   input{
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
                     background: none;
                     border: 0;//Required to stop Give Plugin style
@@ -118,6 +127,10 @@ body.give-page{
                     left: 50%; top: 50%;
                     transform: translate(-50%, -50%);
                     z-index: 2;
+
+                    &:active{
+                      padding: 0px;//override Give styling
+                    }
                   }
                 }
 
@@ -160,7 +173,14 @@ body.give-page{
                       @include background(linear-gradient(to bottom, #C5D8E5*1 0%, #9BABD2*1.05 42%, #477799*1.05 100%));
                     }
                   }
+                  &:active{
+                    margin-top: 1px;
+                    margin-bottom: -1px;
+                    box-shadow: 0 3px 4px rgba(black,0.2);
+                  }
                   input{
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
                     border: 0;//Required to stop Give Plugin style
                     text-transform: uppercase;
@@ -172,7 +192,9 @@ body.give-page{
                     background: none;
                     z-index: 2;
 
-
+                    &:active{
+                      padding: 0px;//override Give styling
+                    }
                   }
                     
                   span.give-loading-animation{

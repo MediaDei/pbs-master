@@ -11,6 +11,7 @@ div.give-form-wrap{
   }
   form.give-form{
     position: relative;
+    margin: 0px;//override Give styling
     p.set-price.give-donation-amount.form-row-wide{
       opacity: 0;
       margin: 0;
@@ -40,7 +41,9 @@ div.give-form-wrap{
         }
       }
     }
-    ul.give-donation-levels-wrap{
+    ul.give-donation-levels-wrap{   
+      margin-bottom: 0px !important;//override Give styling
+      padding-bottom: 10px !important;   
       li{
         button { 
           background-color: #F9F4E4;
@@ -80,28 +83,33 @@ div.give-form-wrap{
       }
     }
     button.give-btn.give-btn-modal{
-
+      margin: 0px auto;
+      box-shadow: 0 3px 4px rgba(black,0.5);
+      cursor: pointer;
+      border-radius: 12px;
+      position: relative;
+      border: 0;//Required to stop Give Plugin style
+      text-transform: uppercase;
+      z-index: 1;
+      &:active{
+        padding: 0px;//override Give styling
+        margin-top: 1px;
+        margin-bottom: -1px;
+        box-shadow: 0 3px 4px rgba(black,0.2);
+      }
       &.join-button{
-        position: relative;
         background-color: red;
-        margin: 10px auto;
         display: table;
         @include background(linear-gradient(to bottom, rgba(white,0.5), rgba(black,0.5)),
             #F8CF7A);
-        border-radius: 12px;
         width: 178px;
         height: 46px;
-        box-shadow: 0 3px 4px rgba(black,0.5);
-        cursor: pointer;
-        border: 0;//Required to stop Give Plugin style
         left: 50%; top: 52%;
         transform: translate(-50%, -50%);
         text-shadow: 0 1px 0 rgba(white, 1);
         color: #3A4D52;
         font-size: 1.4em;
         letter-spacing: 4px;
-        text-transform: uppercase;
-        z-index: 1;
 
         // inner gradient
         &:before {
@@ -130,21 +138,13 @@ div.give-form-wrap{
       &.donate-button{
         @include background(linear-gradient(to bottom, rgba(white,0.5), rgba(black,0.5)),
         #4186B6);
-        border-radius: 12px;
-        position: relative;
-        box-shadow: 0 3px 4px rgba(black,0.5);
         height: 46px;
         width: 178px;
         display: block;
-        margin: 0px auto;
-        cursor: pointer;
-        border: 0;//Required to stop Give Plugin style
         font-size: 1.3em;
-        text-transform: uppercase;
         letter-spacing: 2px;
         text-shadow: 0 -1px 0 rgba(black, 0.4);
         color: #F9F0D9;
-        z-index: 1;
 
         // button extra
         &:before {
