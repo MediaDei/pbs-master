@@ -237,6 +237,8 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
  * @param string $sep Optional separator.
  * @return string Filtered title.
  */
+
+/*
 function extra_wp_title( $title, $sep ) {
     global $paged, $page;
 
@@ -258,6 +260,7 @@ function extra_wp_title( $title, $sep ) {
     return $title;
 }
 add_filter( 'wp_title', 'extra_wp_title', 10, 2 );
+*/
 
 
 
