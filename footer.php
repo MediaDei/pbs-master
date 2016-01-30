@@ -59,7 +59,7 @@
 
 				<p class="details">
 					<span>Email:</span>contact@pbsusa.org<br><br>
-					<span>Phone:</span>(212) 232 3333
+					<span>Phone:</span>1 (800) PBS-1928
 				</p>
 
 				<h3 class="address">Address</h3>
