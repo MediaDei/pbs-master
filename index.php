@@ -35,8 +35,8 @@
 				<div class="bottom"><?php echo get_the_date('d'); ?></div>
 			</time>
 		</header>
-		<div class="p">
-		<?php the_content(); ?>
+		<div class="p container">
+		<?php the_content('read more &raquo;'); ?>
 		</div>
 		</article>
 
@@ -91,9 +91,9 @@
 			<h2>Stirred up to Godliness
 			the Daily Office in Anglicanism</h2>
 
-			<p class="p">The Society is pleased to announce that it is planning two one day events on the theme of Daily Prayer which it is hoped to hold in Dallas in January and in Savannah after Easter.</p>
+			<p class="p">The Society is pleased to announce that the first of two one day events on the theme of Daily Prayer will take place on 20th January (10 a.m - 5.30 p.m. in Dallas at the Church of the Holy Cross Herschel Avenue  with a second colloquium in Savannah in the second week after Easter.</p>
 
-			<p class="p">Further details coming soon !</p>
+			<p class="p">Further details of how to register can be found <a href="http://www.pbsusa.org/a-series-of-colloquia-on-common-prayer/#read">here</a> !</p>
 			<span class="arrow fa fa-reply-all fa-flip-horizontal"> </span>
 		</div>
 
