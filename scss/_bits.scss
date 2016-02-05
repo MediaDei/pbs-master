@@ -36,6 +36,7 @@
 	&:first-of-type {
 	  margin-left: 100px;
 	  @include breakpoint(mobile){ 
+      margin-left: 60px !important;
   	}
 	}
 }

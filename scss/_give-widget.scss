@@ -2,6 +2,9 @@
 div.give-form-wrap{ 
   display: table;
   margin: 0 auto;
+  @include breakpoint(mobile){ 
+    width: 100%;
+  }
 
   h2{
     display: none;
@@ -51,6 +54,7 @@ div.give-form-wrap{
         @include breakpoint(mobile){ 
           width: 31.5%;
           display: inline-block; 
+          margin: 2px 2px !important;
         }
         button { 
           background-color: #F9F4E4;
@@ -64,7 +68,8 @@ div.give-form-wrap{
           @include breakpoint(mobile){ 
             width: 100%;
             padding: 0px;  
-            margin: 0px;      
+            margin: 0px; 
+            border-radius: 0px;     
           }
 
           &:hover {
@@ -111,7 +116,6 @@ div.give-form-wrap{
       }
       &.join-button{
         background-color: red;
-        display: table;
         @include background(linear-gradient(to bottom, rgba(white,0.5), rgba(black,0.5)),
             #F8CF7A);
         width: 178px;
@@ -122,6 +126,7 @@ div.give-form-wrap{
         color: #3A4D52;
         font-size: 1.4em;
         letter-spacing: 4px;
+        margin: 0px auto;
 
         // inner gradient
         &:before {
