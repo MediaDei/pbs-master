@@ -65,8 +65,9 @@
   endwhile; wp_reset_query(); 
   ?>
 
-  <a href="#join-offline-text" class="join-offline">See Offline Ways to Join</a>
-  <div id="join-offline-text">
+  <span id="join-offline" class="anchor"></span>
+  <a href="#join-offline" class="join-offline-button">See Offline Ways to Join</a>
+  <div class="offline-text">
     <p class="fee">A yearly membership is $40.00</p>
     <p class="msg">Please mail your member fee, along with your name,
      address, and contact information to:</p>

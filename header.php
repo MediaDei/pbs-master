@@ -63,7 +63,7 @@
 				</div>
 			</div>
 
-			<nav class="main-nav"><div class="container">
+			<nav class="main-nav"><div class="container clear">
 			  <a class="home" href="/">Home</a>
 			  <a class="about" href="/about/">About</a>
 			  <a class="ministries" href="/ministries/">Ministries</a>

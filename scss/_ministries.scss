@@ -28,6 +28,12 @@ section.ministries {
     background-repeat: no-repeat;
     background-size: 710px auto;
     position: relative;
+
+    @include breakpoint(mobile){ 
+      width: 350px;
+      height: 200px;
+      padding: 25px 35px;
+    }
     &.img1{
       background-image: url("../images/ministries-project1.jpg");
       background-position: center -20px;
@@ -113,6 +119,10 @@ section.ministries {
               inset 0 0 30px rgba(white, 0.6);
         background: rgba(0, 0, 0, 0.05);
 
+        @include breakpoint(mobile){ 
+          padding: 10px 0px;
+        }
+
 
         &:after{
           content: "";
@@ -161,7 +171,7 @@ section.ministries {
     display: none;
     &[type="radio"][name="project1"]:checked{
       &~ .modal-info.m1{
-        height: 400px;
+        min-height: 400px;
       }
       &~ .projectbg div.arrow.first{
         display: block;
@@ -232,6 +242,9 @@ section.ministries {
         line-height: 1.2;
         margin: 10px auto;
         text-shadow: 0 -1px 0 #000000;
+        @include breakpoint(mobile){ 
+          width: 350px;
+        }
       }
 
       .coming-soon {

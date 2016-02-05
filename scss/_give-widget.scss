@@ -12,6 +12,9 @@ div.give-form-wrap{
   form.give-form{
     position: relative;
     margin: 0px;//override Give styling
+    label.give-hidden{
+      display: none !important;
+    }
     p.set-price.give-donation-amount.form-row-wide{
       opacity: 0;
       margin: 0;
@@ -43,8 +46,12 @@ div.give-form-wrap{
     }
     ul.give-donation-levels-wrap{   
       margin-bottom: 0px !important;//override Give styling
-      padding-bottom: 10px !important;   
+      padding-bottom: 10px !important; 
       li{
+        @include breakpoint(mobile){ 
+          width: 31.5%;
+          display: inline-block; 
+        }
         button { 
           background-color: #F9F4E4;
           border: 1px solid #D2BB89;
@@ -54,6 +61,11 @@ div.give-form-wrap{
           color: $main-text;
           font-size: 1.2em;
           transition: opacity .5s ease-in-out, width .5s, height .5s;
+          @include breakpoint(mobile){ 
+            width: 100%;
+            padding: 0px;  
+            margin: 0px;      
+          }
 
           &:hover {
             background-color: #F9F4E4 * 1.03;

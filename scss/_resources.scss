@@ -8,6 +8,10 @@ section.resources {
     width: 630px;
     padding-bottom: 55px;
 
+    @include breakpoint(mobile){ 
+      width: 350px;
+    }
+
     h2 {
       font-style: italic;
       font-size: 1.4em;

@@ -3,6 +3,7 @@ body.give-page{
   div.mfp-wrap{
     div.mfp-container{
       div.mfp-content{
+        min-width: $min-breakpoint;
         form.give-form{
           fieldset#give-payment-mode-select{
             div#give-payment-mode-wrap{
@@ -191,6 +192,7 @@ body.give-page{
                     transform: translate(-50%, -50%);
                     background: none;
                     z-index: 2;
+                    font-size: 1em;
 
                     &:active{
                       padding: 0px;//override Give styling
