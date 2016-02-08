@@ -2,7 +2,9 @@
 
 	
 	<div role="img" class="hero-image home"></div>
+	<!--
 	<div role="img" class="hero-image home extra"></div>
+-->
 	<div class="page-title"><h1>Welcome</h1></div>
 </header>
 

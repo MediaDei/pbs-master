@@ -222,7 +222,7 @@ header {
       height:46px; width:46px;
       background: url('../images/_header_menu-ornament.png') top left no-repeat;
       background-size: 100% auto;
-      @include breakpoint(tablet){ 
+      @include breakpoint(mobile){ 
         display: none;         
       }
     } 
@@ -236,7 +236,7 @@ header {
       @include transform (scaleX(-1));
       filter: FlipH;
       -ms-filter: "FlipH";
-      @include breakpoint(tablet){ 
+      @include breakpoint(mobile){ 
         display: none;         
       }
     }
@@ -250,8 +250,9 @@ header {
     .container {
       display: table;
       margin: 0 auto;
-      @include breakpoint(tablet){ 
+      @include breakpoint(mobile){ 
         display: block;
+        padding: 0px 30px;
       }
     }
 
@@ -294,12 +295,11 @@ header {
         &:active {
           margin: 4px 2px 2px 25px;
           @include breakpoint(tablet){ 
-            margin: 3px 2px 3px;
-            padding: 10px;
-            text-align: center;
-            width: 32.5%; 
+            margin: 3px 2px 3px 15px;
           }
           @include breakpoint(mobile){ 
+            text-align: center;
+            width: 32.5%; 
             padding: 0px;
           }
         }
@@ -308,22 +308,23 @@ header {
           padding-right: 5px;
         }
         @include breakpoint(tablet){ 
-          margin: 3px 2px 3px;
-          text-align: center;
-          width: 32.5%;
-          padding: 10px;   
+          padding: 8px 11px 6px;
+          margin: 3px 2px 3px 15px;
         }
         @include breakpoint(mobile){ 
-          padding: 10px 0px;
+          margin: 3px 2px 3px;
+          text-align: center;
+          width: 32.3%;
+          padding: 10px;   
         }
       }
       @include breakpoint(tablet){ 
-        text-align: center;
-        width: 32.5%;
-        padding: 10px;         
+        padding: 8px 11px 6px;
       }
       @include breakpoint(mobile){ 
-        padding: 10px 0px; 
+        text-align: center;
+        width: 32.3%;
+        padding: 10px;         
       }
     }
   }
@@ -335,73 +336,44 @@ header {
     }
 
     &.home {
-      background: url("../images/home--banner.jpg") no-repeat scroll 0 -220px;
+      background: url("../images/home--banner.jpg") no-repeat center center;
       background-size: 100% auto;
       display: block;
-      @include breakpoint(tablet){ 
-        background: url("../images/home--banner.jpg") no-repeat scroll 0 -95px;
-        background-size: 100% auto;
-      }
-      @include breakpoint(mobile){ 
-        background: url("../images/home--banner.jpg") no-repeat scroll 0 -125px;
-        background-size: 100% auto;
-      }
-
+      /*
       &.extra {
         background: url("../images/home--banner-extra.jpg") no-repeat scroll 0 -300px;
         background-size: 100% auto;
         display: none;
       }
+      */
     }
     
     &.about {
       background: url("../images/about--banner.jpg") no-repeat center -180px;
       background-size: auto 163%;
       @include breakpoint(mobile){ 
-        background: url("../images/about--banner.jpg") no-repeat scroll -130px -180px / 710px auto;
+        background: url("../images/about--banner.jpg") no-repeat scroll -130px -180px / 750px auto;
       }
     }
 
     &.ministries {
-      background: url("../images/ministries--banner.jpg") no-repeat center -580px;
+      background: url("../images/ministries--banner.jpg") no-repeat center center;
       background-size: 100% auto;
-      @include breakpoint(tablet){ 
-        background-position: center -370px
-      }
-      @include breakpoint(mobile){ 
-        background-position: center -310px
-      }
     }
     
     &.resources {
-      background: url("../images/resources--banner.jpg") no-repeat center -170px;
+      background: url("../images/resources--banner.jpg") no-repeat center center;
       background-size: 100% auto;
-      @include breakpoint(tablet){ 
-        background-position: center -45px
-      }
-      @include breakpoint(mobile){ 
-        background-position: center -100px
-      }
     }
 
     &.contribute {
-      background: url("../images/contribute--banner.jpg") center left no-repeat;
+      background: url("../images/contribute--banner.jpg") center center no-repeat;
       background-size: 100% auto;
-      @include breakpoint(mobile){ 
-        background-position: center -50px
-      }
     }
 
     &.post {
-      background: url("../images/post--banner.jpg") no-repeat center -320px;
+      background: url("../images/post--banner.jpg") no-repeat center center;
       background-size: 100% auto;
-      @include breakpoint(tablet){ 
-        background-position: center -200px
-      }
-      @include breakpoint(mobile){ 
-        background-position: center -160px
-      }
-
     }
   }
 
@@ -684,17 +656,17 @@ footer {
       border-radius: 7px;
       box-shadow: 0 4px 12px black;
       height: auto;
-      left: 25%;
       overflow: auto;
       padding: 20px;
       position: fixed;
       top: 10%;
-      width: 530px;
+      max-width: 530px;
+      min-width: $min-breakpoint;
       z-index: 1002;
-      @include breakpoint(mobile){ 
-        width: 350px;
-        left: 15%;
-      }
+      left: 50%;
+      @include transform(translateX(-50%));
+      
+     
 
 
       .close {
@@ -717,7 +689,7 @@ footer {
       .text {
         display: block;
         margin: 21px auto 0;
-        width: 370px;
+        max-width: 370px;
 
         input, textarea {
           border: 1px solid #bbb;
@@ -1540,7 +1512,7 @@ section.home.map {
     border: 1px solid #555;
     position: relative;
     @include breakpoint(tablet){ 
-        height: 250px;
+        height: 350px;
     }
     &:after {
       content: "Coming Soon";
@@ -1557,7 +1529,10 @@ section.home.map {
       color: white;
       text-shadow: 0 1px 3px black;
       @include breakpoint(tablet){ 
-        line-height: 7;
+        line-height: 10;
+        box-shadow: inset 0 0 10px rgba(black,0.5),
+                    inset 0 0 0 130px rgba(white, 0.5);
+        top: -5px;  
       }
     }
   }
@@ -1664,33 +1639,33 @@ section.home.ministry-list {
       }
 
       &.anglicanway, &.anglicanway .bg-blur {
-        background: url("../images/home-ministries-anglicanway.jpg") no-repeat center center / ($home-ministry-largewidth + 100px) auto;
+        background: url("../images/ministries-anglicanway.jpg") no-repeat center center / ($home-ministry-largewidth + 100px) auto;
         @include breakpoint(tablet){ 
-          background-size: 100% auto;
+          background-size: $tablet-breakpoint auto;
         }
       }
       &.print, &.print .bg-blur {
-        background: url("../images/home-ministries-print.jpg") no-repeat center center / ($home-ministry-largewidth + 100px) auto;
+        background: url("../images/ministries-print.jpg") no-repeat center center / ($home-ministry-largewidth + 100px) auto;
         @include breakpoint(tablet){ 
-          background-size: 100% auto;
+          background-size: $tablet-breakpoint auto;
         }
       }
       &.ipray, &.ipray .bg-blur {
-        background: url("../images/home-ministries-ipray.jpg") no-repeat center center / ($home-ministry-largewidth) auto;
+        background: url("../images/ministries-ipray.jpg") no-repeat center center / ($home-ministry-largewidth) auto;
         @include breakpoint(tablet){ 
-          background-size: 100% auto;
+          background-size: $tablet-breakpoint auto;
         }
       }
       &.catechesis, &.catechesis .bg-blur {
-        background: url("../images/home-ministries-catechesis.jpg") no-repeat center center/ ($home-ministry-largewidth) auto;
+        background: url("../images/ministries-catechesis.jpg") no-repeat center center/ ($home-ministry-largewidth) auto;
         @include breakpoint(tablet){ 
-          background-size: 100% auto;
+          background-size: $tablet-breakpoint auto;
         }
       }
       &.scriptorium, &.scriptorium .bg-blur {
-        background: url("../images/home-ministries-scriptorium.jpg") no-repeat center center/ ($home-ministry-largewidth) auto;
+        background: url("../images/ministries-scriptorium.jpg") no-repeat center center/ ($home-ministry-largewidth) auto;
         @include breakpoint(tablet){ 
-          background-size: 100% auto;
+          background-size: $tablet-breakpoint auto;
         }
       }
 
@@ -1754,10 +1729,6 @@ section.home.ministry-list {
         width: 100%;
         border-radius: 0px;
       }
-      @include breakpoint(mobile){ 
-        height: 150px;
-      }
-
       &:first-of-type {
         margin: 0 0 (($home-ministry-largemargin*2)-4) 0;
       }
@@ -1933,6 +1904,11 @@ section.home.join {
         &.one { left: -32px; &:after { margin-left: 0px; }}
         &.two { left: -40px; }
         &.three { left: -34px; }
+        @include breakpoint(tablet){ 
+          &.one { left: -62px; &:after { margin-left: 0px; }}
+          &.two { left: -70px; }
+          &.three { left: -64px; }       
+        }
 
         &:after {
           content: "";
@@ -1944,6 +1920,9 @@ section.home.join {
           margin-left: -20px;
           box-shadow: 0 1px 1px #827970;
           opacity: 0.99;
+          @include breakpoint(tablet){ 
+            display: none;  
+          }
         }
       }
 
@@ -2061,7 +2040,7 @@ section.about {
     @include breakpoint(tablet){ 
       min-height: auto;
       width: 100%;
-      padding: 0px 30px;         
+      padding: 0px 100px;         
     }
   }
 
@@ -2149,7 +2128,7 @@ section.about {
     border: 1px solid #555;
     position: relative;
     @include breakpoint(tablet){ 
-      height: 250px;
+      height: 350px;
     }
 
 
@@ -2167,6 +2146,12 @@ section.about {
       font-size: 2.9em;
       color: white;
       text-shadow: 0 1px 3px black;
+      @include breakpoint(tablet){ 
+        line-height: 10;
+        box-shadow: inset 0 0 10px rgba(black,0.5),
+                    inset 0 0 0 130px rgba(white, 0.5);
+        top: -5px;  
+      }
     }
   }
 
@@ -2380,7 +2365,7 @@ section.about {
 
     //Show and Hide Dropdown
     input[type="radio"][name="bio1"]:checked ~ .m1, input[type="radio"][name="bio2"]:checked ~ .m2 {
-        height: auto;
+        height: 360px;
         padding-bottom: 20px;
     }
     //Show Appropriate Bio
@@ -2668,6 +2653,10 @@ section.print-magazine {
   h2 {
     text-align: center;
 
+    @include breakpoint(mobile){
+      font-size: 0.9em;
+    }
+
     &.missing {
       color: red;
     }
@@ -2693,6 +2682,15 @@ section.print-magazine {
     display: block;
     height: 180px;
     margin: 0 auto;
+  }
+  div.wrapper{
+    margin: 0px auto;
+    &.two{
+      max-width: 370px;
+    }
+    &.three{
+      max-width: 550px;
+    }
   }
 }
 
@@ -2774,6 +2772,9 @@ section.contribute {
     box-shadow: inset 0 -9px 7px -8px black;
     @include background(linear-gradient(to top, #D5CFBB 0%, rgba(white,0) 30%, rgba(white,0) 100%), 
       rgba(white,0));
+    @include breakpoint(tablet){
+      padding-bottom: 70px;
+    }
 
 
     .tout {
@@ -2797,6 +2798,11 @@ section.contribute {
         &.one { left: -32px; }
         &.two { left: -40px; }
         &.three { left: -34px; }
+        @include breakpoint(tablet){ 
+          &.one { left: -62px; &:after { margin-left: 0px; }}
+          &.two { left: -70px; }
+          &.three { left: -64px; }       
+        }
       }
 
       p {
@@ -3028,14 +3034,13 @@ section.contribute {
     opacity: 0;
     transition: all 0.1s ease-in 0.1s;
     overflow: hidden;
-    max-width: 375px;
+    max-width: 380px;
     margin: 0 auto;
 
     .fee{
       font-size: 1.1em;
       margin: 0px;
       padding: 5px;
-      text-align: center;
     }
     .msg{
       white-space: pre-line;
@@ -3364,7 +3369,7 @@ aside.post {
   margin: 60px auto 100px;
   padding-left: 40px;
   @include breakpoint(tablet){ 
-      width: 100%;
+      width: 80%;
       padding-left: 0px;
     }
 

@@ -3,7 +3,8 @@ body.give-page{
   div.mfp-wrap{
     div.mfp-container{
       div.mfp-content{
-        min-width: $min-breakpoint;
+        //width: 400px;
+        min-width: 400px;
         form.give-form{
           fieldset#give-payment-mode-select{
             div#give-payment-mode-wrap{
@@ -126,7 +127,7 @@ body.give-page{
                     font-size: 1.4em;
                     text-transform: uppercase;
                     left: 50%; top: 50%;
-                    transform: translate(-50%, -50%);
+                    @include transform (translate(-50%, -50%));
                     z-index: 2;
 
                     &:active{
@@ -189,7 +190,7 @@ body.give-page{
                     text-shadow: 0 -1px 0 rgba(black, 0.4);
                     color: #F9F0D9;
                     left: 50%; top: 50%;
-                    transform: translate(-50%, -50%);
+                    @include transform (translate(-50%, -50%));
                     background: none;
                     z-index: 2;
                     font-size: 1em;

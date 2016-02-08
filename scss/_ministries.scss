@@ -29,30 +29,43 @@ section.ministries {
     background-size: 710px auto;
     position: relative;
 
-    @include breakpoint(mobile){ 
-      width: 350px;
-      height: 200px;
-      padding: 25px 35px;
+    @include breakpoint(tablet){ 
+      width: 100%;
+      border-radius: 0px;
+      box-shadow: 0 3px 4px 1px rgba(black, 0.6);
+    }
+    @include breakpoint(mobile){
+      min-width: $min-ministries-breakpoint;//added to stop text from wrapping in mobile
     }
     &.img1{
-      background-image: url("../images/ministries-project1.jpg");
-      background-position: center -20px;
+      background: url("../images/ministries-anglicanway.jpg") no-repeat center center / 900px auto;
+      @include breakpoint(tablet){ 
+        background-size: 900px auto;
+      }
     }
     &.img2{
-      background-image: url("../images/ministries-project2.jpg"); 
-      background-position: center top;
+      background: url("../images/ministries-print.jpg") no-repeat center center / 710px auto;
+      @include breakpoint(tablet){ 
+        background-size: $tablet-breakpoint auto;
+      }
     }
     &.img3{
-      background-image: url("../images/ministries-project3.jpg"); 
-      background-position: center top;
+      background: url("../images/ministries-ipray.jpg") no-repeat center center / 710px auto;
+      @include breakpoint(tablet){ 
+        background-size: $tablet-breakpoint auto;
+      }
     }
     &.img4{
-      background-image: url("../images/ministries-project4.jpg");
-      background-position: center -540px;
+      background: url("../images/ministries-catechesis.jpg") no-repeat center center / 710px auto;
+      @include breakpoint(tablet){ 
+        background-size: $tablet-breakpoint auto;
+      }
     }
     &.img5{
-      background-image: url("../images/ministries-project5.jpg"); 
-      background-position: center -20px;
+      background: url("../images/ministries-scriptorium.jpg") no-repeat center center / 710px auto;
+      @include breakpoint(tablet){ 
+        background-size: $tablet-breakpoint auto;
+      }
     }
     &:active{
       box-shadow: 0px 2px 3px rgba(black, 0.6);
@@ -85,24 +98,38 @@ section.ministries {
         background-repeat: no-repeat;
         background-size: 710px auto;
         &.img1{
-          background-image: url("../images/ministries-project1.jpg");
-          background-position: center -110px;
+          background: url("../images/ministries-anglicanway.jpg") no-repeat center center / 900px auto;
+          @include breakpoint(tablet){ 
+            background-size: 900px auto;
+          }
         }
         &.img2{
-          background-image: url("../images/ministries-project2.jpg"); 
-          background-position: center -90px;
+          background: url("../images/ministries-print.jpg") no-repeat center center / 710px auto;
+          background-position: center center;
+          @include breakpoint(tablet){ 
+            background-size: $tablet-breakpoint auto;
+          }
         }
         &.img3{
-          background-image: url("../images/ministries-project3.jpg"); 
-          background-position: center -90px;
+          background: url("../images/ministries-ipray.jpg") no-repeat center center / 710px auto; 
+          background-position: center center;
+          @include breakpoint(tablet){ 
+            background-size: $tablet-breakpoint auto;
+          }
         }
         &.img4{
-          background-image: url("../images/ministries-project4.jpg");
-          background-position: center -640px;
+          background: url("../images/ministries-catechesis.jpg") no-repeat center center / 710px auto;
+          background-position: center center;
+          @include breakpoint(tablet){ 
+            background-size: $tablet-breakpoint auto;
+          }
         }
         &.img5{
-          background-image: url("../images/ministries-project5.jpg"); 
-          background-position: center -110px;
+          background: url("../images/ministries-scriptorium.jpg") no-repeat center center / 710px auto; 
+          background-position: center center;
+          @include breakpoint(tablet){ 
+            background-size: $tablet-breakpoint auto;
+          }
         }
         &:active{
           box-shadow: 0px 0px 0px rgba(black, 0.5);
@@ -118,11 +145,6 @@ section.ministries {
         box-shadow: 0 3px 10px rgba(black, 0.5), 
               inset 0 0 30px rgba(white, 0.6);
         background: rgba(0, 0, 0, 0.05);
-
-        @include breakpoint(mobile){ 
-          padding: 10px 0px;
-        }
-
 
         &:after{
           content: "";
@@ -171,7 +193,8 @@ section.ministries {
     display: none;
     &[type="radio"][name="project1"]:checked{
       &~ .modal-info.m1{
-        min-height: 400px;
+        height: auto;
+        padding-bottom: 25px;
       }
       &~ .projectbg div.arrow.first{
         display: block;
@@ -179,7 +202,8 @@ section.ministries {
     }
     &[type="radio"][name="project2"]:checked{
       &~ .modal-info.m2{
-        height: 400px;
+        height: auto;
+        padding-bottom: 25px;
       }
       &~ .projectbg div.arrow.second{
         display: block;
@@ -187,7 +211,8 @@ section.ministries {
     }
     &[type="radio"][name="project3"]:checked{
       &~ .modal-info.m3{
-        height: 400px;
+        height: auto;
+        padding-bottom: 25px;
       }
       &~ .projectbg div.arrow.third{
         display: block;
@@ -195,7 +220,8 @@ section.ministries {
     }
     &[type="radio"][name="project4"]:checked{
       &~ .modal-info.m4{
-        height: 400px;
+        height: auto;
+        padding-bottom: 25px;
       }
       &~ .projectbg div.arrow.fourth{
         display: block;
@@ -203,7 +229,8 @@ section.ministries {
     }
     &[type="radio"][name="project5"]:checked{
       &~ .modal-info.m5{
-        height: 400px;
+        height: auto;
+        padding-bottom: 25px;
       }
       &~ .projectbg div.arrow.fifth{
         display: block;
@@ -220,6 +247,9 @@ section.ministries {
       overflow: hidden;
       @include transition(height 0.3s ease 0s);
       z-index: 2;
+      @include breakpoint(mobile){
+        min-width: $min-ministries-breakpoint;//added to force arrow to be centered in mobile
+      }
     }
     div.bio{
       display: table;
