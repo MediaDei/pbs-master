@@ -7,7 +7,7 @@
 
 
 <section class="ministries">
-	<p class="capital-ornate intro"><span class="N">N</span><span class="smallcaps">ew society ministries</span> ipse lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital-ornate intro"><span class="T">T</span><span class="smallcaps">he </span> Prayer Book Society has a growing portfolio of ministries in fulfillment of its goals. These currently include:</p>
 
 
 	<script type="text/javascript">

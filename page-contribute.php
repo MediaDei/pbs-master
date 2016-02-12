@@ -7,7 +7,7 @@
 
 
 <section class="contribute" id="join">
-	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
+	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontributions to the work</span> of the Society are gratefully received and are vital to maintaining and expanding our work.</p>
 
   <h1 class="member-title">Become a Member</h1>
 
@@ -81,7 +81,7 @@
 <section class="contribute">
   <h1>Donate</h1>
 
-  <p class="capital-ornate"><span class="D">D</span><span class="smallcaps">onate to the Society</span> lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
+  <p class="capital-ornate"><span class="P">P</span><span class="smallcaps">lease express</span> your support for the work of the Society by making a financial contribution which will be greatly valued.</p>
 
   <div class="range-input">
     <span class="range-value"></span>

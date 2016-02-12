@@ -151,7 +151,7 @@
 <section class="home ministry-list">
 	<h1>Our Ministries</h1>
 
-	<p class="capital-ornate N"><span class="N">N</span><span class="smallcaps">ew society ministries</span> dei lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. rest pretium tempor. Ut eget imperdiet neque. In veritatem volutpat ante semper diam et aliquam erat.</p>
+	<p class="capital-ornate"><span class="T">T</span><span class="smallcaps">he </span> Prayer Book Society has a growing portfolio of ministries in fulfillment of its goals. These currently include:</p>
 
 	<div class="ministry-list">
 		<input id="ac-1" type="radio" name="accordion-1" checked="">
@@ -253,7 +253,7 @@
 <section class="home join">
   <h1 class="member-title">Become a Member</h1>
 
-	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontribute to the work</span> of the Society lorem ipsum dolor abesset velum amet, consectetur adipiscing elit. Ut pretium non datur. Rest pretium tempor. Ut eget imperdiet neque. In veritaatem volutpat ante semper diam.</p>
+	<p class="capital-ornate"><span class="P">P</span><span class="smallcaps">lease express</span> your support for the work of the Society by making a financial contribution which will be greatly valued.</p>
 
 	<div class="member-benefits">
 		<div class="grid-1-3">
