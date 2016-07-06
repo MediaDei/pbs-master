@@ -1,10 +1,11 @@
 //////////////////////////////////// Give Pop-up styling
 body.give-page{
+  div.mfp-bg{
+  }
   div.mfp-wrap{
     div.mfp-container{
       div.mfp-content{
-        //width: 400px;
-        min-width: 400px;
+        min-width: 250px;
         form.give-form{
           fieldset#give-payment-mode-select{
             div#give-payment-mode-wrap{

@@ -661,7 +661,7 @@ footer {
       position: fixed;
       top: 10%;
       max-width: 530px;
-      min-width: $min-breakpoint;
+      min-width: 220px;
       z-index: 1002;
       left: 50%;
       @include transform(translateX(-50%));
@@ -1003,7 +1003,7 @@ section.home {
   article.news {
     width: 680px;
     margin: 0 auto;
-    padding: 25px 40px;
+    padding: 25px 20px;
     background-color: #F2ECE1 * 1.01;
     box-shadow: 0 1px 2px rgba(black, 0.4), 
           inset 0 0 12px 3px white;
@@ -1065,7 +1065,7 @@ section.home {
       // extra date
       time.circle {
         position: absolute;
-        left: -70px;
+        left: -60px;
         top: -23px;
         height: 76px;
         width: 76px;
@@ -1113,10 +1113,16 @@ section.home {
       text-shadow: 0 1px 0 rgba(white, 0.9);
       font-size: 15px;
       display: table;
+      @include breakpoint(tablet){ 
+        padding: 1px 20px;
+      }
     
       div.img {
         display: table-cell;
         vertical-align: top;
+        @include breakpoint(tablet){ 
+          display: none;
+        }
   
         a {
           box-shadow: 0 0 0 1px #8E8A83 * 1.5, 
@@ -1221,7 +1227,7 @@ section.home {
       }
 
       a.item {
-        padding: 0 20px 0 20px;
+        padding: 0 20px 0 13px;
         display: block;
         position: relative;
         outline: 0;
@@ -1682,7 +1688,7 @@ section.home.ministry-list {
           position: absolute;
           left: 50%;
           top: 50%;
-          transform: translate(-50%, -50%);
+          @include transform (translate(-50%, -50%));
           width: 90%;
 
           h2 {
@@ -2799,9 +2805,9 @@ section.contribute {
         &.two { left: -40px; }
         &.three { left: -34px; }
         @include breakpoint(tablet){ 
-          &.one { left: -62px; &:after { margin-left: 0px; }}
-          &.two { left: -70px; }
-          &.three { left: -64px; }       
+          &.one { left: -49px; &:after { margin-left: 0px; }}
+          &.two { left: -60px; }
+          &.three { left: -54px; }       
         }
       }
 
@@ -3192,7 +3198,7 @@ section.post-archive {
   .post-title {
     text-align: center;
     font-size: 1.9em;
-    width: $post-text-width;
+    max-width: $post-text-width;
     margin: 0 auto;
     line-height: 1.1;
 

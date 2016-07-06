@@ -220,6 +220,7 @@ function scripts_styles() {
     wp_deregister_style( 'open-sans' );
     wp_register_style( 'open-sans', false );
     wp_enqueue_script('jquery'); // default jQuery
+    wp_enqueue_script('mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js');//check to make sure not linked in header.php since this is proper link
 }
 add_action( 'wp_enqueue_scripts', 'scripts_styles');
 

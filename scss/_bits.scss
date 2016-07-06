@@ -1,6 +1,5 @@
 //RWD Break Points
 $min-breakpoint: 480px;
-$min-ministries-breakpoint: 551px;//added to stop text wrapping in mobile
 $mobile-breakpoint: 620px;
 $tablet-breakpoint: 820px;
 @mixin breakpoint($point) {

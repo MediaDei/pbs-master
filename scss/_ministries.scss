@@ -34,9 +34,6 @@ section.ministries {
       border-radius: 0px;
       box-shadow: 0 3px 4px 1px rgba(black, 0.6);
     }
-    @include breakpoint(mobile){
-      min-width: $min-ministries-breakpoint;//added to stop text from wrapping in mobile
-    }
     &.img1{
       background: url("../images/ministries-anglicanway.jpg") no-repeat center center / 900px auto;
       @include breakpoint(tablet){ 
@@ -161,6 +158,9 @@ section.ministries {
           color: #ffffff;
           font-size: 2.3em;
           font-style: italic;
+          @include breakpoint(mobile){
+            font-size: 1.9em;
+          }
 
         }
         p{
@@ -170,6 +170,9 @@ section.ministries {
           line-height: 1.1;
           padding-top: 30px;
           white-space: pre-line;
+          @include breakpoint(mobile){
+            font-size: 0.8em;
+          }
           
 
         }
@@ -247,9 +250,6 @@ section.ministries {
       overflow: hidden;
       @include transition(height 0.3s ease 0s);
       z-index: 2;
-      @include breakpoint(mobile){
-        min-width: $min-ministries-breakpoint;//added to force arrow to be centered in mobile
-      }
     }
     div.bio{
       display: table;

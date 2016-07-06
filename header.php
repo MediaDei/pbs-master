@@ -13,7 +13,14 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
 	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' type="text/css">
 
+	<!-- remove this script, its in functions.php 
 	<script type='text/javascript' src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js?ver=4.3.1'></script>
+	-->
+
+
+
+
+
 
 	<!-- compact way of doing things; doesn't work for Home
 	<title><?php wp_title( '|', true, 'right' ); ?></title>-->
