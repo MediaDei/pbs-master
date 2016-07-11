@@ -4,7 +4,8 @@
 add_theme_support( 'post-thumbnails' );
 
 //Disable WP Core editor settings from adding <p> and <br> into the_content();
-//remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_content', 'wpautop' );
+
 
 //Disable Emoji from WP Core
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -60,7 +61,193 @@ function media_dei_announcement_image_shortcode($atts, $content){
     return '<div class="announcement-image" role="img"><figure><img src="' . $url . '"></figure></div>';
 }
 add_shortcode('announcement_image', 'media_dei_announcement_image_shortcode');
+
+function media_dei_staff_circles_3_shortcode($atts, $content){
+    $atts = shortcode_atts(
+        array(
+            'staff_photo_left' => 'URL of Image from Media Library Goes Here',
+            'staff_photo_center' => 'URL of Image from Media Library Goes Here',
+            'staff_photo_right' => 'URL of Image from Media Library Goes Here',
+
+            'staff_name_left' => 'Name Goes Here',
+            'staff_name_center' => 'Name Goes Here',
+            'staff_name_right' => 'Name Goes Here',
+
+            'staff_title_left' => 'Title Goes Here',
+            'staff_title_center' => 'Title Goes Here',
+            'staff_title_right' => 'Title Goes Here',
+
+            'staff_bio_left' => 'Bio Paragraph Goes Here',
+            'staff_bio_center' => 'Bio Paragraph Goes Here',
+            'staff_bio_right' => 'Bio Paragraph Goes Here'
+        ), $atts
+    );
+
+    extract($atts);//convert indexed values from array into variables
+    
+    return '
+        <input class="radioButton" id="bio1-left" type="radio" name="bio1">
+        <input class="radioButton" id="bio1-center" type="radio" name="bio1">
+        <input class="radioButton" id="bio1-right" type="radio" name="bio1">
+        
+        <div class="wrapper">
+          <div class="grid-1-3">
+            <div class="person">
+              <label class="zoom fa fa-search" for="bio1-left"></label>
+              <figure><img src="' . $staff_photo_left . '"></figure>
+              <p>' . $staff_name_left . '</p>
+              <p>' . $staff_title_left . '</p>
+              <div class="arrow bio1-left"></div>
+            </div>
+          </div>
+          
+          <div class="grid-1-3">
+            <div class="person">
+              <label class="zoom fa fa-search" for="bio1-center"></label>
+              <figure><img src="' . $staff_photo_center . '"></figure>
+              <p>' . $staff_name_center . '</p>
+              <p>' . $staff_title_center . '</p>
+              <div class="arrow bio1-center"></div>
+            </div>
+          </div>
+          
+          <div class="grid-1-3">
+            <div class="person">
+              <label class="zoom fa fa-search" for="bio1-right"></label>
+              <figure><img src="' . $staff_photo_right . '"></figure>
+              <p>' . $staff_name_right . '</p>
+              <p>' . $staff_title_right . '</p>
+              <div class="arrow bio1-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-info m1">
+          <div class="bio1">
+            <p>' . $staff_name_left . '</p>
+            <p class="p capital">' . $staff_bio_left . '</p>
+          </div>
+          <div class="bio1">
+            <p>' . $staff_name_center . '</p>
+            <p class="p capital">' . $staff_bio_center . '</p>
+          </div>
+          <div class="bio1">
+            <p>' . $staff_name_right . '</p>
+            <p class="p capital">' . $staff_bio_right . '</p>
+          </div>
+          <div class="close fa fa-times"></div>
+        </div>
+    ';
+}
+add_shortcode('staff_circles_3', 'media_dei_staff_circles_3_shortcode');
+
+function media_dei_staff_circles_2_shortcode($atts, $content){
+    $atts = shortcode_atts(
+        array(
+            'staff_photo_left' => 'URL of Image from Media Library Goes Here',
+            'staff_photo_right' => 'URL of Image from Media Library Goes Here',
+
+            'staff_name_left' => 'Name Goes Here',
+            'staff_name_right' => 'Name Goes Here',
+
+            'staff_title_left' => 'Title Goes Here',
+            'staff_title_right' => 'Title Goes Here',
+
+            'staff_bio_left' => 'Bio Paragraph Goes Here',
+            'staff_bio_right' => 'Bio Paragraph Goes Here'
+        ), $atts
+    );
+
+    extract($atts);//convert indexed values from array into variables
+    
+    return '
+        <input class="radioButton" id="bio2-left" type="radio" name="bio2">
+        <input class="radioButton" id="bio2-right" type="radio" name="bio2">
+
+        <div class="wrapper">
+          <div class="grid-1-2">
+            <div class="person">
+              <label class="zoom fa fa-search" for="bio2-left"></label>
+              <figure><img src="' . $staff_photo_left . '"></figure>
+              <p>' . $staff_name_left . '</p>
+              <p>' . $staff_title_left . '</p>
+              <div class="arrow bio2-left"></div>
+            </div>
+          </div>
+          
+          <div class="grid-1-2">
+            <div class="person">
+              <label class="zoom fa fa-search" for="bio2-right"></label>
+              <figure><img src="' . $staff_photo_right . '"></figure>
+              <p>' . $staff_name_right . '</p>
+              <p>' . $staff_title_right . '</p>
+              <div class="arrow bio2-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-info m2">
+          <div class="bio2">
+            <p>' . $staff_name_left . '</p>
+            <p class="p capital">' . $staff_bio_left . '</p>
+          </div>
+          <div class="bio2">
+            <p>' . $staff_name_right . '</p>
+            <p class="p capital">' . $staff_bio_right . '</p>
+          </div>
+          <div class="close fa fa-times"></div>
+        </div>
+    ';
+}
+add_shortcode('staff_circles_2', 'media_dei_staff_circles_2_shortcode');
+
+function media_dei_additional_staff_member_open_shortcode($atts, $content){           
+    return '
+        <h2 class="more-staff">Other Board Members</h2>
+            <div class="more-staff">';
+    }
+add_shortcode('additional_staff_member_open', 'media_dei_additional_staff_member_open_shortcode');
+
+function media_dei_additional_staff_member_close_shortcode($atts, $content){           
+    return '</div>';
+    }
+add_shortcode('additional_staff_member_close', 'media_dei_additional_staff_member_close_shortcode');
+
+
+
+function media_dei_additional_staff_member_row_shortcode($atts, $content){
+    $atts = shortcode_atts(
+        array(
+            'name_left' => '',
+            'title_left' => '',
+            'name_right' => '',
+            'title_right' => ''
+        ), $atts
+    );
+
+    extract($atts);//convert indexed values from array into variables
+    
+    return '
+        <div>
+            <div class="name">' . $name_left . '</div>
+            <div class="desc">' . $title_left . '</div>
+        </div>
+        <div>
+            <div class="name">' . $name_right . '</div>
+            <div class="desc">' . $title_right . '</div>
+        </div>';
+    }
+add_shortcode('additional_staff_member_row', 'media_dei_additional_staff_member_row_shortcode');
 //End Media Dei Shortcodes
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2474,30 +2474,18 @@ section.about {
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;
            
             &:active {
               .modal-info{
                 height: 280px;
               }
             }
-            &.photo-dunbar {
-              background: url("../images/about-photo-dunbar.jpg") no-repeat scroll -53px -9px / 249% auto;
+            img{
+              width: 100%;
+              height: auto;
+              display: block;
             }
-            &.photo-rix {
-              background: url("../images/about-photo-rix.jpg") no-repeat scroll -3px 4px / 101% auto;
-            }
-            &.photo-mcd {
-              background: url("../images/about-photo-mcd.jpg") no-repeat scroll -95px 2px / 215% auto;
-            }
-            &.photo-bayer {
-              background: url("../images/about-photo-bayer.jpg") no-repeat scroll -1px 0 / 100% auto;
-            }
-            &.photo-stephans {
-              background: url("../images/about-photo-stephans.jpeg") no-repeat scroll -111px -98px / 380px auto;
-            }
-            //&.photo-martin {
-            //  background: url("../images/about-photo-martin.jpg") no-repeat scroll -51px -2px / 225px auto;
-            //}
             
           }
           p {

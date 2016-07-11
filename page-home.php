@@ -75,10 +75,10 @@ if ( have_posts() ) {
 
 	<div class="more-aw">
 		<h2 class="smallcaps">Anglican Way</h2>
-		<time datetime="2015-12">Dec., 2015 <span>•</span> Vol. 38, No. 3</time>
+		<time datetime="2015-12">Summer, 2016 <span>•</span> Vol. 39, No. 1</time>
 
-		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2015-03.pdf">
-			<img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2015-03-cover.jpg" title="Anglican Way Print Magazine"/>
+		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2016-01.pdf">
+			<img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2016-01-cover.jpg" title="Anglican Way Print Magazine"/>
 			<span class="zoom fa fa-search"></span>
 		</a>
 

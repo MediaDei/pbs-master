@@ -139,103 +139,14 @@
 
   <h1>Who We Are</h1>
 
-    <input class="radioButton" id="bio1-left" type="radio" name="bio1">
-    <input class="radioButton" id="bio1-center" type="radio" name="bio1">
-    <input class="radioButton" id="bio1-right" type="radio" name="bio1">
-    
-    <div class="wrapper">
-      <div class="grid-1-3">
-        <div class="person">
-          <label class="zoom fa fa-search" for="bio1-left"></label>
-          <figure class="photo-dunbar"></figure>
-          <p>Fr. Gavin Dunbar</p>
-          <p>President</p>
-          <div class="arrow bio1-left"></div>
-        </div>
-      </div>
-      
-      <div class="grid-1-3">
-        <div class="person">
-          <label class="zoom fa fa-search" for="bio1-center"></label>
-          <figure class="photo-rix"></figure>
-          <p>Fr. Edward Rix</p>
-          <p>Vice-President</p>
-          <div class="arrow bio1-center"></div>
-        </div>
-      </div>
-      
-      <div class="grid-1-3">
-        <div class="person">
-          <label class="zoom fa fa-search" for="bio1-right"></label>
-          <figure class="photo-bayer"></figure>
-          <p>Roberta Bayer, Ph.D.</p>
-          <p>Editor, "Anglican Way"</p>
-          <div class="arrow bio1-right"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-info m1">
-      <div class="bio1">
-        <p>Fr. Gavin Dunbar</p>
-        <p class="p capital"><i>Fr. Gavin Dunbar is Rector of Saint John's Church, in Savannah, Georgia</i>. Saint John's is a 1928 Prayer Book parish in the Episcopal Church. Born in Toronto, Ontario, he was educated at Trinity College, Toronto; Dalhousie University, Halifax; and Wycliffe College, Toronto. He was ordained in Nova Scotia in 1992.</p>
-      </div>
-      <div class="bio1">
-        <p>Fr. Edward Rix</p>
-        <p class="p capital"><i>Fr. Edward Rix is Priest-in-charge of All Saints’ Church in Wynnewood, PA</i>. A native of Canada, he is a graduate of King's College and Wycliffe College. Before ordination he pursued graduate studies in Classics, student hospital chaplaincy, University administration and assisted in parishes in Boston, Toronto, New Brunswick, Guyana, Quebec and Labrador. In 1996 he was ordained for ministry in the Diocese Lusaka, Zambia, and served first as a school chaplain and then as a deacon in rural, shanty-town and urban parishes. Having come to All Saints, he became Youth Director in 1998, Interim Rector in 2001, and Priest-in-charge in 2013.</p>
-      </div>
-      <div class="bio1">
-        <p>Roberta Bayer, Ph.D.</p>
-        <p class="p capital"><i>Dr. Roberta Bayer serves as the Editor of the <u>Anglican Way</u>, the print magazine of the Prayer Book Society</i>. A Canadian by birth and educated at the Universities of Notre Dame, the London School of Economics, Toronto and Guelph, Dr. Bayer is Assistant Professor of Government at Patrick Henry College. She researches and teaches Medieval Philosophy, Reformation thought, and contemporary Christian philosophy. Dr. Bayer has taught in the University of King's College, Halifax, Nova Scotia; Saint Mary's College, Leavenworth, Kansas; and George Mason University, Fairfax, Virginia. In 2012 she published a collection of essays: <i>Reformed and Catholic: Essays in Honor of Peter Toon</i>, (Wipf and Stock).</p>
-      </div>
-      <div class="close fa fa-times"></div>
-    </div>
-  
-    <input class="radioButton" id="bio2-left" type="radio" name="bio2">
-    <input class="radioButton" id="bio2-right" type="radio" name="bio2">
-    <div class="wrapper">
-      <div class="grid-1-2">
-        <div class="person">
-          <label class="zoom fa fa-search" for="bio2-left"></label>
-          <figure class="photo-anderson"></figure>
-          <p>Gordon Anderson</p>
-          <p>Treasurer</p>
-          <div class="arrow bio2-left"></div>
-        </div>
-      </div>
-      
-      <div class="grid-1-2">
-        <div class="person">
-          <label class="zoom fa fa-search" for="bio2-right"></label>
-          <figure class="photo-mcd"></figure>
-          <p>Canon Alistair
-          <span>Macdonald-Radcliff</span></p>
-          <p>Special Advisor</p>
-          <div class="arrow bio2-right"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-info m2">
-      <div class="bio2">
-        <p>Gordon Anderson</p>
-        <p class="p capital"><i>Gordon Anderson serves as the Treasurer for the Prayer Book Society</i>.  Lorem ipsum...</p>
-      </div>
-      <div class="bio2">
-        <p>Canon Alistair Macdonald-Radcliff</p>
-        <p class="p capital"><i>International Advisor to the Society on special projects</i>. He has served as Director General of the World Dialogue Network and C-1 (successor body to the Council of One Hundred Leaders West-Islamic Dialogue launched by World Economic Forum with Lord Carey 103<sup>rd</sup> Archbishop of Canterbury) as well as the King Abdullah Centre (KAICIID) in Vienna launched by Spain, Austria, Saudi Arabia and the Holy See.  Educated at the Universities of London, Oxford and Yale he also served as Quondam Dean of All Saints’ Anglican Cathedral in Cairo.</p>
-      </div>
-      <div class="close fa fa-times"></div>
-    </div>
-
-
-    <h2 class="more-staff">Other Board Members</h2>
-    <div class="more-staff">
-      <div class="name">Dr. Gillis Harp</div> <div class="desc">Board member</div>
-      <div class="name">The Rev’d Jonathan Kell</div> <div class="desc">Board member</div>
-      <div class="name">Mr. William Murchison</div> <div class="desc">Board member</div>
-      <div class="name">The Very Rev’d David Thurlow</div> <div class="desc">Board member</div>
-    </div>
+  <?php //get page contents
+  if ( have_posts() ) {
+    while ( have_posts() ) {
+      the_post(); 
+      the_content();
+    } // end while
+  } // end if
+  ?>
 
 </section>
 
