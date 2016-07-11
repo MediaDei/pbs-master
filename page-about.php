@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image about"></div>
-	<div class="page-title"><h1>About</h1></div>
-</header>
-
+<div class="page-title"><h1>About</h1></div>
 
 <section class="about">
 	<div class="about-text">
@@ -70,72 +66,78 @@
 
 	<h1>Prayerbook Parishes</h1>
 
+  <p style="text-align:center">Parish Registration Form &rarr;&nbsp;&nbsp;&nbsp; <a href="https://docs.google.com/forms/d/1vaKqduDKQ20V5SsU4JFArPLoE1Zqf5taSMkAty9t3m0/viewform?c=0&w=1">click here</a></p>
+  <p style="text-align:center">Individual Sign-up Form &rarr;&nbsp;&nbsp;&nbsp; <a href="https://docs.google.com/forms/d/1AoAW0SMBdIJ5FlLG_bLnb-tOpq5yhWYr1zbqQ438cjk/viewform?c=0&w=1">click here</a></p>
+  <br>
+
 	<div id="mapBox">
 	</div>
 
 
 
-	<h2 class="find-title">Find nearby Parish:</h2>
+	<h2 style="display:none" class="find-title">Find nearby Parish:</h2>
 
-	<div class="find-wrap">
-		<div class="left-wrap">
-			<label for="find-list" class="find-label">Sort by:</label>
-			<select name="find-list" class="find-list">
-				<option value="all" selected>All</option>
-				<option value="state">State</option>
-				<option value="diocese">Diocese</option>
-				<option value="jurisdiction">Jurisdiction</option>
-			</select>
-		</div>
+	<h2 style="display:none" class="find-title">Find nearby Parish:</h2>
 
-		<div class="right-wrap">
-			<label for="find-state" class="find-label">Enter state:</label>
-			<input name="find-state" class="find-input" size="15" placeholder="State">
-			<input type="button" class="find-button" value="Search">
+  <div style="display:none" class="find-wrap">
+    <div class="left-wrap">
+      <label for="find-list" class="find-label">Sort by:</label>
+      <select name="find-list" class="find-list">
+        <option value="all" selected>All</option>
+        <option value="state">State</option>
+        <option value="diocese">Diocese</option>
+        <option value="jurisdiction">Jurisdiction</option>
+      </select>
+    </div>
 
-			<label for="find-zip" class="find-label">Enter ZIP:</label>
-			<input name="find-zip" class="find-input" size="15" placeholder="ZIP">
-			<input type="button" class="find-button" value="Search">
-		</div>
-	</div>
+    <div style="display:none" class="right-wrap">
+      <label for="find-state" class="find-label">Enter state:</label>
+      <input name="find-state" class="find-input" size="15" placeholder="State">
+      <input type="button" class="find-button" value="Search">
+
+      <label for="find-zip" class="find-label">Enter ZIP:</label>
+      <input name="find-zip" class="find-input" size="15" placeholder="ZIP">
+      <input type="button" class="find-button" value="Search">
+    </div>
+  </div>
 
 
-	<h2 class="added-title">Recently added:</h2>
+	<h2 style="display:none" class="added-title">Recently added:</h2>
 
-	<ul class="added-wrap">
-		<li class="added-item clear">
-				<div role="img" class="photo ph1"></div>
-				<h1 class="title"><a href="#">St. Stephen's (CANA)</a></h1>
-				<h2 class="location">Madison, WI</h2>
-				<time class="date">8/2/2015</time>
+  <ul style="display:none" class="added-wrap">
+    <li class="added-item clear">
+        <div role="img" class="photo ph1"></div>
+        <h1 class="title"><a href="#">St. Stephen's (CANA)</a></h1>
+        <h2 class="location">Madison, WI</h2>
+        <time class="date">8/2/2015</time>
 
-				<a class="button" href="#">Visit →</a>
-		</li>
+        <a class="button" href="#">Visit →</a>
+    </li>
 
-		<li class="added-item">
-				<div role="img" class="photo ph2"></div>
-				<h1 class="title"><a href="#">All Saints Anglican</a></h1>
-				<h2 class="location">Charleston, SC</h2>
-				<time class="date">7/18/2015</time>
+    <li class="added-item">
+        <div role="img" class="photo ph2"></div>
+        <h1 class="title"><a href="#">All Saints Anglican</a></h1>
+        <h2 class="location">Charleston, SC</h2>
+        <time class="date">7/18/2015</time>
 
-				<a class="button" href="#">Visit →</a>
-		</li>
+        <a class="button" href="#">Visit →</a>
+    </li>
 
-		<li class="added-item">
-				<div role="img" class="photo ph3"></div>
-				<h1 class="title"><a href="#">Christ Redeemer Anglican</a></h1>
-				<h2 class="location">Norfolk, VA</h2>
-				<time class="date">5/21/2015</time>
+    <li class="added-item">
+        <div role="img" class="photo ph3"></div>
+        <h1 class="title"><a href="#">Christ Redeemer Anglican</a></h1>
+        <h2 class="location">Norfolk, VA</h2>
+        <time class="date">5/21/2015</time>
 
-				<a class="button" href="#">Visit →</a>
-		</li>
-	</ul>
+        <a class="button" href="#">Visit →</a>
+    </li>
+  </ul>
 
 </section>
 
 <section class="about staff">
 
-	<h1>Who We Are</h1>
+  <h1>Who We Are</h1>
 
     <input class="radioButton" id="bio1-left" type="radio" name="bio1">
     <input class="radioButton" id="bio1-center" type="radio" name="bio1">
@@ -195,8 +197,8 @@
       <div class="grid-1-2">
         <div class="person">
           <label class="zoom fa fa-search" for="bio2-left"></label>
-          <figure class="photo-stephans"></figure>
-          <p>Kathleen Stephans</p>
+          <figure class="photo-anderson"></figure>
+          <p>Gordon Anderson</p>
           <p>Treasurer</p>
           <div class="arrow bio2-left"></div>
         </div>
@@ -216,8 +218,8 @@
 
     <div class="modal-info m2">
       <div class="bio2">
-        <p>Kathleen Stephans</p>
-        <p class="p capital"><i>Kathleen Stephans serves as the Treasurer for the Prayer Book Society</i>.  A long-time member of All Saints Church, Wynnewood, PA and coming from a multi-generational Anglican family, she holds in very high regard the Anglican tradition and the 1928 Prayer Book, particularly the Daily Office and the liturgical practices. An accountant by training, she began her career at Price Waterhouse, spent many years in healthcare finance, and is currently Director of Partner Services for a large, international law firm.</p>
+        <p>Gordon Anderson</p>
+        <p class="p capital"><i>Gordon Anderson serves as the Treasurer for the Prayer Book Society</i>.  Lorem ipsum...</p>
       </div>
       <div class="bio2">
         <p>Canon Alistair Macdonald-Radcliff</p>
@@ -228,16 +230,12 @@
 
 
     <h2 class="more-staff">Other Board Members</h2>
-	  <div class="more-staff">
-	    <div class="name">Mrs. Rhea Bright</div> <div class="desc">Secretary</div>
-	    <div class="name">The Rev’d William Martin</div> <div class="desc">Board member</div>
-	    <div class="name">The Rev’d J. Gordon Anderson</div> <div class="desc">Board member</div>
-	    <div class="name">Dr. Gillis Harp</div> <div class="desc">Board member</div>
-	    <div class="name">The Rev’d Jonathan Kell</div> <div class="desc">Board member</div>
-	    <div class="name">Mr. William Murchison</div> <div class="desc">Board member</div>
-	    <div class="name">The Very Rev’d David Thurlow</div> <div class="desc">Board member</div>
-	    <div class="name">The Rev’d Elijah White</div> <div class="desc">Board member</div>
-	  </div>
+    <div class="more-staff">
+      <div class="name">Dr. Gillis Harp</div> <div class="desc">Board member</div>
+      <div class="name">The Rev’d Jonathan Kell</div> <div class="desc">Board member</div>
+      <div class="name">Mr. William Murchison</div> <div class="desc">Board member</div>
+      <div class="name">The Very Rev’d David Thurlow</div> <div class="desc">Board member</div>
+    </div>
 
 </section>
 

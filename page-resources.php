@@ -1,12 +1,17 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image resources"></div>
-	<div class="page-title"><h1>Resources</h1></div>
-</header>
-
+<div class="page-title"><h1>Resources</h1></div>
 
 <section class="resources">
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		the_content();
+	} // end while
+} // end if
+?>
+<!--
 	<article>
 		<h2><a href="http://anglicanwaymagazine.com/">Anglican Way Magazine</a></h2>
 		<p class="p">An online magazine of the Society, discussing perspectives on theology and doctrine from the traditional Anglican perspective.</p>
@@ -46,8 +51,6 @@
 		<h2><a href="http://www.episcopalnet.org/Kalendars/index.html">Liturgical Calendar (1928 BCP)</a></h2>
 		<p class="p">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ult rices sem tincidunt euismod.</p>
 	</article>
-
+-->
 </section>
-
-
 <?php get_footer(); ?>

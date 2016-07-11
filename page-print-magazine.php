@@ -1,11 +1,6 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image resources"></div>
-	<div class="page-title"><h1>Anglican Way Magazine</h1></div>
-</header>
-
-
+<div class="page-title"><h1>Anglican Way Magazine</h1></div>
 
 <section class="print-magazine">
 	<h1>2015</h1>

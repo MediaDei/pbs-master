@@ -1,4 +1,127 @@
 <?php
+
+//allow Featured Images in Posts/Pages
+add_theme_support( 'post-thumbnails' );
+
+//Disable WP Core editor settings from adding <p> and <br> into the_content();
+//remove_filter( 'the_content', 'wpautop' );
+
+//Disable Emoji from WP Core
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+function scripts_styles() {
+
+    //Deregister Scripts/Styles from WP Core
+    wp_deregister_style( 'open-sans' );
+    wp_register_style( 'open-sans', false );
+
+    //Register Scripts/Styles
+    wp_register_style( 'global-style', get_template_directory_uri() . '/css/global.css');
+    wp_register_style('font-awesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
+
+    //Enqueue Scripts/Styles
+    wp_enqueue_script('jquery'); // default jQuery
+    wp_enqueue_script('mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js');
+
+    wp_enqueue_style('global-style');
+    wp_enqueue_style('font-awesome-style');
+
+
+}
+add_action( 'wp_enqueue_scripts', 'scripts_styles');
+
+
+//Media Dei Shortcodes
+function media_dei_resource_item_shortcode($atts, $content){
+    $atts = shortcode_atts(
+        array(
+            'title' => 'Heading Goes Here',
+            'url' => 'URL Goes Here',
+            'paragraph' => 'Text Goes Here'
+        ), $atts
+    );
+
+    extract($atts);//convert indexed values from array into variables
+
+    return '<h2 class="resource-heading"><a href="' . $url . '">' . $title . '</a></h2><p class="resource-paragraph">' . $paragraph . '</p>';
+}
+add_shortcode('resource_item', 'media_dei_resource_item_shortcode');
+
+function media_dei_announcement_image_shortcode($atts, $content){
+    $atts = shortcode_atts(
+        array(
+            'url' => 'URL of Image from Media Library Goes Here'
+        ), $atts
+    );
+
+    extract($atts);//convert indexed values from array into variables
+    
+    return '<div class="announcement-image" role="img"><figure><img src="' . $url . '"></figure></div>';
+}
+add_shortcode('announcement_image', 'media_dei_announcement_image_shortcode');
+//End Media Dei Shortcodes
+
+
+
+
+function filter_ptags_on_images($content)
+{
+    // strip <p> from post images
+    // regular expression: <p> (whitespace) <a (stuff)>(stuff)</a> (whitespace) </p>
+    // replace with <div> and inner contents
+    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '<div class="img">\1\2\3</div>', $content);
+}
+// we want it to be run after the autop stuff... 10 is default.
+add_filter('the_content', 'filter_ptags_on_images');
+
+
+/* Recommended implementation of <title> from WP folks 
+function theme_slug_setup() {
+   add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'theme_slug_setup' );
+*/
+
+/**
+ * Set title based on current view.
+ *
+ * @since Twenty Twelve 1.0
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string Filtered title.
+ */
+
+/*
+function extra_wp_title( $title, $sep ) {
+    global $paged, $page;
+
+    if ( is_feed() )
+        return $title;
+
+    // Add the site name.
+    $title .= get_bloginfo( 'name' );
+
+    // Add the site description for the home/front page.
+    $site_description = get_bloginfo( 'description', 'display' );
+    if ( $site_description && ( is_home() || is_front_page() ) )
+        $title = "$title $sep $site_description";
+
+    // Add a page number if necessary.
+    if ( $paged >= 2 || $page >= 2 )
+        $title = "$title $sep " . sprintf( __( 'Page %s', 'standrewshamble' ), max( $paged, $page ) );
+
+    return $title;
+}
+add_filter( 'wp_title', 'extra_wp_title', 10, 2 );
+*/
+
+
+
+
+
+
+
 //Give Plugin Modifications
 
 
@@ -213,72 +336,7 @@ add_action( 'give_payment_personal_details_list', 'give_myprefix_purchase_detail
 
 
 
-// Defaults
-// ---remove GoogleFonts OpenSans font, 
-// ---add default jquery
-function scripts_styles() {
-    wp_deregister_style( 'open-sans' );
-    wp_register_style( 'open-sans', false );
-    wp_enqueue_script('jquery'); // default jQuery
-    wp_enqueue_script('mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js');//check to make sure not linked in header.php since this is proper link
-}
-add_action( 'wp_enqueue_scripts', 'scripts_styles');
 
-// ---Auto-loaded emoji scripts
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-
-
-function filter_ptags_on_images($content)
-{
-    // strip <p> from post images
-    // regular expression: <p> (whitespace) <a (stuff)>(stuff)</a> (whitespace) </p>
-    // replace with <div> and inner contents
-    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '<div class="img">\1\2\3</div>', $content);
-}
-// we want it to be run after the autop stuff... 10 is default.
-add_filter('the_content', 'filter_ptags_on_images');
-
-
-/* Recommended implementation of <title> from WP folks 
-function theme_slug_setup() {
-   add_theme_support( 'title-tag' );
-}
-add_action( 'after_setup_theme', 'theme_slug_setup' );
-*/
-
-/**
- * Set title based on current view.
- *
- * @since Twenty Twelve 1.0
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string Filtered title.
- */
-
-/*
-function extra_wp_title( $title, $sep ) {
-    global $paged, $page;
-
-    if ( is_feed() )
-        return $title;
-
-    // Add the site name.
-    $title .= get_bloginfo( 'name' );
-
-    // Add the site description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) )
-        $title = "$title $sep $site_description";
-
-    // Add a page number if necessary.
-    if ( $paged >= 2 || $page >= 2 )
-        $title = "$title $sep " . sprintf( __( 'Page %s', 'standrewshamble' ), max( $paged, $page ) );
-
-    return $title;
-}
-add_filter( 'wp_title', 'extra_wp_title', 10, 2 );
-*/
 
 
 

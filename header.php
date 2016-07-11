@@ -8,29 +8,14 @@
 		<meta name="robots" content="noindex, nofollow">
 	<?php }?>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/global.css" type="text/css">
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css" type="text/css">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
-	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' type="text/css">
-
-	<!-- remove this script, its in functions.php 
-	<script type='text/javascript' src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js?ver=4.3.1'></script>
-	-->
-
-
-
-
-
-
-	<!-- compact way of doing things; doesn't work for Home
-	<title><?php wp_title( '|', true, 'right' ); ?></title>-->
+	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' type="text/css"><!--need to put in functions.php-->
 
 	<title>
 		<?php 
 			if(is_home()) { 
-				echo " Home | ";
+				echo " Notices | ";//this names the "index.php" or "blog" page
 				echo bloginfo("name");
-				//echo bloginfo("description"); add if desired for SEO?
 			} 
 			else { 
 				echo wp_title(" | ", false, right);
@@ -71,10 +56,25 @@
 			</div>
 
 			<nav class="main-nav"><div class="container clear">
-			  <a class="home" href="/">Home</a>
+			  <a class="home" href="/home/">Home</a>
 			  <a class="about" href="/about/">About</a>
 			  <a class="ministries" href="/ministries/">Ministries</a>
 			  <a class="resources" href="/resources/">Resources</a>
 			  <a class="contribute" href="/contribute/">Contribute</a>
 			  <a class="market" href="http://www.anglicanmarketplace.com"><span class="cart fa fa-shopping-cart"></span>Market</a>
 			</div></nav>
+
+			<?php 
+			//get hero for index.php "Notices" and also apply it to archive.php
+			if(is_home() || is_archive()) { 
+			  $page_for_posts = get_option( 'page_for_posts' );
+        echo '<div class="hero-img" role="image">'.get_the_post_thumbnail($page_for_posts, 'large').'</div>';
+			}
+			//get hero for all pages except index.php "Notices"
+			if ( has_post_thumbnail() ) {
+				echo '<div class="hero-img" role="image">';
+				the_post_thumbnail();
+				echo '</div>';
+			} 
+			?>
+		</header>

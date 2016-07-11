@@ -1,9 +1,5 @@
-	<?php get_header(); ?>
+<?php get_header(); ?>
 	
-	<div role="img" class="hero-image post"></div>
-</header>
-
-
 <section id="read" class="post">
 
 	<?php the_post(); ?>

@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image ministries"></div>
-	<div class="page-title"><h1>Ministries</h1></div>
-</header>
-
+<div class="page-title"><h1>Ministries</h1></div>
 
 <section class="ministries">
 	<p class="capital-ornate intro"><span class="T">T</span><span class="smallcaps">he </span> Prayer Book Society has a growing portfolio of ministries in fulfillment of its goals. These currently include:</p>

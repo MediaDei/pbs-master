@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image resources"></div>
-	<div class="page-title"><h1>Catechesis Project</h1></div>
-</header>
-
+<div class="page-title"><h1>Catechesis Project</h1></div>
 
 <section class="catechesis-project">
 	<h1>Training in the Anglican Faith</h1>

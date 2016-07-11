@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-	
-	<div role="img" class="hero-image contribute"></div>
-	<div class="page-title"><h1>Contribute</h1></div>
-</header>
-
+<div class="page-title"><h1>Contribute</h1></div>
 
 <section class="contribute" id="join">
 	<p class="capital-ornate"><span class="C">C</span><span class="smallcaps">ontributions to the work</span> of the Society are gratefully received and are vital to maintaining and expanding our work.</p>
