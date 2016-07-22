@@ -3,245 +3,341 @@
 //allow Featured Images in Posts/Pages
 add_theme_support( 'post-thumbnails' );
 
-//Disable WP Core editor settings from adding <p> and <br> into the_content();
-remove_filter( 'the_content', 'wpautop' );
-
-
 //Disable Emoji from WP Core
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+//stop WP core from adding <p> and <br> tags to shortcode from WYSIWYG editor filter (wpautop)
+function shortcode_empty_paragraph_fix($content)
+{   
+  $array = array (
+    '<p>[' => '[', 
+    ']</p>' => ']', 
+    ']<br />' => ']'
+  );
+
+  $content = strtr($content, $array);
+
+  return $content;
+}
+add_filter('the_content', 'shortcode_empty_paragraph_fix');
+
 function scripts_styles() {
+  //Deregister Scripts/Styles from WP Core
+  wp_deregister_style( 'open-sans' );
+  wp_register_style( 'open-sans', false );
 
-    //Deregister Scripts/Styles from WP Core
-    wp_deregister_style( 'open-sans' );
-    wp_register_style( 'open-sans', false );
+  //Register Scripts/Styles
+  wp_register_style( 'global-style', get_template_directory_uri() . '/css/global.css');
+  wp_register_style('font-awesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
 
-    //Register Scripts/Styles
-    wp_register_style( 'global-style', get_template_directory_uri() . '/css/global.css');
-    wp_register_style('font-awesome-style', get_template_directory_uri() . '/css/font-awesome.min.css');
+  //Enqueue Scripts/Styles
+  wp_enqueue_script('jquery'); // default jQuery
+  wp_enqueue_script('mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js');
 
-    //Enqueue Scripts/Styles
-    wp_enqueue_script('jquery'); // default jQuery
-    wp_enqueue_script('mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js');
-
-    wp_enqueue_style('global-style');
-    wp_enqueue_style('font-awesome-style');
-
-
+  wp_enqueue_style('global-style');
+  wp_enqueue_style('font-awesome-style');
 }
 add_action( 'wp_enqueue_scripts', 'scripts_styles');
 
 
+
 //Media Dei Shortcodes
-function media_dei_resource_item_shortcode($atts, $content){
-    $atts = shortcode_atts(
-        array(
-            'title' => 'Heading Goes Here',
-            'url' => 'URL Goes Here',
-            'paragraph' => 'Text Goes Here'
-        ), $atts
-    );
 
-    extract($atts);//convert indexed values from array into variables
-
-    return '<h2 class="resource-heading"><a href="' . $url . '">' . $title . '</a></h2><p class="resource-paragraph">' . $paragraph . '</p>';
+function media_dei_resource_item_url_shortcode($atts, $content){
+  $GLOBALS['resourceUrl'];
+  $GLOBALS['resourceUrl']=$content;
 }
-add_shortcode('resource_item', 'media_dei_resource_item_shortcode');
+add_shortcode('resource_item_url', 'media_dei_resource_item_url_shortcode');
+
+
+
+
+
+function media_dei_resource_item_title_shortcode($atts, $content){
+  $return_string='<h2 class="resource-heading"><a href="' . $GLOBALS['resourceUrl'] . '">' . $content . '</a></h2>';
+  return $return_string;
+}
+add_shortcode('resource_item_title', 'media_dei_resource_item_title_shortcode');
+
+
+
+
+function media_dei_resource_item_text_shortcode($atts, $content){
+  $return_string='<p class="resource-paragraph">' . $content . '</p>';
+  return $return_string;
+}
+add_shortcode('resource_item_text', 'media_dei_resource_item_text_shortcode');
+
+
+
 
 function media_dei_announcement_image_shortcode($atts, $content){
-    $atts = shortcode_atts(
-        array(
-            'url' => 'URL of Image from Media Library Goes Here'
-        ), $atts
-    );
-
-    extract($atts);//convert indexed values from array into variables
-    
-    return '<div class="announcement-image" role="img"><figure><img src="' . $url . '"></figure></div>';
+    $return_string='<div class="announcement-image" role="img"><figure>' . $content . '</figure></div>';
+    return $return_string;
 }
 add_shortcode('announcement_image', 'media_dei_announcement_image_shortcode');
 
+
+
+
 function media_dei_staff_circles_3_shortcode($atts, $content){
-    $atts = shortcode_atts(
-        array(
-            'staff_photo_left' => 'URL of Image from Media Library Goes Here',
-            'staff_photo_center' => 'URL of Image from Media Library Goes Here',
-            'staff_photo_right' => 'URL of Image from Media Library Goes Here',
-
-            'staff_name_left' => 'Name Goes Here',
-            'staff_name_center' => 'Name Goes Here',
-            'staff_name_right' => 'Name Goes Here',
-
-            'staff_title_left' => 'Title Goes Here',
-            'staff_title_center' => 'Title Goes Here',
-            'staff_title_right' => 'Title Goes Here',
-
-            'staff_bio_left' => 'Bio Paragraph Goes Here',
-            'staff_bio_center' => 'Bio Paragraph Goes Here',
-            'staff_bio_right' => 'Bio Paragraph Goes Here'
-        ), $atts
-    );
-
-    extract($atts);//convert indexed values from array into variables
+  $GLOBALS['staffCounter'] = 0;
+  $GLOBALS['bioCounter'] = 0;
+  $GLOBALS['nameLeft'];
+  $GLOBALS['nameCenter'];
+  $GLOBALS['nameRight'];
+  $return_string='
+    <input class="radioButton" id="bio1-left" type="radio" name="bio1">
+    <input class="radioButton" id="bio1-center" type="radio" name="bio1">
+    <input class="radioButton" id="bio1-right" type="radio" name="bio1">
     
-    return '
-        <input class="radioButton" id="bio1-left" type="radio" name="bio1">
-        <input class="radioButton" id="bio1-center" type="radio" name="bio1">
-        <input class="radioButton" id="bio1-right" type="radio" name="bio1">
-        
-        <div class="wrapper">
-          <div class="grid-1-3">
-            <div class="person">
-              <label class="zoom fa fa-search" for="bio1-left"></label>
-              <figure><img src="' . $staff_photo_left . '"></figure>
-              <p>' . $staff_name_left . '</p>
-              <p>' . $staff_title_left . '</p>
-              <div class="arrow bio1-left"></div>
-            </div>
-          </div>
-          
-          <div class="grid-1-3">
-            <div class="person">
-              <label class="zoom fa fa-search" for="bio1-center"></label>
-              <figure><img src="' . $staff_photo_center . '"></figure>
-              <p>' . $staff_name_center . '</p>
-              <p>' . $staff_title_center . '</p>
-              <div class="arrow bio1-center"></div>
-            </div>
-          </div>
-          
-          <div class="grid-1-3">
-            <div class="person">
-              <label class="zoom fa fa-search" for="bio1-right"></label>
-              <figure><img src="' . $staff_photo_right . '"></figure>
-              <p>' . $staff_name_right . '</p>
-              <p>' . $staff_title_right . '</p>
-              <div class="arrow bio1-right"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-info m1">
-          <div class="bio1">
-            <p>' . $staff_name_left . '</p>
-            <p class="p capital">' . $staff_bio_left . '</p>
-          </div>
-          <div class="bio1">
-            <p>' . $staff_name_center . '</p>
-            <p class="p capital">' . $staff_bio_center . '</p>
-          </div>
-          <div class="bio1">
-            <p>' . $staff_name_right . '</p>
-            <p class="p capital">' . $staff_bio_right . '</p>
-          </div>
-          <div class="close fa fa-times"></div>
-        </div>
-    ';
+    <div class="wrapper">' . do_shortcode($content) . '</div>';
+  return $return_string;
 }
 add_shortcode('staff_circles_3', 'media_dei_staff_circles_3_shortcode');
 
+
+
 function media_dei_staff_circles_2_shortcode($atts, $content){
-    $atts = shortcode_atts(
-        array(
-            'staff_photo_left' => 'URL of Image from Media Library Goes Here',
-            'staff_photo_right' => 'URL of Image from Media Library Goes Here',
-
-            'staff_name_left' => 'Name Goes Here',
-            'staff_name_right' => 'Name Goes Here',
-
-            'staff_title_left' => 'Title Goes Here',
-            'staff_title_right' => 'Title Goes Here',
-
-            'staff_bio_left' => 'Bio Paragraph Goes Here',
-            'staff_bio_right' => 'Bio Paragraph Goes Here'
-        ), $atts
-    );
-
-    extract($atts);//convert indexed values from array into variables
-    
-    return '
-        <input class="radioButton" id="bio2-left" type="radio" name="bio2">
-        <input class="radioButton" id="bio2-right" type="radio" name="bio2">
-
-        <div class="wrapper">
-          <div class="grid-1-2">
-            <div class="person">
-              <label class="zoom fa fa-search" for="bio2-left"></label>
-              <figure><img src="' . $staff_photo_left . '"></figure>
-              <p>' . $staff_name_left . '</p>
-              <p>' . $staff_title_left . '</p>
-              <div class="arrow bio2-left"></div>
-            </div>
-          </div>
-          
-          <div class="grid-1-2">
-            <div class="person">
-              <label class="zoom fa fa-search" for="bio2-right"></label>
-              <figure><img src="' . $staff_photo_right . '"></figure>
-              <p>' . $staff_name_right . '</p>
-              <p>' . $staff_title_right . '</p>
-              <div class="arrow bio2-right"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-info m2">
-          <div class="bio2">
-            <p>' . $staff_name_left . '</p>
-            <p class="p capital">' . $staff_bio_left . '</p>
-          </div>
-          <div class="bio2">
-            <p>' . $staff_name_right . '</p>
-            <p class="p capital">' . $staff_bio_right . '</p>
-          </div>
-          <div class="close fa fa-times"></div>
-        </div>
-    ';
+  $GLOBALS['staffCounter'] = 3;
+  $return_string='
+    <input class="radioButton" id="bio2-left" type="radio" name="bio2">
+    <input class="radioButton" id="bio2-right" type="radio" name="bio2">
+  
+    <div class="wrapper">' . do_shortcode($content) . '</div>';
+  return $return_string;
 }
 add_shortcode('staff_circles_2', 'media_dei_staff_circles_2_shortcode');
 
-function media_dei_additional_staff_member_open_shortcode($atts, $content){           
-    return '
-        <h2 class="more-staff">Other Board Members</h2>
-            <div class="more-staff">';
-    }
-add_shortcode('additional_staff_member_open', 'media_dei_additional_staff_member_open_shortcode');
-
-function media_dei_additional_staff_member_close_shortcode($atts, $content){           
-    return '</div>';
-    }
-add_shortcode('additional_staff_member_close', 'media_dei_additional_staff_member_close_shortcode');
 
 
 
-function media_dei_additional_staff_member_row_shortcode($atts, $content){
-    $atts = shortcode_atts(
-        array(
-            'name_left' => '',
-            'title_left' => '',
-            'name_right' => '',
-            'title_right' => ''
-        ), $atts
-    );
-
-    extract($atts);//convert indexed values from array into variables
-    
-    return '
-        <div>
-            <div class="name">' . $name_left . '</div>
-            <div class="desc">' . $title_left . '</div>
+function media_dei_person_shortcode($atts, $content){
+  $arrowPosition;
+  $GLOBALS['staffCounter']++;
+  if($GLOBALS['staffCounter'] > 5){
+    return;
+  }
+  if($GLOBALS['staffCounter']===1 || $GLOBALS['staffCounter']===4){
+    $position = 'left';
+  }
+  elseif($GLOBALS['staffCounter']===2){
+    $position = 'center';
+  }
+  elseif($GLOBALS['staffCounter']===3 || $GLOBALS['staffCounter']===5){
+    $position = 'right';
+  }
+  if($GLOBALS['staffCounter'] < 4){
+    $return_string='
+      <div class="grid-1-3">
+        <div class="person">
+          <label class="zoom fa fa-search" for="bio1-'. $position .'"></label>'
+          . do_shortcode($content) .
+          '<div class="arrow bio1-' . $position .'"></div>
         </div>
-        <div>
-            <div class="name">' . $name_right . '</div>
-            <div class="desc">' . $title_right . '</div>
-        </div>';
+      </div>';
+  }
+  elseif($GLOBALS['staffCounter'] > 3){
+    $return_string='
+      <div class="grid-1-2">
+        <div class="person">
+          <label class="zoom fa fa-search" for="bio2-'. $position .'"></label>'
+          . do_shortcode($content) .
+          '<div class="arrow bio2-' . $position .'"></div>
+        </div>
+      </div>';
+  }
+  return $return_string;
+}
+add_shortcode('person', 'media_dei_person_shortcode');
+
+
+
+
+
+function media_dei_person_photo_shortcode($atts, $content){
+  $return_string='<figure>' . $content . '</figure>';
+  return $return_string;
+}
+add_shortcode('photo', 'media_dei_person_photo_shortcode');
+
+
+
+
+
+function media_dei_person_name_shortcode($atts, $content){ 
+  $return_string='<p>' . $content . '</p>';
+  if($GLOBALS['staffCounter']===1){
+    $GLOBALS['nameLeft']=$content;
+  }
+  elseif($GLOBALS['staffCounter']===2){
+    $GLOBALS['nameCenter']=$content;
+  }
+  elseif($GLOBALS['staffCounter']===3){
+    $GLOBALS['nameRight']=$content;
+  }
+  elseif($GLOBALS['staffCounter']===4){
+    $GLOBALS['nameLeft']=$content;
+  }
+  elseif($GLOBALS['staffCounter']===5){
+    $GLOBALS['nameRight']=$content;
+  }
+  return $return_string;
+}
+add_shortcode('name', 'media_dei_person_name_shortcode');
+
+
+
+
+
+function media_dei_person_title_shortcode($atts, $content){
+  $return_string='<p>' . $content . '</p>';
+  return $return_string;
+}
+add_shortcode('title', 'media_dei_person_title_shortcode');  
+
+
+
+
+
+function media_dei_modal_bios_shortcode($atts, $content){
+  //$GLOBALS['bioCounter'] = 0;
+  if($GLOBALS['staffCounter'] < 4){
+    $return_string='<div class="modal-info m1">' . do_shortcode($content) . '</div>';
+  }
+  elseif($GLOBALS['staffCounter'] > 3){
+    $return_string='<div class="modal-info m2">' . do_shortcode($content) . '</div>';
+  }
+  return $return_string;
+}
+add_shortcode('modal_bios', 'media_dei_modal_bios_shortcode');
+
+
+
+
+
+function media_dei_person_bio_shortcode($atts, $content){
+  $GLOBALS['bioCounter']++;
+  $name;
+  if($GLOBALS['bioCounter']===1){
+    $name=$GLOBALS['nameLeft'];
+  }
+  elseif($GLOBALS['bioCounter']===2){
+    $name=$GLOBALS['nameCenter'];
+  }
+  elseif($GLOBALS['bioCounter']===3){
+    $name=$GLOBALS['nameRight'];
+  }
+  elseif($GLOBALS['bioCounter']===4){
+    $name=$GLOBALS['nameLeft'];
+  }
+  elseif($GLOBALS['bioCounter']===5){
+    $name=$GLOBALS['nameRight'];
+  }
+  elseif($GLOBALS['bioCounter']===6){
+    return;
+  }
+  if($GLOBALS['bioCounter'] < 4){
+    $return_string='<div class="bio1">
+                      <p>' . $name . '</p>
+                      <p class="p capital">' . $content . '</p>
+                    </div>';
+  }
+  elseif($GLOBALS['bioCounter'] > 3){
+    $return_string='<div class="bio2">
+                      <p>' . $name . '</p>
+                      <p class="p capital">' . $content . '</p>
+                    </div>';
+  }
+  return $return_string;
+}
+add_shortcode('bio', 'media_dei_person_bio_shortcode');
+
+
+
+
+
+function media_dei_additional_staff_members_shortcode($atts, $content){           
+    $return_string='
+        <h2 class="more-staff">Other Board Members</h2>
+            <div class="more-staff">' . do_shortcode($content) . '</div>';
+    return $return_string;
     }
-add_shortcode('additional_staff_member_row', 'media_dei_additional_staff_member_row_shortcode');
+add_shortcode('additional_staff_members', 'media_dei_additional_staff_members_shortcode');
+
+
+
+function media_dei_additional_staff_member_name_shortcode($atts, $content){    
+    $return_string='
+      <div class="name">' . $content . '</div>';
+    return $return_string;
+}
+add_shortcode('additional_staff_name', 'media_dei_additional_staff_member_name_shortcode');
+
+
+
+
+function media_dei_additional_staff_member_title_shortcode($atts, $content){    
+    $return_string='
+      <div class="desc">' . $content . '</div>';
+    return $return_string;
+}
+add_shortcode('additional_staff_title', 'media_dei_additional_staff_member_title_shortcode');
 //End Media Dei Shortcodes
 
 
 
+
+//Register Custom Document Category - Newsletter
+function media_dei_custom_taxonomy() {
+
+    $labels = array(
+        'name'                       => _x( 'Categories', 'Taxonomy General Name', 'text_domain' ),
+        'singular_name'              => _x( 'Category', 'Taxonomy Singular Name', 'text_domain' ),
+        'menu_name'                  => __( 'Media Dei Document Categories', 'text_domain' ),
+        'all_items'                  => __( 'All Categories', 'text_domain' ),
+        'parent_item'                => __( 'Parent Category', 'text_domain' ),
+        'parent_item_colon'          => __( 'Parent Category:', 'text_domain' ),
+        'new_item_name'              => __( 'New Category', 'text_domain' ),
+        'add_new_item'               => __( 'Add New Category', 'text_domain' ),
+        'edit_item'                  => __( 'Edit Category', 'text_domain' ),
+        'update_item'                => __( 'Update Category', 'text_domain' ),
+        'view_item'                  => __( 'View Category', 'text_domain' ),
+        'separate_items_with_commas' => __( 'Separate Categories with commas', 'text_domain' ),
+        'add_or_remove_items'        => __( 'Add or remove Categories', 'text_domain' ),
+        'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+        'popular_items'              => __( 'Popular Categories', 'text_domain' ),
+        'search_items'               => __( 'Search Categories', 'text_domain' ),
+        'not_found'                  => __( 'Not Found', 'text_domain' ),
+        'no_terms'                   => __( 'No Categories', 'text_domain' ),
+        'items_list'                 => __( 'Categories list', 'text_domain' ),
+        'items_list_navigation'      => __( 'Categories list navigation', 'text_domain' ),
+    );
+    $args = array(
+        'labels'                     => $labels,
+        'hierarchical'               => false,
+        'public'                     => true,
+        'show_ui'                    => true,
+        'show_admin_column'          => true,
+        'show_in_nav_menus'          => true,
+        'show_tagcloud'              => true,
+    );
+    register_taxonomy( 'Category', array( 'document' ), $args );
+
+}
+add_action( 'init', 'media_dei_custom_taxonomy', 0 );
+
+
+
+//enable categories and tags for media library attachments
+function media_dei_add_categories_for_attachments() {     register_taxonomy_for_object_type( 'category', 'attachment' ); 
+}
+add_action( 'init' , 'media_dei_add_categories_for_attachments' );
+
+function add_tags_for_attachments() {     register_taxonomy_for_object_type( 'post_tag', 'attachment' ); 
+} 
+add_action( 'init' , 'media_dei_add_tags_for_attachments' );
 
 
 

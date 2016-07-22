@@ -58,7 +58,17 @@
 				</style>
 
 				<p class="details">
-					<span>Email:</span>contact@pbsusa.org<br><br>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							var e = "contact"; // replace with your email username
+							var t = "pbsusa"; // replace with your email provider
+							var n = ".org"; // replace with your email provider TLD
+							var r = "mailto:" + e + '@' + t + n;
+							$('#hidden-email').attr('href',r).html(r);
+						});
+					</script>
+					<span>Email:<a id="hidden-email" href="#"><script type="text/javascript"> document.getElementById("hidden-email").innerHTML = e+t+n;</script></a></span>
+					<br><br>
 					<span>Phone:</span>1 (800) PBS-1928
 				</p>
 

@@ -65,16 +65,20 @@
 			</div></nav>
 
 			<?php 
-			//get hero for index.php "Notices" and also apply it to archive.php
+			//get hero for index.php and also apply it to archive.php
 			if(is_home() || is_archive()) { 
 			  $page_for_posts = get_option( 'page_for_posts' );
         echo '<div class="hero-img" role="image">'.get_the_post_thumbnail($page_for_posts, 'large').'</div>';
 			}
-			//get hero for all pages except index.php "Notices"
-			if ( has_post_thumbnail() ) {
+			//get hero for all pages except index.php, archive.php, and single.php
+			if ( has_post_thumbnail() && !is_single()) {
 				echo '<div class="hero-img" role="image">';
 				the_post_thumbnail();
 				echo '</div>';
-			} 
+				
+			}
+			if(is_single()){
+				echo '<div class="hero-img single-post" role="image"></div>';
+			}
 			?>
 		</header>

@@ -3,6 +3,31 @@
 <div class="page-title"><h1>Anglican Way Magazine</h1></div>
 
 <section class="print-magazine">
+	<?php
+	$currentDoc;
+	$args = array( 'post_type' => 'document', 'category' => 'magazine');
+	$magazines = get_documents( $args );
+	foreach ( $magazines as $magazine ) :
+	  setup_postdata( $magazine );
+		$currentDoc = the_title();?>
+
+		<div class="wrapper two">
+			div.
+		</div>
+
+		<?php
+		$args = array( 'post_type' => 'document', 'category' => 'thumbnail', 'name' => $currentDoc.'-thumbnail');
+		$thumbnails = get_documents( $args );
+		foreach ( $thumbnails as $thumbnail ) :
+	  	setup_postdata( $thumbnail ); ?>
+
+		<?php endforeach; ?>
+
+	<?php endforeach; 
+	wp_reset_postdata();
+	?>
+
+	<!--
 	<h1>2015</h1>
 	<div class="wrapper two">
 		<div class="grid-1-2">
@@ -437,5 +462,5 @@
 		</div>
 	</div>
 </section>
-
+-->
 <?php get_footer(); ?>

@@ -18,7 +18,7 @@
 		<time class="line"><?php echo get_the_date('F j, Y'); ?></time>
 		
 		<hr class="fleuron indent">
-
+		<figure><?php the_post_thumbnail(); ?></figure>
 		<?php the_content(); ?>
 
 		<hr class="fleuron">
