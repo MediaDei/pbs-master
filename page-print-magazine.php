@@ -2,30 +2,154 @@
 
 <div class="page-title"><h1>Anglican Way Magazine</h1></div>
 
-<section class="print-magazine">
-	<?php
-	$currentDoc;
-	$args = array( 'post_type' => 'document', 'category' => 'magazine');
-	$magazines = get_documents( $args );
-	foreach ( $magazines as $magazine ) :
-	  setup_postdata( $magazine );
-		$currentDoc = the_title();?>
+<?php
 
-		<div class="wrapper two">
-			div.
-		</div>
+/*
+wp loop starts
+	while have documents, get all documents
+		store the_title() in a $currentDoc variable
+		store the_date() in $currentDocDate variable
+		while have images, get all images
+			store the_title() in a $currentImage variable
+			if $currentDoc+'-thumbnail' === $currentImage, && $currentDocDate===the_date(); (only year)
+				get image src
+			endif
+			else
+				get placholder src (blank grey rectangle)
+			endelse
+		end while
+	end while
+wp loop ends
 
+
+name docs with $i counter
+
+
+
+
+upload file issue1.pdf
+	root/2016/07/issue1.pdf
+upload file issue1-thumbnail.jpg
+	root/2016/07/issue1-thumbnail.jpg
+wp loop starts
+	<img src="<?php the_permalink(); ?>"
+
+
+
+
+(https://codex.wordpress.org/The_Loop#Multiple_Loops)
+the challenge is to retreive two levels of information from a single loop pass through
+
+*/
+
+
+
+$magazines = array();
+$key = 0;
+$i = 0;//used to count posts for grid
+$vol = 0;//used to count volume/issue per year
+$newSection;
+$dateCompare;
+$docArgs = array(
+	'post_type' => 'document',
+	'category' 	=> 'magazine,magazine-thumbnail',
+	'orderby'		=> 'date',
+	'order' 		=> 'DESC'
+);
+$query = new WP_Query($docArgs);
+
+class magazine{
+	public $name;
+	public $date;
+	public $link;
+	public $category;
+}
+while ($query->have_posts()){
+	$query->the_post();
+	$object = new magazine();
+	$object->name=get_the_title();
+	$object->date=get_the_date(Y);
+	$object->link=get_permalink();
+	$categories=get_the_category();
+	$object->category=$categories[0]->slug;
+	$magazines[$key] = $object;
+	$key++;
+}
+
+foreach ($magazines as $j => $magazine) {
+	if($magazine->category==="magazine"){
+	if($dateCompare!=$magazine->date)
+		$newSection = true;
+	$dateCompare = $magazine->date;
+
+	if($newSection){
+		?>
+		<section class="print-magazine">
+			<h1><?php echo $magazine->date; ?></h1>
 		<?php
-		$args = array( 'post_type' => 'document', 'category' => 'thumbnail', 'name' => $currentDoc.'-thumbnail');
-		$thumbnails = get_documents( $args );
-		foreach ( $thumbnails as $thumbnail ) :
-	  	setup_postdata( $thumbnail ); ?>
+		$newSection = false;
+	}//endif
+	
+	if($i===1){
+		?>
+		<div class="wrapper two">
+		<?php
+	}//endif
+	
+	
+	
+	echo '<div class="grid-1-2">
+		<h2>Vol.'.$vol. ' ' .$magazine->date . '</h2>
+		<a href="'.$magazine->link.'">';
+		foreach ($magazines as $k => $value){
+			if(($value->name)===$magazine->name.'-thumbnail'){
+				echo '<img src="'.$value->link.'">';
+			}
+		}		
+	  ?>
 
-		<?php endforeach; ?>
+		</a><!--close anchor wrapping img-->
+  </div><!--close grid-1-2-->
 
-	<?php endforeach; 
-	wp_reset_postdata();
+  <?php
+
+
+
+	}//endifmag
+}//endforeach
+
+
+if($i % 2 != 0){
 	?>
+	</div><!--close wrapper two if odd number of posts-->
+	<?php $i=0;
+}//endif
+
+if(!$newSection){
+	?>
+	</section>
+	<?php
+}//endif
+?>
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<!--
 	<h1>2015</h1>
@@ -463,4 +587,4 @@
 	</div>
 </section>
 -->
-<?php get_footer(); ?>
+

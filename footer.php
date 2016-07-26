@@ -59,17 +59,29 @@
 
 				<p class="details">
 					<script type="text/javascript">
+						var $ = jQuery.noConflict();
 						$(document).ready(function() {
-							var e = "contact"; // replace with your email username
-							var t = "pbsusa"; // replace with your email provider
-							var n = ".org"; // replace with your email provider TLD
-							var r = "mailto:" + e + '@' + t + n;
-							$('#hidden-email').attr('href',r).html(r);
+							var e = "pbssecretary"; // replace with your email username
+							var t = "gmail"; // replace with your email provider
+							var n = ".com"; // replace with your email provider TLD
+							var r = "mailto:" + e + '@' + t + n; //href
+							$('#hidden-email').attr('href',r).html(e + '@'+t+n);
 						});
 					</script>
-					<span>Email:<a id="hidden-email" href="#"><script type="text/javascript"> document.getElementById("hidden-email").innerHTML = e+t+n;</script></a></span>
-					<br><br>
-					<span>Phone:</span>1 (800) PBS-1928
+					<span>Email: <br><a id="hidden-email" href="#">Please enable Javascript to view</a></span>
+					<br>
+					<script type="text/javascript">
+						var $ = jQuery.noConflict();
+						$(document).ready(function() {
+							var a = "1";
+							var e = "(703)"; // replace with your area code
+							var t = "349"; // replace with next 3 digits
+							var n = "1346"; // replace with your email provider TLD
+							var r = "tel:" + a + e + t + n; //href
+							$('#hidden-phone').attr('href',r).html(a + ' ' + e + ' ' + t + ' ' + n);
+						});
+					</script>
+					<span>Phone: <br><a id="hidden-phone" href="#">Please enable Javascript to view</a></span>
 				</p>
 
 				<h3 class="address">Address</h3>
