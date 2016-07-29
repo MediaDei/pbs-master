@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Static Home Page
+*/?>
+
 <?php get_header(); ?>
 
 <div class="page-title"><h1>Welcome</h1></div>
