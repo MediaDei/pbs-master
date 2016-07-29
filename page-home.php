@@ -75,13 +75,71 @@ if ( have_posts() ) {
 
 	<div class="more-aw">
 		<h2 class="smallcaps">Anglican Way</h2>
-		<time datetime="2015-12">Summer, 2016 <span>•</span> Vol. 39, No. 1</time>
+		<?php
+		/*
+		(https://codex.wordpress.org/The_Loop#Multiple_Loops)
+		the challenge is to retreive two levels of information from a single loop pass through
+		*/
+		$attachments = array();
+		$key = 0;
+		$notPDF = true;
+		$docArgs = array(
+			'post_type' 			=> 'attachment',
+			'category' 				=> 'magazine,magazine-thumbnail',
+			'orderby'					=> 'title',
+			'order' 					=> 'DESC',
+			'post_status'    	=> 'inherit',
+			'posts_per_page'	=> '-1'
+		);
+		$query = new WP_Query($docArgs);
 
-		<a class="img" href="<?php bloginfo('template_url'); ?>/files/2016-01.pdf">
-			<img class="AWcover" src="<?php bloginfo('template_url'); ?>/files/2016-01-cover.jpg" title="Anglican Way Print Magazine"/>
-			<span class="zoom fa fa-search"></span>
-		</a>
+		class attachment{
+			public $id;
+			public $fileName;
+			public $mimeType;	
+		}
+		while ($query->have_posts()){
+			$query->the_post();
+			$object = new attachment();
+			$object->mimeType=get_post_mime_type();
+			$object->id=get_the_ID();
+			$id=$object->id;
+			$object->fileName=basename(get_attached_file($id));
+			$attachments[$key] = $object;
+			$key++;
+		}
 
+		foreach ($attachments as $j => $attachment) {
+			if($notPDF){
+				if($attachment->mimeType==="application/pdf"){
+					$notPDF = false;
+					echo '<a class="img" href="'.wp_get_attachment_url($attachment->id).'"><span class="zoom fa fa-search"></span>';
+
+					//inner/image loop
+					$noCover=true;
+					foreach ($attachments as $k => $attachment2){
+
+						if($attachment2->mimeType==="image/gif" || $attachment2->mimeType==="image/jpeg" || $attachment2->mimeType==="image/png"){
+
+							if(substr($attachment->fileName, 0, -4)===substr($attachment2->fileName, 0, -10)){
+								echo '<img class="AWcover" src="'.wp_get_attachment_url($attachment2->id).'"/>';
+								$noCover = false;
+							}
+						}//end if image
+					}//end inner/image loop
+
+					if($noCover){//if no cover found, use placeholder
+						?>
+						<img class="AWcover" src="<?php bloginfo('template_url'); ?>/images/magazine-placeholder.gif"/>
+						<?php
+					}		
+				  ?>
+					</a><!--close anchor wrapping img-->
+			  	<?php
+				}//end if pdf
+			}//end if$notPDF
+		}//end main foreach loop
+		?>
 		<a class="more-vol smallcaps" href="/print-magazine/">All issues →</a>
 	</div>
 
