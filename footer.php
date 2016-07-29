@@ -87,8 +87,8 @@
 				<h3 class="address">Address</h3>
 				<p class="address">The Society for the Preservation of<br>
 				the Book of Common Prayer<br>
-				PO Box 137,<br>
-				Jenkintown, PA 19046-0137</p>
+				1 West Macon Street,<br>
+				Savannah, GA 31401</p>
 			</div>
 
 
@@ -109,9 +109,9 @@
 			</div>
 
 
-			<!--<div class="mediadei">
-				&copy; <?php echo date("Y"); ?>, Prayer Book Society, USA | <a href="http://www.mediadei.org">Designed and built by Media Dei</a>
-			</div>-->
+			<div class="mediadei">
+				<a href="http://www.mediadei.org">Designed and built by Media Dei, &copy; <?php echo date("Y"); ?></a>
+			</div>
 
 			<div class="contact-lightbox">
 				<div class="overlay"></div>

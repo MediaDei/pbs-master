@@ -713,12 +713,14 @@ footer {
       display: block;
       text-align: right;
       margin-top: 20px;
-      padding-bottom: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }//------------END FOOTER
-
-
+ 
 
 
 
