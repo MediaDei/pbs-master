@@ -14,7 +14,6 @@ $vol = 0;//used to count volume/issue per year
 $newSection;
 $date;
 $dateCompare;
-$firstLoop = true;
 $docArgs = array(
 	'post_type' 			=> 'attachment',
 	'category' 				=> 'magazine,magazine-thumbnail',
@@ -48,17 +47,13 @@ foreach ($attachments as $j => $attachment) {
 
 	if($attachment->mimeType==="application/pdf"){
 
-		if($dateCompare!=$date){//close section when date changes
+		if($dateCompare!=$date){//close section when date changes and start new section
 			echo '</section>';
-		}
-
-		$i++;//increment grid counter
-		$vol++;//increment volume/issue counter
-
-		if($dateCompare!=$date){//if date changes, begin a new section
 			$newSection = true;
 		}
 		$dateCompare = $date;//update $date with current attachment's date
+		$i++;//increment grid counter
+		$vol++;//increment volume/issue counter
 
 		if($newSection){
 			?>
@@ -103,14 +98,13 @@ foreach ($attachments as $j => $attachment) {
 	  </div><!--close grid-1-2-->
 
 	  <?php
-	  if($i===2){
+	  if($i===2){//close wrapper two if grid is complete with two grid-1-2 divs
 		?>
-		</div><!--close wrapper two-->
+		</div>
 		<?php $i=0;
 		}
 
 	}//end if pdf
-	$firstLoop = false;
 }//end main loop
 
 if(!$newSection){//if loop ends with open section, close section	
