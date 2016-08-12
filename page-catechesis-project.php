@@ -34,15 +34,15 @@
 	<ul id="contents" class="p contents">
 	<h2>Look Within</h2>
 		<br>
-		<li><a href="<?php bloginfo('template_url'); ?>/files/CP_I-am-His-Table-of-Contents-Introduction.docx">Table of Contents, & Introduction</a></li>
-		<li><a href="<?php bloginfo('template_url'); ?>/files/CP_I-am-His-Part-1-A-Place-To-Belong.docx">Part 1 — A Place To Belong</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His - Table of Contents & Introduction.pdf">Table of Contents, & Introduction</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His Part 1 - A Place To Belong.pdf">Part 1 — A Place To Belong</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His Part 2 - A Faith to Believe.pdf">Part 2 — A Faith to Believe</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His Part 3 - A Law to Live By.pdf">Part 3 — A Law to Live By</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His Part 4 - Help For the Asking.pdf">Part 4 — Help for the Asking</a></li>
+		<li><a href="<?php bloginfo('template_url'); ?>/files/I am His Part 5 - Signs of Grace.pdf">Part 5 — Signs of Grace</a></li>
 		<li><i>in production</i></li>
 		<li><i>in production</i></li>
-		<li><i>in production</i></li>
-		<li><i>in production</i></li>
-		<li><i>in production</i></li>
-		<li><i>in production</i></li>
-	<time timedate="2015-09-12">Last updated: 12/9/2015</time>
+	<time timedate="2015-05-08">Last updated: 8/9/2016</time>
 	</ul>
 
 </section>

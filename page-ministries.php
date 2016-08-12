@@ -53,7 +53,10 @@
 			<h3>Anglican Way</h3>
 			<p class="p capital">E<span class="smallcaps">ssential, topical and innovative,</span> anglicanway.org is a central website and multi&shy;media resource for all in the Anglican tradition With informative and inspiring content, it explores the riches and distinctiveness of our Anglican theological heritage and Prayer Book tradition It also offers a platform for informed debate about the key issues and challenges facing the Anglicans today. It will also feature inspirational video and audio content in support of our liturgical mission and vision in partnership with our network of parishes.</p>
 
-			<p class="eh coming-soon">Coming Soon</p>
+			<p class="link">
+				<span class="smallcaps">Anglican Way Magazine</span>
+				<a href="https://anglicanwaymagazine.com">https://anglicanwaymagazine.com/</a>
+			</p>
 		</div>
 	</div>
 
@@ -77,7 +80,7 @@
 
 			<p class="link">
 				<span class="smallcaps">Read issues here:</span>
-				<a href="/print-magazine/">Anglican Way issues</a>
+				<a href="/print-magazine/">Anglican Way Print issues</a>
 			</p>
 
 		</div>
@@ -100,6 +103,11 @@
 		<div class="bio">
 			<h3>I-Pray BCP App</h3>
 			<p class="p capital">U<span class="smallcaps">pdated daily,</span> this app provides the full text for saying Morning and Evening Prayer as well as Noonday Prayer and Compline. There is no need to carry a heavy book and makes it even easier to integrate the Office into your daily devotions, in unity with the Church worldwide, in prayer through time.</p>
+
+			<p class="link">
+				<span class="smallcaps">iOS App in iTunes</span>
+				<a href="https://itunes.apple.com/gb/app/ipray-bcp/id431349318?mt=8">https://itunes.apple.com/gb/app/ipray-bcp/id431349318?mt=8</a>
+			</p>
 		</div>
 	</div>
 
@@ -123,8 +131,8 @@
 			<p class="p">T<span class="smallcaps">he substantial</span> first volume, <span style="font-style: italic">My Beloved is Mine and I am His</span>, by the Society President, the Revd. Fr. Gavin Dunbar is now being launched. It provides material for Adult Education Classes through twenty five weekly chapters. Its three main sections exploring progressively what it means to belong, to believe and to follow Christ as this has been understood and set out in the Anglican tradition. Each of the cumulative chapters features short essays on the Prayer Book Catechism’s Questions and Answers, followed by suggestions for further reading, and questions for study and discussion.</p>
 
 			<p class="link">
-				<span class="smallcaps">See the Catechesis Project:</span>
-				<a href="/catechesis-project/">Catechesis Project Page</a>
+				<span class="smallcaps">Visit the page:</span>
+				<a href="/catechesis-project/">PBS Catechesis Project</a>
 			</p>
 
 		</div>
