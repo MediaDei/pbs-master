@@ -31,6 +31,29 @@
 	<div class="page-wrap">
 
 		<header>
+			<div class="top-ad">
+				<div class="wrapper">
+					<div class="left">
+						<span class="large">We Need Your Help</span>
+						to continue our work!
+					</div>
+					<div class="right">
+						The Society has recently been expanding its work substantially both here and overseas. We have undertaken
+						<ul>
+							<li>work in Tanzania which has reached thousands of young people 
+							and where we plan a new edition of the classic Kiswhahili Prayer Book</li>
+							<li>a complete new volume of Catechesis to teach the faith in Parishes: <em>I am His</em></li>
+							<li>arranged colloquia around the country on <em>Daily Prayer</em> and on <em>Marriage</em></li>
+						</ul>
+					</div>
+					<div class="bottom">
+					    <p>And now we are planning a major conference on Anglicanism Catholic and Reformed in February 2017.</p>
+					    <p>All this has taken major investment, so there could  be no better time to donate in support of our work !</p>
+					    <p><a href="https://anglicanway.org/make-a-donation/">You can donate now online here</a><br>
+						and remember all donations are tax deductible!</p>
+					</div>
+			    </div>
+			</div>
 			<div class="title-wrap">
 				<h1 class="main-title">
 					<div role="img" class="floral-left"><div class="inner">

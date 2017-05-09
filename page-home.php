@@ -21,6 +21,31 @@ if ( have_posts() ) {
 	A place to belong, a Faith to believe,
 	and a Rule of life and worship.</p>
 
+	<aside class="notice">
+		<h1 class="smallcaps">Prayer Book Society 2017 Conference</h1>
+
+		<div class='wrapper'>
+			<figure class="thumbnail"><img src="http://www.pbsusa.org/wp-content/uploads/2016/11/PBS-Conf-2017-Ad3-v-small.jpg" /></figure>
+
+			<div class="text">
+				<h2>Anglicanism – Catholic and Reformed: 
+				Revisiting the Reformation Legacy 1517-2017</h2>
+
+				<p class="p">The premier Anglican conference for 2017, commemorating the launch of the Reformation in 1517, and exploring the emergence of the Anglican identity that was both truly reformed and enduringly catholic.</p>
+
+				<p class="p">With a gathering of scholars, clergy and lecturers from around the world, this event is not to be missed. <a href="http://www.pbsusa.org/2016/11/30/the-pbs-announces-its-2017-conference-anglicanism-catholic-and-reformed-revisiting-the-reformation-legacy-1517-2017/#read">Read more.</a></p>
+			</div>
+
+			<span class="arrow fa fa-reply-all fa-flip-horizontal"> </span>
+		</div>
+		<a class='register' href='http://anglicanism-2017.bpt.me'>Click here to register!</a>
+
+		<span class="close fa fa-times"> </span>
+
+	</aside>
+
+
+
 	<h1>Latest News</h1>
 
 	<?php 
@@ -150,22 +175,6 @@ if ( have_posts() ) {
 
 	</aside>
 
-
-	<aside class="notice">
-		<h1 class="smallcaps">The Society Announces a Series of Colloquia on Daily Prayer</h1>
-
-		<div class="text">
-			<h2>Stirred up to Godliness
-			the Daily Office in Anglicanism</h2>
-
-			<p class="p">The Society is pleased to announce that the first of two one day events on the theme of Daily Prayer will take place on 20th January (10 a.m - 5.30 p.m. in Dallas at the Church of the Holy Cross Herschel Avenue  with a second colloquium in Savannah in the second week after Easter.</p>
-
-			<p class="p">Further details of how to register can be found <a href="http://www.pbsusa.org/a-series-of-colloquia-on-common-prayer/#read">here</a> !</p>
-			<span class="arrow fa fa-reply-all fa-flip-horizontal"> </span>
-		</div>
-
-		<span class="close fa fa-times"> </span>
-	</aside>
 </section>
 
 <script type="text/javascript">

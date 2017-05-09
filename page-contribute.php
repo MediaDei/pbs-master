@@ -94,6 +94,12 @@
   endwhile; wp_reset_query(); 
   ?>
 
+  <a href="https://anglicanway.org/make-a-donation/" class="join-offline-button cards">
+    To Donate By Card →
+    <img src='<?php bloginfo('template_url'); ?>/images/contribute-cards.png' alt='Credit Cards' />
+  </a>
+
+
 
   <script>
     var $ = jQuery.noConflict();
